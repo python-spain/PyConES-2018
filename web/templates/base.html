@@ -1,0 +1,75 @@
+{% load i18n static compress %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PyconES 2018 - Málaga</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{% static 'web/png/favicon.png' %}">
+
+    {% block css %}
+      {% compress css %}
+        <link type="text/less" rel="stylesheet" href="{% static 'web/less/main.less' %}">
+      {% endcompress %}
+      {% block extracss %}{% endblock %}
+    {% endblock %}
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat">
+  </head>
+  <body>
+    <!--[if lt IE 11]>
+      <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="js-nav">
+      <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
+      <div class="nav__event-date console-text--black-bg"><5-7/OCT/2018> Málaga</div>
+      <h1 class="nav__title console-text">Connecting the Python Community</h1>
+      <div class="nav__subtitle console-text">6th Edition</div>
+      <p class="nav__menu-text">
+        Welcome to the most important nation-wide Python conference in Spain. A three-day event
+        that will bring together the most interesting speakers, a super cool agenda and an awesome audience. Proudly
+        organised and sponsored with care from Málaga.
+      </p>
+      <div class="nav__tickets">
+        <h2 class="nav__tickets__title">Where are the tickets?!</h2>
+        <p>
+          Tickets are not available yet but if you want to be the first to know, give us your email. No spam, just
+          important stuff about the event
+        </p>
+        <div class="nav__tickets__email js-email-widget">
+          <input class="nav__tickets__email__input js-email-input" placeholder="Enter your email address">
+          <span class="nav__tickets__email__button">
+            <button class="js-email-send-btn">
+              <img src="{% static 'web/svg/send.svg' %}" alt="send">
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="nav__social">
+        <div class="nav__social__icons">
+          <a class="no-mustache" href="https://twitter.com/pycones">
+            <img class="nav__social__icon" src="{% static 'web/svg/twitter.svg' %}">
+          </a>
+        </div>
+        <span>
+          <a class="no-mustache" href="mailto:contact2018@es.pycon.org">contact2018@es.pycon.org</a>
+        </span>
+      </div>
+    </nav>
+
+    {% block main %}{% endblock %}
+
+    {% block js %}
+      {% compress js %}
+        <script src="{% static 'vendor/js/jquery-3.3.1.js' %}"></script>
+        <script src="{% static 'vendor/js/jquery.scrollify.js' %}"></script>
+        <script src="{% static 'web/js/main.js' %}"></script>
+      {% endcompress %}
+      {% block extrajs %}{% endblock %}
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,232 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+.browsehappy {
+  text-align: center;
+  margin: 0;
+  background: #fff8e2;
+  color: #000;
+  padding: 0.5em 0;
+}
+html {
+  font-size: 14px;
+}
+body {
+  color: #191F20;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+}
+a {
+  color: #191F20;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: .2s;
+}
+a:not(.no-mustache) {
+  border-bottom: solid 4px #DEBC3E;
+}
+a:not(.no-mustache):hover {
+  border-color: #11B8DF;
+}
+a:not(.no-mustache):before {
+  content: "{{ ";
+}
+a:not(.no-mustache):after {
+  content: " }}";
+}
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+}
+.stroke-button {
+  width: 395px;
+  height: 50px;
+  background: transparent url(/static/images/button-blue.svg) no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  transition: .2s;
+}
+.stroke-button:hover {
+  background-image: url(/static/images/button-yellow.svg);
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0 0;
+}
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.sub-header {
+  margin-top: 0;
+}
+.console-text--black-bg {
+  color: white;
+  background-color: black;
+  font-family: 'Inconsolata', monospace;
+}
+.console-text {
+  font-family: 'Inconsolata', monospace;
+}
+nav {
+  position: fixed;
+  background: white;
+  min-height: 100vh;
+  width: 33%;
+  max-width: 640px;
+  text-align: center;
+  padding: 45px 60px 120px 60px;
+}
+.nav__title {
+  font-size: 1.85rem;
+  margin: 0 0 1.15rem 0;
+}
+.nav__subtitle {
+  font-size: 1.15rem;
+}
+.nav__event-date {
+  display: inline-block;
+  font-size: 1.15rem;
+  margin: 0 0 1.15rem 0;
+  padding: 2px 6px 2px 6px;
+}
+.nav__logo {
+  margin-bottom: 55px;
+  width: 200px;
+}
+.nav__menu-text {
+  margin: 60px 0;
+}
+.nav__menu-text a {
+  white-space: nowrap;
+}
+.nav__tickets__title {
+  margin: 0 0 1.15rem 0;
+}
+.nav__tickets__email {
+  display: flex;
+  width: 100%;
+  padding: 0 45px;
+  justify-content: center;
+}
+.nav__tickets__email.success .nav__tickets__email__input {
+  border-color: #13AA7D;
+}
+.nav__tickets__email.success .nav__tickets__email__button button {
+  background-color: #13AA7D;
+}
+.nav__tickets__email.error .nav__tickets__email__input {
+  border-color: #E03F3F;
+}
+.nav__tickets__email.error .nav__tickets__email__button button {
+  background-color: #E03F3F;
+}
+.nav__tickets__email__input {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  height: 2.25rem;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: #11B8DF;
+  font-style: normal;
+  font-size: 1rem;
+  padding-left: 5px;
+  transition: .5s;
+}
+.nav__tickets__email__input::placeholder {
+  font-size: .8rem;
+  font-style: italic;
+}
+.nav__tickets__email__button {
+  display: flex;
+}
+.nav__tickets__email__button button {
+  width: 45px;
+  border: 0;
+  border-radius: 0;
+  background-color: #11B8DF;
+  padding: 3px 0 0 3px;
+  cursor: pointer;
+  transition: .5s;
+}
+.nav__social {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+}
+.nav__social__icons {
+  width: 100%;
+  height: 40px;
+}
+.nav__social__icons img {
+  width: 40px;
+}
+main {
+  position: relative;
+  display: flex;
+  margin-left: 33%;
+  flex-flow: row wrap;
+}
+main section {
+  height: 100vh;
+  width: 50%;
+  background: white url(/static/images/pattern.svg) repeat left top;
+}
+main section .section__content {
+  height: 100%;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+main section:nth-child(odd) {
+  padding-top: 25vh;
+}
+main section:nth-child(odd) .section__content {
+  background-color: #F1FBFD;
+  padding-top: 10vh;
+}
+main section:nth-child(even) {
+  padding-bottom: 25vh;
+}
+main section:nth-child(even) .section__content {
+  background-color: #FEFDFA;
+  padding-top: 35vh;
+}
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    margin-left: 0;
+  }
+  main section {
+    width: 100%;
+  }
+  nav {
+    position: relative;
+    width: 100%;
+  }
+}
