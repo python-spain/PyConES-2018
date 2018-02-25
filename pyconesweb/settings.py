@@ -43,6 +43,7 @@ THIRD_PARTY_APPS = [
 
 PROJECT_APPS = [
     'web',
+    'newsletter'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
@@ -136,3 +137,8 @@ COMPRESS_CSS_HASHING_METHOD = 'content'
 COMPRESS_PRECOMPILERS = (
     ('text/less', 'lessc {infile} {outfile}'),
 )
+
+# MailChimp
+MAILCHIMP_API_KEY = os.environ['MAILCHIMP_API_KEY']
+MAILCHIMP_USERNAME = os.environ['MAILCHIMP_USERNAME']
+MAILCHIMP_NEWSLETTER_LIST_ID = os.environ['MAILCHIMP_NEWSLETTER_LIST_ID']

@@ -39,14 +39,15 @@ $(function () {
 
     if (isValidEmail(email)) {
       $.ajax({
-          headers: { "Accept": "application/json" },
-          url: "https://xw5s3m0p1l.execute-api.eu-west-1.amazonaws.com/latest?email=" + email,
-          type: "GET",
-          crossDomain: true,
+          url: "/newsletter/subscribers/",
+          type: "POST",
+          data: { email:  email},
           success: function (response) {
-            console.log(response);
             $emailInput.val('Got it!');
             $emailWidget.addClass('success');
+          },
+          error: function (response) {
+            $emailWidget.addClass('error');
           }
       });
     } else {

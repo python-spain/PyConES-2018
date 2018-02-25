@@ -6,3 +6,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
+    environment:
+      - MAILCHIMP_API_KEY=${MAILCHIMP_API_KEY}
+      - MAILCHIMP_USERNAME=${MAILCHIMP_USERNAME}
+      - MAILCHIMP_NEWSLETTER_LIST_ID=${MAILCHIMP_NEWSLETTER_LIST_ID}
