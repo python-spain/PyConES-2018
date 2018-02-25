@@ -10,3 +10,9 @@ services:
       - MAILCHIMP_API_KEY=${MAILCHIMP_API_KEY}
       - MAILCHIMP_USERNAME=${MAILCHIMP_USERNAME}
       - MAILCHIMP_NEWSLETTER_LIST_ID=${MAILCHIMP_NEWSLETTER_LIST_ID}
+    depends_on:
+      - redis
+  redis:
+    image: "redis"
+    ports:
+      - "127.0.0.1:6379:6379"
