@@ -5,7 +5,7 @@
 
 3. . ~/.virtualenvs/pyconesweb/bin/activate
 
-4. pip install requirements.txt
+4. pip install -r requirements.txt
 
 5. sudo apt install node npm
 
