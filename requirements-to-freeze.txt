@@ -1,4 +1,5 @@
 Django
 django-compressor
 djangorestframework
+gunicorn
 mailchimp3
