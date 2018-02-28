@@ -1,4 +1,11 @@
 
-1. docker-compose build
+1. Create a `.env` file with required environment variables.
 
-2. docker-compose up
+```
+cp web.env.example web.env
+```
+
+2. Run docker services:
+```
+docker-compose up
+```
