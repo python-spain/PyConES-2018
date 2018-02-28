@@ -1,5 +1,6 @@
 Django
-django-compressor
 djangorestframework
+django-compressor
+django-redis
 gunicorn
 mailchimp3

@@ -16,3 +16,9 @@ services:
     env_file: web.env
     volumes:
       - ./static:/static
+    depends_on:
+      - redis
+  redis:
+    image: "redis"
+    ports:
+      - "6379:6379"
