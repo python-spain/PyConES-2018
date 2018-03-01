@@ -1,18 +1,24 @@
 version: '3'
 
 services:
+  nginx:
+    image: nginx
+    depends_on:
+      - web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./deploy/nginx:/etc/nginx/conf.d
+      - ./static:/static:ro
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
-    ports:
-      - "8000:8000"
-    environment:
-      - MAILCHIMP_API_KEY=${MAILCHIMP_API_KEY}
-      - MAILCHIMP_USERNAME=${MAILCHIMP_USERNAME}
-      - MAILCHIMP_NEWSLETTER_LIST_ID=${MAILCHIMP_NEWSLETTER_LIST_ID}
+    command: gunicorn pyconesweb.wsgi -b 0.0.0.0:8000
+    env_file: web.env
+    volumes:
+      - ./static:/static
     depends_on:
       - redis
   redis:
     image: "redis"
     ports:
-      - "127.0.0.1:6379:6379"
+      - "6379:6379"

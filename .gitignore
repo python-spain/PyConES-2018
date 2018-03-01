@@ -1,4 +1,14 @@
+### Environment files
+*.env
+
+### JetBrains
 .idea/
-db.sqlite3
-*.pyc
-.env*
+
+### Python
+__pycache__/
+
+### SQlite3
+*.sqlite3
+
+### Static files
+static/
