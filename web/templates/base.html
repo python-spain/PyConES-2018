@@ -12,6 +12,8 @@
 
     {% block css %}
       {% compress css %}
+        <link type="text/css" rel="stylesheet" href="{% static 'vendor/css/normalize.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'vendor/css/animate.css' %}">
         <link type="text/less" rel="stylesheet" href="{% static 'web/less/main.less' %}">
       {% endcompress %}
       {% block extracss %}{% endblock %}
