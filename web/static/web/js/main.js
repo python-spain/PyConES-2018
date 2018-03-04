@@ -65,12 +65,9 @@ $(function () {
   });
 
   $emailInput.on('focus', function () {
-    $emailInput.val('');
-    $emailWidget.removeClass('success error');
-  });
-
-  $emailInput.on('focus', function () {
-    $emailInput.val('');
+    if ($emailInput.hasClass('success')) {
+      $emailInput.val('');
+    }
     $emailWidget.removeClass('success error');
   });
 
