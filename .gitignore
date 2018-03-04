@@ -11,4 +11,4 @@ __pycache__/
 *.sqlite3
 
 ### Static files
-static/
+/static/
