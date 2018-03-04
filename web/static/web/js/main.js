@@ -13,7 +13,7 @@ function isValidEmail(email) {
 $(window).resize(function() {
   var $main = $('.js-main');
   var $nav = $('.js-nav');
-  if (window.innerWidth < 800) {
+  if (window.innerWidth < 768) {
     $main.find('section').addClass('js-scroll-section');
     $nav.addClass('js-scroll-section');
   } else {
@@ -29,6 +29,7 @@ $(function () {
   var $emailWidget = $('.js-email-widget');
   var $emailSendBtn = $('.js-email-send-btn');
   var $emailInput = $('.js-email-input');
+  var jqXHR = null;
 
   setUpScrollify();
 
@@ -38,30 +39,35 @@ $(function () {
     $emailWidget.removeClass('success error');
 
     if (isValidEmail(email)) {
-      $.ajax({
-          url: "/newsletter/subscribers/",
-          type: "POST",
-          data: { email:  email},
-          success: function (response) {
-            $emailInput.val('Got it!');
-            $emailWidget.addClass('success');
-          },
-          error: function (response) {
-            $emailWidget.addClass('error');
-          }
-      });
+      $emailSendBtn.prop('disabled', true);
+      $emailSendBtn.find('img').addClass('animated infinite tada');
+
+      if (jqXHR !== null) {
+        jqXHR.abort();
+      }
+
+      jqXHR = $.ajax({ url: "/newsletter/subscribers/", type: "POST", data: { email:  email}})
+        .done(function () {
+          $emailInput.val('Got it!');
+          $emailWidget.addClass('success');
+        })
+        .fail(function () {
+          $emailWidget.addClass('error');
+        })
+        .always(function () {
+          jqXHR = null;
+          $emailSendBtn.find('img').removeClass('animated');
+          $emailSendBtn.prop('disabled', false);
+        })
     } else {
       $emailWidget.addClass('error');
     }
   });
 
   $emailInput.on('focus', function () {
-    $emailInput.val('');
-    $emailWidget.removeClass('success error');
-  });
-
-  $emailInput.on('focus', function () {
-    $emailInput.val('');
+    if ($emailInput.hasClass('success')) {
+      $emailInput.val('');
+    }
     $emailWidget.removeClass('success error');
   });
 
