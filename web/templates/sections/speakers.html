@@ -1,10 +1,15 @@
+{% load i18n %}
+
 <section class="js-scroll-section">
   <div class="section__content">
-    <h1>Speakers</h1>
-    <p class="sub-header">Become one of us</p>
-    <button class="stroke-button">call for papers</button>
+    <h1>{% trans 'Speakers' %}</h1>
+    <p class="sub-header">{% trans 'Become one of us' %}</p>
+    <button class="stroke-button">{% trans 'call for papers' %}</button>
     <p>
-      We want to promote diversity in the widest sense of the term, so don't be afraid to propose anything you think can make the audience learn, enjoy and give back.
+      {% blocktrans %}
+        We want to promote diversity in the widest sense of the term, so don't be afraid to propose anything you think
+        can make the audience learn, enjoy and give back.
+      {% endblocktrans %}
     </p>
   </div>
 </section>

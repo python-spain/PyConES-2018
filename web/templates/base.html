@@ -29,21 +29,25 @@
     <nav class="js-nav">
       <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
       <div class="nav__event-date console-text--black-bg"><5-7/OCT/2018> Málaga</div>
-      <h1 class="nav__title console-text">Connecting the Python Community</h1>
-      <div class="nav__subtitle console-text">6th Edition</div>
+      <h1 class="nav__title console-text">{% trans 'Connecting the Python Community' %}</h1>
+      <div class="nav__subtitle console-text">{% trans '6th Edition' %}</div>
       <p class="nav__menu-text">
-        Welcome to the most important nation-wide Python conference in Spain. A three-day event
-        that will bring together the most interesting speakers, a super cool agenda and an awesome audience. Proudly
-        organised and sponsored with care from Málaga.
+        {% blocktrans %}
+          Welcome to the most important nation-wide Python conference in Spain. A three-day event
+          that will bring together the most interesting speakers, a super cool agenda and an awesome audience.
+          Proudly organised and sponsored with care from Málaga.
+        {% endblocktrans %}
       </p>
       <div class="nav__tickets">
-        <h2 class="nav__tickets__title">Where are the tickets?!</h2>
+        <h2 class="nav__tickets__title">{% trans 'Where are the tickets?!' %}</h2>
         <p>
-          Tickets are not available yet but if you want to be the first to know, give us your email. No spam, just
-          important stuff about the event
+          {% blocktrans %}
+            Tickets are not available yet but if you want to be the first to know, give us your email. No spam, just
+            important stuff about the event
+          {% endblocktrans %}
         </p>
         <div class="nav__tickets__email js-email-widget">
-          <input class="nav__tickets__email__input js-email-input" placeholder="Enter your email address">
+          <input class="nav__tickets__email__input js-email-input" placeholder="{% trans 'Enter your email address' %}">
           <span class="nav__tickets__email__button">
             <button class="js-email-send-btn">
               <img src="{% static 'web/svg/send.svg' %}" alt="send">
