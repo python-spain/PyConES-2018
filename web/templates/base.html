@@ -14,7 +14,7 @@
       {% compress css %}
         <link type="text/css" rel="stylesheet" href="{% static 'vendor/css/normalize.css' %}">
         <link type="text/css" rel="stylesheet" href="{% static 'vendor/css/animate.css' %}">
-        <link type="text/less" rel="stylesheet" href="{% static 'web/less/main.less' %}">
+        <link type="text/x-sass" rel="stylesheet" href="{% static 'web/scss/main.scss' %}">
       {% endcompress %}
       {% block extracss %}{% endblock %}
     {% endblock %}
@@ -26,7 +26,7 @@
       <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <nav class="js-nav">
+    <div class="nav js-nav">
       <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
       <div class="nav__event-date console-text--black-bg"><5-7/OCT/2018> Málaga</div>
       <h1 class="nav__title console-text">Connecting the Python Community</h1>
@@ -61,7 +61,7 @@
           <a class="no-mustache" href="mailto:contact2018@es.pycon.org">contact2018@es.pycon.org</a>
         </span>
       </div>
-    </nav>
+    </div>
 
     {% block main %}{% endblock %}
 

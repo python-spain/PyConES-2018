@@ -1,0 +1,14 @@
+.main {
+  position: relative;
+  display: flex;
+  margin-left: 33%;
+  flex-flow: row wrap;
+}
+
+.section {
+  height: 100vh;
+  width: 50%;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
