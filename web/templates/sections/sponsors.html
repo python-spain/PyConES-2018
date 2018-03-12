@@ -1,19 +1,14 @@
-{% load i18n %}
-{%  load static %}
+{% load i18n static %}
 
 <div class="section bg-color-light-blue">
   <div class="section__content">
+    <span class="text--section-title"><strong>#02</strong> {% trans 'Make it happen' %}</span>
     <h1>{% trans 'Sponsors' %}</h1>
-    <span class="text--section-title"><strong>#02</strong> Make it happen</span>
-    <p class="sub-header">{% trans 'Make it happen' %}</p>
-    <button class="stroke-button">{% trans 'sponsorship leaflet' %}</button>
     <p>
-      {% trans 'Help the whole community making this event a reality.' %}<br>
-      {% trans 'Drop us and email' %}<br>
-      Help the whole community making this event a reality. <br> Drop us an email and we’ll talk about the specifics.
+      {% trans 'Help the whole community making this event a reality.' %} <br> {% trans 'Drop us an email and we’ll talk about the specifics.' %}
     </p>
     <a href="mailto:sponsors2018@pycon.org"><strong>sponsors2018@pycon.org</strong></a>
   </div>
-  <img class="section__icon" src="{% static 'web/svg/rocket.svg' %}" alt="Speaker">
-  <a class="section__action link--stroke" href="{% static 'web/pdf/PyconES_dosier_19-02-2018.pdf' %}" target="_blank">sponsorship leaflet</a>
+  <img class="section__icon" src="{% static 'web/svg/rocket.svg' %}" alt="Sponsor">
+  <a class="section__action link--stroke" href="{% static 'web/pdf/PyconES_dosier_19-02-2018.pdf' %}" target="_blank">{% trans 'sponsorship leaflet' %}</a>
 </div>

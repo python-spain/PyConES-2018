@@ -28,16 +28,12 @@
 
     <div class="nav js-nav">
       <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
-      <div class="nav__event-date text--black-console"><5-7/OCT/2018> Málaga</div>
-      <div class="nav__title text--console">Connecting the Python Community</div>
-      <div class="nav__subtitle text--console">6th Edition</div>
+      <div class="nav__event-date text--black-console">{% trans '<5-7/OCT/2018> Málaga' %}</div>
+      <div class="nav__title text--console">{% trans 'Connecting the Python Community' %}</div>
+      <div class="nav__subtitle text--console">{% trans '6th Edition' %}</div>
       <p>
-        {% blocktrans %}
-        Welcome to the <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>, the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing
-        <a class="link--mustache" href="#1">speakers</a>, a super cool agenda, and an awesome audience.
-          that will bring together the most interesting speakers, a super cool agenda and an awesome audience.
-          Proudly organised and sponsored with care from Málaga.
-        {% endblocktrans %}
+         {% trans 'Welcome to the' %} <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>, {% trans 'the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing' %}
+         <a class="link--mustache" href="#1">{% trans 'speakers' %}</a>, {% trans 'a super cool agenda, and an awesome audience.' %}
       </p>
       <p>
         Proudly organised and <a class="link--mustache" href="#2">sponsored</a> with care in <a class="link--mustache" href="#3">Málaga</a>.

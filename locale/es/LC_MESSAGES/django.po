@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-12 22:29+0000\n"
+"POT-Creation-Date: 2018-03-12 23:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,10 @@ msgstr "Inglés"
 msgid "Spanish"
 msgstr "Español"
 
+#: web/templates/base.html:31
+msgid "<5-7/OCT/2018> Málaga"
+msgstr ""
+
 #: web/templates/base.html:32
 msgid "Connecting the Python Community"
 msgstr "Conecta con la comunidad Python"
@@ -35,22 +39,26 @@ msgid "6th Edition"
 msgstr "6ª Edición"
 
 #: web/templates/base.html:35
+msgid "Welcome to the"
+msgstr "Bienvenidos a la"
+
+#: web/templates/base.html:35
 msgid ""
-"\n"
-"          Welcome to the most important nation-wide Python conference in "
-"Spain. A three-day event\n"
-"          that will bring together the most interesting speakers, a super "
-"cool agenda and an awesome audience.\n"
-"          Proudly organised and sponsored with care from Málaga.\n"
-"        "
+"the most important nation-wide Python conference in Spain. A three-day event "
+"that will bring together amazing"
 msgstr ""
-"\n"
-"Bienvenido a la conferencia nacional sobre Python más importante de España. "
-"Un evento de tres días\n"
-"          que reunirá a los ponentes más interesantes, una agendaincreible y "
-"unos asistentes maravillosos.\n"
-"          Organizado y patrocinado con cariño desde Málaga.\n"
-"        "
+"la conferencia nacional sobre Python más importante de España. Un evento de "
+"tres días que reunirá a los ponentes"
+
+#: web/templates/base.html:36
+#, fuzzy
+#| msgid "Speakers"
+msgid "speakers"
+msgstr "Ponentes"
+
+#: web/templates/base.html:36
+msgid "a super cool agenda, and an awesome audience."
+msgstr "más interesantes, una agenda increible y unos asistentes maravillosos."
 
 #: web/templates/base.html:42
 msgid "Where are the tickets?!"
@@ -65,8 +73,8 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"            Las entradas no están aún disponibles pero si quieres ser el "
-"primero en enterarte, subscríbete. No spam, solo\n"
+"            Las entradas no están aún disponibles, pero si quieres ser el "
+"primero en enterarte, subscríbete. Sin spam, solo\n"
 "            información importante sobre el evento\n"
 "          "
 
@@ -79,23 +87,26 @@ msgid "Enter your email address"
 msgstr "Escribe tu email"
 
 #: web/templates/sections/speakers.html:5
-msgid "Speakers"
-msgstr "Ponentes"
-
-#: web/templates/sections/speakers.html:6
 msgid "Become one of us"
 msgstr "Conviértete en uno de ellos"
 
-#: web/templates/sections/speakers.html:7
-msgid "call for papers"
-msgstr ""
+#: web/templates/sections/speakers.html:6
+msgid "Speakers"
+msgstr "Ponentes"
 
-#: web/templates/sections/speakers.html:9
+#: web/templates/sections/speakers.html:8
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "        We want to promote diversity in the widest sense of the term, so "
+#| "don't be afraid to propose anything you think\n"
+#| "        can make the audience learn, enjoy and give back.\n"
+#| "      "
 msgid ""
 "\n"
-"        We want to promote diversity in the widest sense of the term, so "
-"don't be afraid to propose anything you think\n"
-"        can make the audience learn, enjoy and give back.\n"
+"      We want to promote diversity in the widest sense of the term, so don't "
+"be afraid to propose anything you think can make the audience learn, enjoy "
+"and give back.\n"
 "      "
 msgstr ""
 "\n"
@@ -105,21 +116,74 @@ msgstr ""
 "      "
 
 #: web/templates/sections/sponsors.html:5
-msgid "Sponsors"
-msgstr "Patrocinadores"
-
-#: web/templates/sections/sponsors.html:6
 msgid "Make it happen"
 msgstr "Sé parte del evento"
 
-#: web/templates/sections/sponsors.html:7
-msgid "sponsorship leaflet"
-msgstr "folleto de patrocinadores"
+#: web/templates/sections/sponsors.html:6
+msgid "Sponsors"
+msgstr "Patrocinios"
 
-#: web/templates/sections/sponsors.html:9
+#: web/templates/sections/sponsors.html:8
 msgid "Help the whole community making this event a reality."
 msgstr "Ayuda a la comunidad haciendo este evento realidad"
 
-#: web/templates/sections/sponsors.html:10
-msgid "Drop us and email"
-msgstr "Déjanos tu email"
+#: web/templates/sections/sponsors.html:8
+msgid "Drop us an email and we’ll talk about the specifics."
+msgstr "Dejanos tu email y te contaremos más sobre los detalles."
+
+#: web/templates/sections/sponsors.html:13
+msgid "sponsorship leaflet"
+msgstr "folleto de patrocinadores"
+
+#: web/templates/sections/venue.html:5
+msgid "The venue"
+msgstr "La localización"
+
+#: web/templates/sections/venue.html:8
+msgid ""
+"\n"
+"      La PyConES 2018 se celebrará en la Universidad de Málaga (UMA), que "
+"actualmente ofrece a sus más de 30.000 estudiantes un total de 141 estudios "
+"oficiales.\n"
+"      "
+msgstr ""
+
+#: web/templates/sections/venue.html:13
+msgid "University of Málaga (UMA)"
+msgstr "Universidad de Málaga"
+
+#: web/templates/sections/venue.html:18
+msgid "See location"
+msgstr "Ver localización"
+
+#: web/templates/sections/venue.html:21
+msgid ""
+"\n"
+"      El evento tendrá lugar en el Complejo Tecnológico Teatinos, donde se "
+"encuentra la Escuela Técnica Superior de Ingeniería Informática (ETSI) y la "
+"Escuela Técnica Superior de Ingeniería en Telecomunicaciones (ETSIT).\n"
+"      "
+msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "          Welcome to the most important nation-wide Python conference in "
+#~ "Spain. A three-day event\n"
+#~ "          that will bring together the most interesting speakers, a super "
+#~ "cool agenda and an awesome audience.\n"
+#~ "          Proudly organised and sponsored with care from Málaga.\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "Bienvenido a la conferencia nacional sobre Python más importante de "
+#~ "España. Un evento de tres días\n"
+#~ "          que reunirá a los ponentes más interesantes, una agenda "
+#~ "increible y unos asistentes maravillosos.\n"
+#~ "          Organizado y patrocinado con cariño desde Málaga.\n"
+#~ "        "
+
+#~ msgid "call for papers"
+#~ msgstr "call for papers"
+
+#~ msgid "Drop us and email"
+#~ msgstr "Déjanos tu email"
