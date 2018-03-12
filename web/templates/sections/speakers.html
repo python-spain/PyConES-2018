@@ -1,8 +1,13 @@
+{% load static %}
+
 <div class="section bg-color-lightest-blue js-scroll-section">
-  <h1>Speakers</h1>
-  <p class="sub-header">Become one of us</p>
-  <button class="stroke-button">call for papers</button>
-  <p>
-    We want to promote diversity in the widest sense of the term, so don't be afraid to propose anything you think can make the audience learn, enjoy and give back.
-  </p>
+  <div class="section__content">
+    <span class="text--section-title"><strong>#01</strong> Become one of us</span>
+    <h1>Speakers</h1>
+    <p>
+      We want to promote diversity in the widest sense of the term, so don't be afraid to propose anything you think can make the audience learn, enjoy and give back.
+    </p>
+  </div>
+  <img class="section__icon" src="{% static 'web/svg/speaker.svg' %}" alt="Speaker">
+  <button class="section__action stroke-button">call for papers</button>
 </div>

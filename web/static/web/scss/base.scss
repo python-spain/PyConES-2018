@@ -36,18 +36,17 @@ body {
 }
 
 a {
-  color: $baseFontColor;
+  color: $blue;
   font-family: $baseFontFamily;
   text-decoration: none;
   transition: .2s;
+  white-space: nowrap;
+
+  &:hover {
+    color: $yellow;
+  }
 
   &:not(.no-mustache) {
-    border-bottom: solid 4px $yellow;
-
-    &:hover {
-      border-color: $blue;
-    }
-
     &:before {
       content: "{{ ";
     }
@@ -59,6 +58,10 @@ a {
 
 }
 
+strong {
+  font-weight: 900;
+}
+
 input {
   font-family: $baseFontFamily;
 
@@ -68,9 +71,11 @@ input {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 5.714rem; // 80px, base 14px
+  line-height: 6rem; // 84px
   font-weight: 600;
-  margin: 1.5rem 0 0 0;
+  font-family: $altFontFamily;
+  margin: 0 0 32px 0;
 }
 
 h2 {
@@ -78,6 +83,8 @@ h2 {
   font-weight: 600;
   margin: 5px 0;
 }
+
+// Buttons
 
 .stroke-button {
     width: 395px;
@@ -97,20 +104,25 @@ h2 {
     }
 }
 
-.sub-header {
-  margin-top: 0;
+// Text styles
+
+.text--console {
+  font-family: $altFontFamily;
 }
 
-.console-text--black-bg {
+.text--black-console {
   color: white;
   background-color: black;
   font-family: $altFontFamily;
 }
 
-.console-text {
-  font-family: $altFontFamily;
+.text--section-title {
+  font-size: 1.285rem; // 18px, base 14px
+  line-height: 1.714rem; // 24px
 }
 
+// Color util classes
+// Backgrounds
 @each $color, $value in $alt-colors {
   .bg-color-#{$color} {
     background-color: $value;

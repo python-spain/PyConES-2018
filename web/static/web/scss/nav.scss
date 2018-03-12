@@ -7,6 +7,10 @@
   width: 33%;
   text-align: center;
   padding: 45px 60px 120px 60px;
+
+  p {
+    text-align: left;
+  }
 }
 
 .nav__title {
@@ -30,12 +34,8 @@
   width: 200px;
 }
 
-.nav__menu-text {
-  margin: 60px 0;
-
-  a {
-    white-space: nowrap;
-  }
+.nav__tickets {
+  margin-top: 60px;
 }
 
 .nav__tickets__title {
