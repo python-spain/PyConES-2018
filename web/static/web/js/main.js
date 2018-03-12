@@ -29,6 +29,7 @@ $(function () {
   var $emailWidget = $('.js-email-widget');
   var $emailSendBtn = $('.js-email-send-btn');
   var $emailInput = $('.js-email-input');
+  var $navLink = $('.js-nav-link');
   var jqXHR = null;
 
   setUpScrollify();
@@ -75,6 +76,14 @@ $(function () {
     if (event.keyCode === 13) {
         $emailSendBtn.click();
     }
-});
+  });
+
+  $navLink.on('click', function (event) {
+    var $link = $(event.currentTarget);
+    var ref = $link.attr('href');
+
+    event.preventDefault();
+    $.scrollify.move(ref);
+  });
 });
 
