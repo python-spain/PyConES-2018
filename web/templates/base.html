@@ -29,14 +29,14 @@
     <div class="nav js-nav">
       <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
       <div class="nav__event-date text--black-console"><5-7/OCT/2018> Málaga</div>
-      <h1 class="nav__title text--console">Connecting the Python Community</h1>
+      <div class="nav__title text--console">Connecting the Python Community</div>
       <div class="nav__subtitle text--console">6th Edition</div>
       <p>
-        Welcome to the <a href="/">PyConES</a>, the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing
-        <a href="#1">speakers</a>, a super cool agenda, and an awesome audience.
+        Welcome to the <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>, the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing
+        <a class="link--mustache" href="#1">speakers</a>, a super cool agenda, and an awesome audience.
       </p>
       <p>
-        Proudly organised and <a href="#2">sponsored</a> with care in <a href="#3">Málaga</a>.
+        Proudly organised and <a class="link--mustache" href="#2">sponsored</a> with care in <a class="link--mustache" href="#3">Málaga</a>.
       </p>
       <div class="nav__tickets">
         <h2 class="nav__tickets__title">Where are the tickets?!</h2>
@@ -54,14 +54,10 @@
         </div>
       </div>
       <div class="nav__social">
-        <div class="nav__social__icons">
-          <a class="no-mustache" href="https://twitter.com/pycones">
-            <img class="nav__social__icon" src="{% static 'web/svg/twitter.svg' %}">
-          </a>
-        </div>
-        <span>
-          <a class="no-mustache" href="mailto:contact2018@es.pycon.org">contact2018@es.pycon.org</a>
-        </span>
+        <a href="https://twitter.com/pycones">
+          <img src="{% static 'web/svg/twitter.svg' %}"> @PyConES
+        </a>
+        <a href="mailto:contact2018@es.pycon.org">contact2018@es.pycon.org</a>
       </div>
     </div>
 
