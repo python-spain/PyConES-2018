@@ -45,17 +45,6 @@ a {
   &:hover {
     color: $yellow;
   }
-
-  &:not(.no-mustache) {
-    &:before {
-      content: "{{ ";
-    }
-
-    &:after {
-      content: " }}";
-    }
-  }
-
 }
 
 strong {
@@ -84,24 +73,33 @@ h2 {
   margin: 5px 0;
 }
 
-// Buttons
+// Link styles
 
-.stroke-button {
+.link--stroke {
     width: 395px;
-    height: 50px;
+    line-height: 50px;
+    text-align: center;
     background: transparent url(/static/web/svg/button-blue.svg) no-repeat center;
     background-size: contain;
-    cursor: pointer;
-    border: none;
     color: white;
     font-size: 1.2rem;
     letter-spacing: 1px;
-    font-weight: 200;
     transition: .2s;
 
     &:hover {
+      color: white;
       background-image: url(/static/web/svg/button-yellow.svg);
     }
+}
+
+.link--mustache {
+  &:before {
+    content: "{{ ";
+  }
+
+  &:after {
+    content: " }}";
+  }
 }
 
 // Text styles
@@ -119,6 +117,13 @@ h2 {
 .text--section-title {
   font-size: 1.285rem; // 18px, base 14px
   line-height: 1.714rem; // 24px
+}
+
+.text--block-title {
+  font-size: 1.142rem; // 16px
+  line-height: 1.571rem; // 22px
+  display: block;
+  margin: 30px 0 10px 0;
 }
 
 // Color util classes

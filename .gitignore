@@ -7,6 +7,9 @@
 ### Python
 __pycache__/
 
+### Sass
+.sass-cache/
+
 ### SQlite3
 *.sqlite3
 
