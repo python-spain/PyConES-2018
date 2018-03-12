@@ -29,6 +29,7 @@ $(function () {
   var $emailWidget = $('.js-email-widget');
   var $emailSendBtn = $('.js-email-send-btn');
   var $emailInput = $('.js-email-input');
+  var $emailSuccessMessage = $('.js-email-success-message').val();
   var jqXHR = null;
 
   setUpScrollify();
@@ -48,7 +49,7 @@ $(function () {
 
       jqXHR = $.ajax({ url: "/newsletter/subscribers/", type: "POST", data: { email:  email}})
         .done(function () {
-          $emailInput.val('Got it!');
+          $emailInput.val($emailSuccessMessage);
           $emailWidget.addClass('success');
         })
         .fail(function () {

@@ -47,6 +47,7 @@
           {% endblocktrans %}
         </p>
         <div class="nav__tickets__email js-email-widget">
+          <input class="js-email-success-message" type="hidden" name="success-message" value="{% trans 'Got it!' %}">
           <input class="nav__tickets__email__input js-email-input" placeholder="{% trans 'Enter your email address' %}">
           <span class="nav__tickets__email__button">
             <button class="js-email-send-btn">
