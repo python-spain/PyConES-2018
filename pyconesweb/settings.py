@@ -166,7 +166,7 @@ COMPRESS_CACHE_BACKEND = 'compressor'
 COMPRESS_OUTPUT_DIR = 'cache'
 COMPRESS_CSS_HASHING_METHOD = 'content'
 COMPRESS_PRECOMPILERS = (
-    ('text/less', 'lessc {infile} {outfile}'),
+    ('text/x-sass', 'sass {infile} > {outfile}'),
 )
 
 # MailChimp

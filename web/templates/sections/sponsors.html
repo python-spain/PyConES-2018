@@ -1,14 +1,19 @@
 {% load i18n %}
+{%  load static %}
 
-<section>
+<div class="section bg-color-light-blue">
   <div class="section__content">
     <h1>{% trans 'Sponsors' %}</h1>
+    <span class="text--section-title"><strong>#02</strong> Make it happen</span>
     <p class="sub-header">{% trans 'Make it happen' %}</p>
     <button class="stroke-button">{% trans 'sponsorship leaflet' %}</button>
     <p>
       {% trans 'Help the whole community making this event a reality.' %}<br>
       {% trans 'Drop us and email' %}<br>
-      <a href="mailto:sponsors2018@pycon.org">sponsors2018@pycon.org</a>
+      Help the whole community making this event a reality. <br> Drop us an email and we’ll talk about the specifics.
     </p>
+    <a class="no-mustache" href="mailto:sponsors2018@pycon.org"><strong>sponsors2018@pycon.org</strong></a>
   </div>
-</section>
+  <img class="section__icon" src="{% static 'web/svg/rocket.svg' %}" alt="Speaker">
+  <button class="section__action stroke-button">sponsorship leaflet</button>
+</div>

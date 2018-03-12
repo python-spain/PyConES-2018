@@ -1,10 +1,11 @@
 {% load i18n %}
+{% load static %}
 
-<section class="js-scroll-section">
+<div class="section bg-color-lightest-blue js-scroll-section">
   <div class="section__content">
     <h1>{% trans 'Speakers' %}</h1>
+    <span class="text--section-title"><strong>#01</strong> Become one of us</span>
     <p class="sub-header">{% trans 'Become one of us' %}</p>
-    <button class="stroke-button">{% trans 'call for papers' %}</button>
     <p>
       {% blocktrans %}
         We want to promote diversity in the widest sense of the term, so don't be afraid to propose anything you think
@@ -12,4 +13,6 @@
       {% endblocktrans %}
     </p>
   </div>
-</section>
+  <img class="section__icon" src="{% static 'web/svg/speaker.svg' %}" alt="Speaker">
+  <button class="section__action stroke-button">call for papers</button>
+</div>
