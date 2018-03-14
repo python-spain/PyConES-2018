@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-12 23:19+0000\n"
+"POT-Creation-Date: 2018-03-14 23:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: web/templates/base.html:32
 msgid "Connecting the Python Community"
-msgstr "Conecta con la comunidad Python"
+msgstr ""
 
 #: web/templates/base.html:33
 msgid "6th Edition"
@@ -60,6 +60,18 @@ msgstr "Ponentes"
 msgid "a super cool agenda, and an awesome audience."
 msgstr "más interesantes, una agenda increible y unos asistentes maravillosos."
 
+#: web/templates/base.html:39
+msgid "Proudly organised and "
+msgstr "Organizado y "
+
+#: web/templates/base.html:39
+msgid "sponsored"
+msgstr "patrocinado"
+
+#: web/templates/base.html:39
+msgid " with care in "
+msgstr " con cariño en "
+
 #: web/templates/base.html:42
 msgid "Where are the tickets?!"
 msgstr "¿Dónde puedo comprar las entradas?"
@@ -74,7 +86,7 @@ msgid ""
 msgstr ""
 "\n"
 "            Las entradas no están aún disponibles, pero si quieres ser el "
-"primero en enterarte, subscríbete. Sin spam, solo\n"
+"primero en enterarte, subscríbete. Sin spam, solo te enviaremos\n"
 "            información importante sobre el evento\n"
 "          "
 
@@ -95,13 +107,6 @@ msgid "Speakers"
 msgstr "Ponentes"
 
 #: web/templates/sections/speakers.html:8
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "        We want to promote diversity in the widest sense of the term, so "
-#| "don't be afraid to propose anything you think\n"
-#| "        can make the audience learn, enjoy and give back.\n"
-#| "      "
 msgid ""
 "\n"
 "      We want to promote diversity in the widest sense of the term, so don't "
@@ -115,25 +120,25 @@ msgstr ""
 "        enseñar a los asistentes, disfruta y haz disfrutar.\n"
 "      "
 
-#: web/templates/sections/sponsors.html:5
+#: web/templates/sections/sponsors.html:7
 msgid "Make it happen"
 msgstr "Sé parte del evento"
 
-#: web/templates/sections/sponsors.html:6
+#: web/templates/sections/sponsors.html:8
 msgid "Sponsors"
 msgstr "Patrocinios"
 
-#: web/templates/sections/sponsors.html:8
+#: web/templates/sections/sponsors.html:10
 msgid "Help the whole community making this event a reality."
 msgstr "Ayuda a la comunidad haciendo este evento realidad"
 
-#: web/templates/sections/sponsors.html:8
+#: web/templates/sections/sponsors.html:10
 msgid "Drop us an email and we’ll talk about the specifics."
 msgstr "Dejanos tu email y te contaremos más sobre los detalles."
 
-#: web/templates/sections/sponsors.html:13
+#: web/templates/sections/sponsors.html:15
 msgid "sponsorship leaflet"
-msgstr "folleto de patrocinadores"
+msgstr "folleto de patrocinio"
 
 #: web/templates/sections/venue.html:5
 msgid "The venue"
@@ -142,48 +147,35 @@ msgstr "La localización"
 #: web/templates/sections/venue.html:8
 msgid ""
 "\n"
+"        The PyConEs 2018 will be hosted by the university of Malaga (UMA), "
+"which actually offers to their 30.000\n"
+"        students a total of 141 official studies\n"
+"      "
+msgstr ""
+"\n"
 "      La PyConES 2018 se celebrará en la Universidad de Málaga (UMA), que "
 "actualmente ofrece a sus más de 30.000 estudiantes un total de 141 estudios "
 "oficiales.\n"
 "      "
-msgstr ""
 
-#: web/templates/sections/venue.html:13
+#: web/templates/sections/venue.html:14
 msgid "University of Málaga (UMA)"
 msgstr "Universidad de Málaga"
 
-#: web/templates/sections/venue.html:18
+#: web/templates/sections/venue.html:19
 msgid "See location"
 msgstr "Ver localización"
 
-#: web/templates/sections/venue.html:21
+#: web/templates/sections/venue.html:22
 msgid ""
+"\n"
+"        The conference will take place at the “Teatinos Technology Complex "
+"of the University of Málaga” (School of\n"
+"        Computer Engineering and the School of Telecommunications).\n"
+"      "
+msgstr ""
 "\n"
 "      El evento tendrá lugar en el Complejo Tecnológico Teatinos, donde se "
 "encuentra la Escuela Técnica Superior de Ingeniería Informática (ETSI) y la "
 "Escuela Técnica Superior de Ingeniería en Telecomunicaciones (ETSIT).\n"
 "      "
-msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "          Welcome to the most important nation-wide Python conference in "
-#~ "Spain. A three-day event\n"
-#~ "          that will bring together the most interesting speakers, a super "
-#~ "cool agenda and an awesome audience.\n"
-#~ "          Proudly organised and sponsored with care from Málaga.\n"
-#~ "        "
-#~ msgstr ""
-#~ "\n"
-#~ "Bienvenido a la conferencia nacional sobre Python más importante de "
-#~ "España. Un evento de tres días\n"
-#~ "          que reunirá a los ponentes más interesantes, una agenda "
-#~ "increible y unos asistentes maravillosos.\n"
-#~ "          Organizado y patrocinado con cariño desde Málaga.\n"
-#~ "        "
-
-#~ msgid "call for papers"
-#~ msgstr "call for papers"
-
-#~ msgid "Drop us and email"
-#~ msgstr "Déjanos tu email"
