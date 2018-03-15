@@ -1,10 +1,13 @@
-<section class="js-scroll-section">
+{% load static %}
+
+<div class="section bg-color-lightest-blue js-scroll-section" data-section-name="speakers">
   <div class="section__content">
+    <span class="text--section-title"><strong>#01</strong> Become one of us</span>
     <h1>Speakers</h1>
-    <p class="sub-header">Become one of us</p>
-    <button class="stroke-button">call for papers</button>
     <p>
       We want to promote diversity in the widest sense of the term, so don't be afraid to propose anything you think can make the audience learn, enjoy and give back.
     </p>
   </div>
-</section>
+  <img class="section__icon" src="{% static 'web/svg/speaker.svg' %}" alt="Speaker">
+  <a class="section__action link--stroke" href="https://www.papercall.io/pycones2018">call for papers</a>
+</div>
