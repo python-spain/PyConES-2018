@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-14 23:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pyconesweb/settings.py:133
+msgid "English"
+msgstr "Inglés"
+
+#: pyconesweb/settings.py:134
+msgid "Spanish"
+msgstr "Español"
+
+#: web/templates/base.html:31
+msgid "<5-7/OCT/2018> Málaga"
+msgstr ""
+
+#: web/templates/base.html:32
+msgid "Connecting the Python Community"
+msgstr ""
+
+#: web/templates/base.html:33
+msgid "6th Edition"
+msgstr "6ª Edición"
+
+#: web/templates/base.html:35
+msgid "Welcome to the"
+msgstr "Bienvenidos a la"
+
+#: web/templates/base.html:35
+msgid ""
+"the most important nation-wide Python conference in Spain. A three-day event "
+"that will bring together amazing"
+msgstr ""
+"la conferencia nacional sobre Python más importante de España. Un evento de "
+"tres días que reunirá a los ponentes"
+
+#: web/templates/base.html:36
+#, fuzzy
+#| msgid "Speakers"
+msgid "speakers"
+msgstr "Ponentes"
+
+#: web/templates/base.html:36
+msgid "a super cool agenda, and an awesome audience."
+msgstr "más interesantes, una agenda increible y unos asistentes maravillosos."
+
+#: web/templates/base.html:39
+msgid "Proudly organised and "
+msgstr "Organizado y "
+
+#: web/templates/base.html:39
+msgid "sponsored"
+msgstr "patrocinado"
+
+#: web/templates/base.html:39
+msgid " with care in "
+msgstr " con cariño en "
+
+#: web/templates/base.html:42
+msgid "Where are the tickets?!"
+msgstr "¿Dónde puedo comprar las entradas?"
+
+#: web/templates/base.html:44
+msgid ""
+"\n"
+"            Tickets are not available yet but if you want to be the first to "
+"know, give us your email. No spam, just\n"
+"            important stuff about the event\n"
+"          "
+msgstr ""
+"\n"
+"            Las entradas no están aún disponibles, pero si quieres ser el "
+"primero en enterarte, subscríbete. Sin spam, solo te enviaremos\n"
+"            información importante sobre el evento\n"
+"          "
+
+#: web/templates/base.html:50
+msgid "Got it!"
+msgstr "¡Lo tenemos!"
+
+#: web/templates/base.html:51
+msgid "Enter your email address"
+msgstr "Escribe tu email"
+
+#: web/templates/sections/speakers.html:5
+msgid "Become one of us"
+msgstr "Conviértete en uno de ellos"
+
+#: web/templates/sections/speakers.html:6
+msgid "Speakers"
+msgstr "Ponentes"
+
+#: web/templates/sections/speakers.html:8
+msgid ""
+"\n"
+"      We want to promote diversity in the widest sense of the term, so don't "
+"be afraid to propose anything you think can make the audience learn, enjoy "
+"and give back.\n"
+"      "
+msgstr ""
+"\n"
+"        Queremos promover la diversidad en el sentido más amplio, así que no "
+"tengas miedo en porponer cualquier cosa que puedas\n"
+"        enseñar a los asistentes, disfruta y haz disfrutar.\n"
+"      "
+
+#: web/templates/sections/sponsors.html:7
+msgid "Make it happen"
+msgstr "Sé parte del evento"
+
+#: web/templates/sections/sponsors.html:8
+msgid "Sponsors"
+msgstr "Patrocinios"
+
+#: web/templates/sections/sponsors.html:10
+msgid "Help the whole community making this event a reality."
+msgstr "Ayuda a la comunidad haciendo este evento realidad"
+
+#: web/templates/sections/sponsors.html:10
+msgid "Drop us an email and we’ll talk about the specifics."
+msgstr "Dejanos tu email y te contaremos más sobre los detalles."
+
+#: web/templates/sections/sponsors.html:15
+msgid "sponsorship leaflet"
+msgstr "folleto de patrocinio"
+
+#: web/templates/sections/venue.html:5
+msgid "The venue"
+msgstr "La localización"
+
+#: web/templates/sections/venue.html:8
+msgid ""
+"\n"
+"        The PyConEs 2018 will be hosted by the university of Malaga (UMA), "
+"which actually offers to their 30.000\n"
+"        students a total of 141 official studies\n"
+"      "
+msgstr ""
+"\n"
+"      La PyConES 2018 se celebrará en la Universidad de Málaga (UMA), que "
+"actualmente ofrece a sus más de 30.000 estudiantes un total de 141 estudios "
+"oficiales.\n"
+"      "
+
+#: web/templates/sections/venue.html:14
+msgid "University of Málaga (UMA)"
+msgstr "Universidad de Málaga"
+
+#: web/templates/sections/venue.html:19
+msgid "See location"
+msgstr "Ver localización"
+
+#: web/templates/sections/venue.html:22
+msgid ""
+"\n"
+"        The conference will take place at the “Teatinos Technology Complex "
+"of the University of Málaga” (School of\n"
+"        Computer Engineering and the School of Telecommunications).\n"
+"      "
+msgstr ""
+"\n"
+"      El evento tendrá lugar en el Complejo Tecnológico Teatinos, donde se "
+"encuentra la Escuela Técnica Superior de Ingeniería Informática (ETSI) y la "
+"Escuela Técnica Superior de Ingeniería en Telecomunicaciones (ETSIT).\n"
+"      "

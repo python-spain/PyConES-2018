@@ -1,14 +1,16 @@
-{%  load static %}
+{% load i18n static %}
+
+{% get_current_language as LANGUAGE_CODE %}
 
 <div class="section bg-color-light-blue" data-section-name="sponsors">
   <div class="section__content">
-    <span class="text--section-title"><strong>#02</strong> Make it happen</span>
-    <h1>Sponsors</h1>
+    <span class="text--section-title"><strong>#02</strong> {% trans 'Make it happen' %}</span>
+    <h1>{% trans 'Sponsors' %}</h1>
     <p>
-      Help the whole community making this event a reality. <br> Drop us an email and we’ll talk about the specifics.
+      {% trans 'Help the whole community making this event a reality.' %} <br> {% trans 'Drop us an email and we’ll talk about the specifics.' %}
     </p>
     <a href="mailto:sponsors2018@pycon.org"><strong>sponsors2018@pycon.org</strong></a>
   </div>
-  <img class="section__icon" src="{% static 'web/svg/rocket.svg' %}" alt="Sponsors">
-  <a class="section__action link--stroke" href="{% static 'web/pdf/PyconES_dosier_19-02-2018.pdf' %}" target="_blank">sponsorship leaflet</a>
+  <img class="section__icon" src="{% static 'web/svg/rocket.svg' %}" alt="Sponsor">
+  <a class="section__action link--stroke" href="{% static 'web/pdf/pycones2018_dossier_'|add:LANGUAGE_CODE|add:'.pdf' %}" target="_blank">{% trans 'sponsorship leaflet' %}</a>
 </div>

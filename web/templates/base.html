@@ -28,24 +28,27 @@
 
     <div class="nav js-nav">
       <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
-      <div class="nav__event-date text--black-console"><5-7/OCT/2018> Málaga</div>
-      <div class="nav__title text--console">Connecting the Python Community</div>
-      <div class="nav__subtitle text--console">6th Edition</div>
+      <div class="nav__event-date text--black-console">{% trans '<5-7/OCT/2018> Málaga' %}</div>
+      <div class="nav__title text--console">{% trans 'Connecting the Python Community' %}</div>
+      <div class="nav__subtitle text--console">{% trans '6th Edition' %}</div>
       <p>
-        Welcome to the <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>, the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing
-        <a class="link--mustache js-nav-link" href="#speakers">speakers</a>, a super cool agenda, and an awesome audience.
+         {% trans 'Welcome to the' %} <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>, {% trans 'the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing' %}
+        <a class="link--mustache js-nav-link" href="#speakers">{% trans 'speakers' %}</a>, {% trans 'a super cool agenda, and an awesome audience.' %}
       </p>
       <p>
-        Proudly organised and <a class="link--mustache js-nav-link" href="#speakers">sponsored</a> with care in <a class="link--mustache js-nav-link" href="#venue">Málaga</a>.
+        {% trans 'Proudly organised and ' %}<a class="link--mustache js-nav-link" href="#speakers">{% trans 'sponsored' %}</a>{% trans ' with care in ' %}<a class="link--mustache js-nav-link" href="#venue">Málaga</a>.
       </p>
       <div class="nav__tickets">
-        <h2 class="nav__tickets__title">Where are the tickets?!</h2>
+        <h2 class="nav__tickets__title">{% trans 'Where are the tickets?!' %}</h2>
         <p>
-          Tickets are not available yet but if you want to be the first to know, give us your email. No spam, just
-          important stuff about the event
+          {% blocktrans %}
+            Tickets are not available yet but if you want to be the first to know, give us your email. No spam, just
+            important stuff about the event
+          {% endblocktrans %}
         </p>
         <div class="nav__tickets__email js-email-widget">
-          <input class="nav__tickets__email__input js-email-input" placeholder="Enter your email address">
+          <input class="js-email-success-message" type="hidden" name="success-message" value="{% trans 'Got it!' %}">
+          <input class="nav__tickets__email__input js-email-input" placeholder="{% trans 'Enter your email address' %}">
           <span class="nav__tickets__email__button">
             <button class="js-email-send-btn">
               <img src="{% static 'web/svg/send.svg' %}" alt="send">
@@ -53,6 +56,17 @@
           </span>
         </div>
       </div>
+
+      <div class="nav__language">
+        <a href="#" onclick="$('.form__language__input').val('en');$('.form__language').submit();">en</a> -
+        <a href="#" onclick="$('.form__language__input').val('es');$('.form__language').submit();">es</a>
+        <form class="form__language" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+          <input name="next" type="hidden" value="{{ redirect_to }}"/>
+          {% get_current_language as LANGUAGE_CODE %}
+          <input class="form__language__input" name="language" type="hidden" value="{{ LANGUAGE_CODE }}"/>
+        </form>
+      </div>
+
       <div class="nav__social">
         <a href="https://twitter.com/pycones">
           <img src="{% static 'web/svg/twitter.svg' %}"> @PyConES
