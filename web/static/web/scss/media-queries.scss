@@ -1,15 +1,11 @@
 @import 'variables';
 
 @media (max-width: $breakpoint1-width) {
-  body {
-    display: flex;
-    justify-content: center;
-  }
-
   .main {
     margin-left: 0;
 
     .section {
+      height: inherit;
       width: 100%;
     }
   }
@@ -17,5 +13,33 @@
   .nav {
     position: relative;
     width: 100%;
+  }
+
+  .hide-on-bp1 {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint2-width) {
+  .main {
+    .section {
+      padding: 30px 20px;
+    }
+  }
+
+  .nav {
+    padding: 30px 20px 120px 20px;
+  }
+
+  .nav__social {
+    padding: 0 20px;
+  }
+
+  .section--bg-speakers {
+    background-image: none;
+  }
+
+  .section--bg-sponsors {
+    background-image: none;
   }
 }

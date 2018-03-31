@@ -60,7 +60,8 @@ input {
 }
 
 h1 {
-  font-size: 5.714rem; // 80px, base 14px
+  //font-size: 5.714rem; // 80px, base 14px
+  font-size: 5rem;
   line-height: 6rem; // 84px
   font-weight: 600;
   font-family: $altFontFamily;
@@ -76,20 +77,22 @@ h2 {
 // Link styles
 
 .link--stroke {
-    width: 395px;
-    line-height: 50px;
-    text-align: center;
-    background: transparent url(/static/web/svg/button-blue.svg) no-repeat center;
-    background-size: contain;
-    color: white;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    transition: .2s;
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: transparent url(/static/web/svg/button-blue.svg) no-repeat center;
+  background-size: contain;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  transition: .2s;
 
-    &:hover {
-      color: white;
-      background-image: url(/static/web/svg/button-yellow.svg);
-    }
+  &:hover {
+    color: white;
+    background-image: url(/static/web/svg/button-yellow.svg);
+  }
 }
 
 .link--mustache {

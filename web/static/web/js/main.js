@@ -1,39 +1,14 @@
-function setUpScrollify() {
-  $.scrollify({
-    section : '.js-scroll-section',
-    setHeights: false
-  });
-}
-
 function isValidEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
-
-$(window).resize(function() {
-  var $main = $('.js-main');
-  var $nav = $('.js-nav');
-  if (window.innerWidth < 768) {
-    $main.find('section').addClass('js-scroll-section');
-    $nav.addClass('js-scroll-section');
-  } else {
-    $main.find('section').removeClass('js-scroll-section');
-    $main.find('section:even').addClass('js-scroll-section');
-    $nav.removeClass('js-scroll-section');
-  }
-
-  $.scrollify.update();
-});
 
 $(function () {
   var $emailWidget = $('.js-email-widget');
   var $emailSendBtn = $('.js-email-send-btn');
   var $emailInput = $('.js-email-input');
   var $emailSuccessMessage = $('.js-email-success-message').val();
-  var $navLink = $('.js-nav-link');
   var jqXHR = null;
-
-  setUpScrollify();
 
   $emailSendBtn.on('click', function () {
     var email = $emailInput.val().toLowerCase();
@@ -48,7 +23,7 @@ $(function () {
         jqXHR.abort();
       }
 
-      jqXHR = $.ajax({ url: "/newsletter/subscribers/", type: "POST", data: { email:  email}})
+      jqXHR = $.ajax({ url: "/newsletter/subscribers/", type: "POST", data: { email:  email }})
         .done(function () {
           $emailInput.val($emailSuccessMessage);
           $emailWidget.addClass('success');
@@ -77,14 +52,6 @@ $(function () {
     if (event.keyCode === 13) {
         $emailSendBtn.click();
     }
-  });
-
-  $navLink.on('click', function (event) {
-    var $link = $(event.currentTarget);
-    var ref = $link.attr('href');
-
-    event.preventDefault();
-    $.scrollify.move(ref);
   });
 });
 
