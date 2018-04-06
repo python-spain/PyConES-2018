@@ -12,7 +12,7 @@ services:
       - ./static:/static:ro
   web:
     build: .
-    command: gunicorn pyconesweb.wsgi -b 0.0.0.0:8000
+    entrypoint: /run_web.sh
     env_file: web.env
     volumes:
       - ./static:/static
@@ -20,5 +20,3 @@ services:
       - redis
   redis:
     image: "redis"
-    ports:
-      - "6379:6379"
