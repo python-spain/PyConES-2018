@@ -17,13 +17,16 @@ $alt-colors: ("lightest-blue": $lightest-blue, "light-blue": $light-blue);
 
 // Main font set up
 $baseFontSize: 14px;
-$baseLineHeight: 22px;
+$baseLineHeight: 1.571rem;
 $baseFontWeight: 400;
 $baseFontColor: $black;
 $baseFontFamily: 'Montserrat', sans-serif;
 
 // Alt font set up
 $altFontFamily: 'Inconsolata', monospace;
+
+// Effects
+$baseTransition: .2s;
 
 // Media queries breakpoints
 $breakpoint1-width: 992px;

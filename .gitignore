@@ -15,3 +15,6 @@ __pycache__/
 
 ### Static files
 /static/
+
+### OS files
+.DS_Store

@@ -39,7 +39,7 @@ a {
   color: $blue;
   font-family: $baseFontFamily;
   text-decoration: none;
-  transition: .2s;
+  transition: $baseTransition;
   white-space: nowrap;
 
   &:hover {
