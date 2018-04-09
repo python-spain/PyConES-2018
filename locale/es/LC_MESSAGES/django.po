@@ -51,10 +51,8 @@ msgstr ""
 "tres días que reunirá a los ponentes"
 
 #: web/templates/base.html:36
-#, fuzzy
-#| msgid "Speakers"
 msgid "speakers"
-msgstr "Ponentes"
+msgstr "ponentes"
 
 #: web/templates/base.html:36
 msgid "a super cool agenda, and an awesome audience."

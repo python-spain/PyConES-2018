@@ -15,7 +15,7 @@ textarea:focus, input:focus, button:focus {
 }
 
 // Styling on warning for users on IE11 or below
-.browsehappy {
+.browse-happy {
   text-align: center;
   margin: 0;
   background: #fff8e2;
@@ -60,12 +60,11 @@ input {
 }
 
 h1 {
-  //font-size: 5.714rem; // 80px, base 14px
-  font-size: 5rem;
-  line-height: 6rem; // 84px
+  font-size: 4rem;
+  line-height: 5rem;
   font-weight: 600;
   font-family: $altFontFamily;
-  margin: 0 0 32px 0;
+  margin: 0 0 2rem 0;
 }
 
 h2 {
@@ -79,8 +78,8 @@ h2 {
 .link--stroke {
   width: 100%;
   max-width: 400px;
-  height: 50px;
-  line-height: 50px;
+  height: 3.5rem;
+  line-height: 3.5rem;
   text-align: center;
   background: transparent url(/static/web/svg/button-blue.svg) no-repeat center;
   background-size: contain;
@@ -118,15 +117,15 @@ h2 {
 }
 
 .text--section-title {
-  font-size: 1.285rem; // 18px, base 14px
-  line-height: 1.714rem; // 24px
+  font-size: 1.285rem;
+  line-height: 1.714rem;
 }
 
 .text--block-title {
-  font-size: 1.142rem; // 16px
-  line-height: 1.571rem; // 22px
+  font-size: 1.142rem;
+  line-height: 1.571rem;
   display: block;
-  margin: 30px 0 10px 0;
+  margin: 2rem 0 1rem 0;
 }
 
 // Color util classes

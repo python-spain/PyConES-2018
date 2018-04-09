@@ -6,7 +6,7 @@
   min-height: 100vh;
   width: 33%;
   text-align: center;
-  padding: 45px 60px 120px 60px;
+  padding: 3rem 4rem 8.5rem 4rem;
 
   p {
     text-align: left;
@@ -27,16 +27,16 @@
   display: inline-block;
   font-size: 1.15rem;
   margin: 0 0 1.15rem 0;
-  padding: 2px 25px 2px 25px;
+  padding: 2px 1.75rem 2px 1.75rem;
 }
 
 .nav__logo {
-  margin-bottom: 55px;
-  width: 150px;
+  margin-bottom: 4rem;
+  width: 10rem;
 }
 
 .nav__tickets {
-  margin-top: 60px;
+  margin-top: 4rem;
 }
 
 .nav__tickets__title {
@@ -46,7 +46,7 @@
 .nav__tickets__email {
   display: flex;
   width: 100%;
-  padding: 0 45px;
+  padding: 0 3rem;
   justify-content: center;
 
   &.success {
@@ -97,7 +97,7 @@
   display: flex;
 
   button {
-    width: 45px;
+    width: 3.214rem;
     border: 0;
     border-radius: 0;
     background-color: $blue;
@@ -109,25 +109,25 @@
 
 .nav__social {
   position: absolute;
-  bottom: 25px;
+  bottom: 1.75rem;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 0 60px;
+  padding: 0 4rem;
 
   img {
     vertical-align: middle;
-    width: 40px;
+    width: 3rem;
   }
 }
 
 .nav__social__icons {
   width: 100%;
-  height: 40px;
+  height: 3rem;
 }
 
 .nav__language {
-  margin-top: 60px;
+  margin-top: 4rem;
 }
