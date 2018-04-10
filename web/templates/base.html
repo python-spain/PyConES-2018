@@ -31,19 +31,22 @@
       <div class="nav__event-date text--black-console">{% trans '<5-7/OCT/2018> Málaga' %}</div>
       <div class="nav__title text--console">{% trans 'Connecting the Python Community' %}</div>
       <div class="nav__subtitle text--console">{% trans '6th Edition' %}</div>
-      <p>
-         {% trans 'Welcome to the' %} <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>, {% trans 'the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing' %}
-        <a class="link--mustache js-nav-link" href="#speakers">{% trans 'speakers' %}</a>, {% trans 'a super cool agenda, and an awesome audience.' %}
-      </p>
-      <p>
-        {% trans 'Proudly organised and ' %}<a class="link--mustache js-nav-link" href="#sponsors">{% trans 'sponsored' %}</a>{% trans ' with care in ' %}<a class="link--mustache js-nav-link" href="#venue">Málaga</a>.
-      </p>
+      <div class="nav__menu">
+        <p>
+           {% trans 'Welcome to the' %} <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>, {% trans 'the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing' %}
+          <a class="link--mustache js-nav-link" href="#speakers">{% trans 'speakers' %}</a>, {% trans 'a super cool agenda, and an awesome audience.' %}
+        </p>
+        <p>
+          {% trans 'Proudly organised and ' %}<a class="link--mustache js-nav-link" href="#sponsors">{% trans 'sponsored' %}</a>{% trans ' with care in ' %}<a class="link--mustache js-nav-link" href="#venue">Málaga</a>.
+        </p>
+      </div>
       <div class="nav__tickets">
-        <h2 class="nav__tickets__title">{% trans 'Where are the tickets?!' %}</h2>
+        <a class="link--button" href="https://www.ticketea.com/entradas-conferencia-pycones-2018/" title="Buy your tickets here">
+          {% trans 'Get your ticket!' %}
+        </a>
         <p>
           {% blocktrans %}
-            Tickets are not available yet but if you want to be the first to know, give us your email. No spam, just
-            important stuff about the event
+            Stay up to date by subscribing to the newsletter. No spam, just important stuff about the event
           {% endblocktrans %}
         </p>
         <div class="nav__tickets__email js-email-widget">

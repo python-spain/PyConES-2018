@@ -31,7 +31,11 @@
 }
 
 .section--bg-venue {
-  background: $light-yellow url(/static/web/png/malaga-photo.png) no-repeat left top;
+  background-color: $lightest-yellow;
+}
+
+.section--bg-venue-image {
+  background: $light-yellow url(/static/web/png/malaga-photo-qhd.png) no-repeat left top;
   background-size: auto 100%;
 }
 
