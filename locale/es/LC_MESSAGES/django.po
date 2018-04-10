@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-14 23:17+0000\n"
+"POT-Creation-Date: 2018-04-10 11:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,11 +38,11 @@ msgstr ""
 msgid "6th Edition"
 msgstr "6ª Edición"
 
-#: web/templates/base.html:35
+#: web/templates/base.html:36
 msgid "Welcome to the"
 msgstr "Bienvenidos a la"
 
-#: web/templates/base.html:35
+#: web/templates/base.html:36
 msgid ""
 "the most important nation-wide Python conference in Spain. A three-day event "
 "that will bring together amazing"
@@ -50,51 +50,47 @@ msgstr ""
 "la conferencia nacional sobre Python más importante de España. Un evento de "
 "tres días que reunirá a los ponentes"
 
-#: web/templates/base.html:36
-#, fuzzy
-#| msgid "Speakers"
+#: web/templates/base.html:37
 msgid "speakers"
-msgstr "Ponentes"
+msgstr "ponentes"
 
-#: web/templates/base.html:36
+#: web/templates/base.html:37
 msgid "a super cool agenda, and an awesome audience."
 msgstr "más interesantes, una agenda increible y unos asistentes maravillosos."
 
-#: web/templates/base.html:39
+#: web/templates/base.html:40
 msgid "Proudly organised and "
 msgstr "Organizado y "
 
-#: web/templates/base.html:39
+#: web/templates/base.html:40
 msgid "sponsored"
 msgstr "patrocinado"
 
-#: web/templates/base.html:39
+#: web/templates/base.html:40
 msgid " with care in "
 msgstr " con cariño en "
 
-#: web/templates/base.html:42
-msgid "Where are the tickets?!"
-msgstr "¿Dónde puedo comprar las entradas?"
+#: web/templates/base.html:45
+msgid "Get your ticket!"
+msgstr "Consigue tu entrada!"
 
-#: web/templates/base.html:44
+#: web/templates/base.html:48
 msgid ""
 "\n"
-"            Tickets are not available yet but if you want to be the first to "
-"know, give us your email. No spam, just\n"
-"            important stuff about the event\n"
+"            Stay up to date by subscribing to the newsletter. No spam, just "
+"important stuff about the event\n"
 "          "
 msgstr ""
 "\n"
-"            Las entradas no están aún disponibles, pero si quieres ser el "
-"primero en enterarte, subscríbete. Sin spam, solo te enviaremos\n"
-"            información importante sobre el evento\n"
+"            Mantente al día suscribiendote a la newsletter. Sin spam, solo "
+"te enviaremos información importante sobre el evento\n"
 "          "
 
-#: web/templates/base.html:50
+#: web/templates/base.html:53
 msgid "Got it!"
 msgstr "¡Lo tenemos!"
 
-#: web/templates/base.html:51
+#: web/templates/base.html:54
 msgid "Enter your email address"
 msgstr "Escribe tu email"
 
@@ -179,3 +175,6 @@ msgstr ""
 "encuentra la Escuela Técnica Superior de Ingeniería Informática (ETSI) y la "
 "Escuela Técnica Superior de Ingeniería en Telecomunicaciones (ETSIT).\n"
 "      "
+
+#~ msgid "Where are the tickets?!"
+#~ msgstr "¿Dónde puedo comprar las entradas?"

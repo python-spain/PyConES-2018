@@ -6,11 +6,7 @@
   min-height: 100vh;
   width: 33%;
   text-align: center;
-  padding: 45px 60px 120px 60px;
-
-  p {
-    text-align: left;
-  }
+  padding: 3rem 4rem 8.5rem 4rem;
 }
 
 .nav__title {
@@ -35,6 +31,10 @@
   width: 150px;
 }
 
+.nav__menu {
+  text-align: left;
+}
+
 .nav__tickets {
   margin-top: 60px;
 }
@@ -46,7 +46,6 @@
 .nav__tickets__email {
   display: flex;
   width: 100%;
-  padding: 0 45px;
   justify-content: center;
 
   &.success {
@@ -77,7 +76,7 @@
 .nav__tickets__email__input {
   display: flex;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   height: 2.25rem;
   border-style: solid;
   border-width: 0 0 2px 0;
