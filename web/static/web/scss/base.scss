@@ -104,6 +104,22 @@ h2 {
   }
 }
 
+.link--button {
+  display: block;
+  width: 100%;
+  max-width: 345px;
+  color: white;
+  background-color: $blue;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+
+  &:hover {
+    color: white;
+    background-color: $yellow;
+  }
+}
+
 // Text styles
 
 .text--console {
