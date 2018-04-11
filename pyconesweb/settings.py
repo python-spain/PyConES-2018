@@ -26,10 +26,6 @@ SECRET_KEY = 'c2&xg)1lgfly1yl4qtbi=gbh!#uldlt-p-^op^kt7e1x+(vw0t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '2018.es.pycon.org'
-]
-
 # Application definition
 
 DJANGO_APPS = [
