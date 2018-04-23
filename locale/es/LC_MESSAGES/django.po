@@ -48,7 +48,7 @@ msgid ""
 "that will bring together amazing"
 msgstr ""
 "la conferencia nacional sobre Python más importante de España. Un evento de "
-"tres días que reunirá a los ponentes"
+"tres días que reunirá a los"
 
 #: web/templates/base.html:37
 msgid "speakers"
@@ -56,7 +56,7 @@ msgstr "ponentes"
 
 #: web/templates/base.html:37
 msgid "a super cool agenda, and an awesome audience."
-msgstr "más interesantes, una agenda increible y unos asistentes maravillosos."
+msgstr "más interesantes, una agenda increíble y unos asistentes maravillosos."
 
 #: web/templates/base.html:40
 msgid "Proudly organised and "
@@ -82,7 +82,7 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"            Mantente al día suscribiendote a la newsletter. Sin spam, solo "
+"            Mantente al día suscribiéndote a la newsletter. Sin spam, solo "
 "te enviaremos información importante sobre el evento\n"
 "          "
 
@@ -112,7 +112,7 @@ msgid ""
 msgstr ""
 "\n"
 "        Queremos promover la diversidad en el sentido más amplio, así que no "
-"tengas miedo en porponer cualquier cosa que puedas\n"
+"tengas miedo en proponer cualquier cosa que puedas\n"
 "        enseñar a los asistentes, disfruta y haz disfrutar.\n"
 "      "
 
@@ -130,7 +130,7 @@ msgstr "Ayuda a la comunidad haciendo este evento realidad"
 
 #: web/templates/sections/sponsors.html:10
 msgid "Drop us an email and we’ll talk about the specifics."
-msgstr "Dejanos tu email y te contaremos más sobre los detalles."
+msgstr "Déjanos tu email y te contaremos más sobre los detalles."
 
 #: web/templates/sections/sponsors.html:15
 msgid "sponsorship leaflet"
