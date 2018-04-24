@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 11:09+0000\n"
+"POT-Creation-Date: 2018-04-24 09:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pyconesweb/settings.py:133
+#: pyconesweb/settings.py:131
 msgid "English"
 msgstr "Inglés"
 
-#: pyconesweb/settings.py:134
+#: pyconesweb/settings.py:132
 msgid "Spanish"
 msgstr "Español"
 
@@ -69,6 +69,10 @@ msgstr "patrocinado"
 #: web/templates/base.html:40
 msgid " with care in "
 msgstr " con cariño en "
+
+#: web/templates/base.html:44
+msgid "Buy your tickets here"
+msgstr "Compra tus entradas aquí"
 
 #: web/templates/base.html:45
 msgid "Get your ticket!"
@@ -158,11 +162,11 @@ msgstr ""
 msgid "University of Málaga (UMA)"
 msgstr "Universidad de Málaga"
 
-#: web/templates/sections/venue.html:19
+#: web/templates/sections/venue.html:20
 msgid "See location"
 msgstr "Ver localización"
 
-#: web/templates/sections/venue.html:22
+#: web/templates/sections/venue.html:24
 msgid ""
 "\n"
 "        The conference will take place at the “Teatinos Technology Complex "
