@@ -4,9 +4,14 @@
   position: fixed;
   background: white;
   min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
   width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 3rem 4rem 8.5rem 4rem;
+  padding: 3rem;
 }
 
 .nav__title {
@@ -36,7 +41,7 @@
 }
 
 .nav__tickets {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .nav__tickets__title {
@@ -107,18 +112,22 @@
 }
 
 .nav__social {
-  position: absolute;
-  bottom: 1.75rem;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 0 4rem;
+  align-items: flex-end;
+  flex: 1 0 auto;
+  line-height: 2.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+
+  a:first-child {
+    margin-right: 2rem;
+  }
 
   img {
     vertical-align: middle;
-    width: 3rem;
+    width: 2.4rem;
   }
 }
 

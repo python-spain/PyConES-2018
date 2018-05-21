@@ -14,6 +14,7 @@
   .nav {
     position: relative;
     width: 100%;
+    height: auto;
   }
 
   .hide-on-bp1 {
@@ -29,11 +30,7 @@
   }
 
   .nav {
-    padding: 2rem 1.5rem 8.5rem 1.5rem;
-  }
-
-  .nav__social {
-    padding: 0 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .section--bg-speakers {
