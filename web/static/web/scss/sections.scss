@@ -1,5 +1,7 @@
 @import 'variables';
 
+$keynoter-info-size: 14rem;
+
 .main {
   position: relative;
   display: flex;
@@ -59,11 +61,34 @@
 }
 
 .section--bg-speakers {
-  background: $lightest-blue url(/static/web/png/community-1.png) no-repeat left bottom;
+  background: $lightest-blue;
 }
 
 .section--bg-sponsors {
   background: $light-blue url(/static/web/png/community-2.png) no-repeat left bottom;
+}
+
+.keynoter {
+  display: flex;
+  width: calc(#{$keynoter-info-size} * 2);
+  margin-top: 4rem;
+
+  img {
+    width: $keynoter-info-size;
+    height: $keynoter-info-size;
+  }
+}
+
+.keynoter__info {
+  width: $keynoter-info-size;
+  height: $keynoter-info-size;
+  padding: 1.5rem;
+  background: white;
+}
+
+.keynoter__info__name {
+  font-weight: 900;
+  margin-bottom: 1rem;
 }
 
 
