@@ -44,3 +44,36 @@
     background-image: none;
   }
 }
+
+@media (max-height: $breakpoint1-height) {
+  .nav__menu {
+    display: none;
+    text-align: center;
+
+    &.nav__menu--only-links {
+      display: block;
+    }
+  }
+
+  .nav__logo {
+    margin-bottom: 2rem;
+  }
+
+  .tickets-button {
+    margin-bottom: 2rem;
+  }
+
+  .nav__language {
+    margin-top: 2rem;
+  }
+
+  .nav__tickets {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-height: $breakpoint2-height) {
+  .section--bg-speakers, .section--bg-sponsors {
+    background-image: none;
+  }
+}
