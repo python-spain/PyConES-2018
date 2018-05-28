@@ -33,7 +33,13 @@
 
 .nav__menu {
   text-align: left;
+
+  &.nav__menu--only-links {
+    display: none;
+  }
 }
+
+
 
 .nav__tickets {
   margin-top: 4rem;
