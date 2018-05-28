@@ -1,6 +1,6 @@
 @import 'variables';
 
-$keynoter-info-size: 14rem;
+$keynoter-info-size: 12rem;
 
 .main {
   position: relative;
@@ -72,6 +72,7 @@ $keynoter-info-size: 14rem;
   display: flex;
   width: calc(#{$keynoter-info-size} * 2);
   margin-top: 4rem;
+  cursor: pointer;
 
   img {
     width: $keynoter-info-size;

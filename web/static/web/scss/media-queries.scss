@@ -70,4 +70,18 @@
   .nav__tickets {
     margin-top: 2rem;
   }
+  
+  .section__icon {
+    display: none;
+  }
+
+  .keynoter {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-height: $breakpoint2-height) {
+  .section--bg-sponsors {
+    background-image: none;
+  }
 }
