@@ -69,6 +69,7 @@ $keynoter-info-size: 12rem;
 }
 
 .keynoter {
+  position: relative;
   display: flex;
   width: calc(#{$keynoter-info-size} * 2);
   margin-top: 4rem;
@@ -77,6 +78,11 @@ $keynoter-info-size: 12rem;
   img {
     width: $keynoter-info-size;
     height: $keynoter-info-size;
+  }
+  &:hover {
+    .keynoter__border {
+      display: block;
+    }
   }
 }
 
@@ -90,6 +96,14 @@ $keynoter-info-size: 12rem;
 .keynoter__info__name {
   font-weight: 900;
   margin-bottom: 1rem;
+}
+
+.keynoter__border {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  border-left: .5rem solid $blue;
 }
 
 
