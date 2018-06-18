@@ -1,7 +1,5 @@
 @import 'variables';
 
-$keynoter-info-size: 12rem;
-
 .main {
   position: relative;
   display: flex;
@@ -30,6 +28,9 @@ $keynoter-info-size: 12rem;
 
 .section__content {
   width: 100%;
+  @media (min-width: $breakpoint2-width) {
+    width: $section-desktop-width;
+  }
 }
 
 .section__location-link {
@@ -68,42 +69,5 @@ $keynoter-info-size: 12rem;
   background: $light-blue url(/static/web/png/community-2.png) no-repeat left bottom;
 }
 
-.keynoter {
-  position: relative;
-  display: flex;
-  width: calc(#{$keynoter-info-size} * 2);
-  margin-top: 4rem;
-  cursor: pointer;
-
-  img {
-    width: $keynoter-info-size;
-    height: $keynoter-info-size;
-  }
-  &:hover {
-    .keynoter__border {
-      display: block;
-    }
-  }
-}
-
-.keynoter__info {
-  width: $keynoter-info-size;
-  height: $keynoter-info-size;
-  padding: 1.5rem;
-  background: white;
-}
-
-.keynoter__info__name {
-  font-weight: 900;
-  margin-bottom: 1rem;
-}
-
-.keynoter__border {
-  display: none;
-  position: absolute;
-  left: 0;
-  height: 100%;
-  border-left: .5rem solid $blue;
-}
 
 

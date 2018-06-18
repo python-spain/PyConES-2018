@@ -1,33 +1,38 @@
 {% load i18n static %}
 
 <div id="speakers" class="section section--bg-speakers">
-  <div class="section__content">
-    <span class="text--section-title"><strong>#01</strong> {% trans 'Become one of us' %}</span>
-    <h1>{% trans 'Speakers' %}</h1>
-    <p>
-      {% blocktrans %}
-      We want to promote diversity in the widest sense of the term, so don't be afraid to propose anything you think can make the audience learn, enjoy and give back.
-      {% endblocktrans %}
-    </p>
-  </div>
-  <img class="section__icon" src="{% static 'web/svg/speaker.svg' %}" alt="Speaker">
-  <a class="section__action link--stroke" href="https://www.papercall.io/pycones2018">call for papers</a>
+    <div class="section__content">
+        <span class="text--section-title"><strong>#01</strong> {% trans 'Become one of us' %}</span>
+        <h1>{% trans 'Speakers' %}</h1>
+        <p class="text--description">
+            {% blocktrans %}
+                We want to promote diversity in the widest sense of the term, so don't be afraid to propose anything you
+                think can make the audience learn, enjoy and give back.
+            {% endblocktrans %}
+        </p>
+        <img class="section__icon" src="{% static 'web/svg/speaker.svg' %}" alt="Speaker">
+        <a class="section__action link--stroke center" href="https://www.papercall.io/pycones2018">call for papers</a>
 
-  <div class="keynoter">
-    <div class="keynoter__border"></div>
-    <img src="{% static 'web/jpg/speaker1-photo.jpg' %}" alt="Lorena Mesa">
-    <div class="keynoter__info">
-      <div class="keynoter__info__name">Lorena<br>Mesa</div>
-      <div class="keynoter__info__mini-bio">{% trans 'Political scientist turned coder' %}</div>
-    </div>
-  </div>
+        <a class="keynoter center" href="#">
+            <div class="keynoter__border"></div>
+            <div class="keynoter__picture">
+                <img src="{% static 'web/jpg/speaker2-photo.jpg' %}" alt="Héctor Socas-Navarro">
+            </div>
+            <div class="keynoter__info">
+                <div class="keynoter__info__name">Héctor<br>Socas-Navarro</div>
+                <div class="keynoter__info__mini-bio">{% trans 'Physicist at the Instituto de Astrofisica de Canarias' %}</div>
+            </div>
+        </a>
 
-  <div class="keynoter">
-    <div class="keynoter__border"></div>
-    <img src="{% static 'web/jpg/speaker2-photo.jpg' %}" alt="Héctor Socas-Navarro">
-    <div class="keynoter__info">
-      <div class="keynoter__info__name">Héctor<br>Socas-Navarro</div>
-      <div class="keynoter__info__mini-bio">{% trans 'Physicist at the Instituto de Astrofisica de Canarias' %}</div>
+        <a class="keynoter center">
+            <div class="keynoter__border"></div>
+            <div class="keynoter__picture">
+                <img src="{% static 'web/jpg/speaker1-photo.jpg' %}" alt="Lorena Mesa">
+            </div>
+            <div class="keynoter__info">
+                <div class="keynoter__info__name">Lorena<br>Mesa</div>
+                <div class="keynoter__info__mini-bio">{% trans 'Political scientist turned coder' %}</div>
+            </div>
+        </a>
     </div>
-  </div>
 </div>
