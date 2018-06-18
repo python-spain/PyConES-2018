@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="section section--bg-detail">
+        <div class="section__content">
+            <a class="details__speaker--close"></a>
+            <div class="details__speaker--picture" href="#" >
+                {% block picture %}{% endblock %}
+            </div>
+            {% block title %}{% endblock %}
+
+            {% block subtitle %}{% endblock %}
+
+            {% block description %}{% endblock %}
+
+            {% block social %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}

@@ -28,6 +28,7 @@
 
 .section__content {
   width: 100%;
+  position: relative;
   @media (min-width: $breakpoint2-width) {
     width: $section-desktop-width;
   }
@@ -61,7 +62,7 @@
   background-size: auto 100%;
 }
 
-.section--bg-speakers {
+.section--bg-speakers, .section--bg-detail {
   background: $lightest-blue;
 }
 

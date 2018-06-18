@@ -1,0 +1,16 @@
+.details__speaker--picture {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.details__speaker--close {
+  height: 50px;
+  width: 50px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
