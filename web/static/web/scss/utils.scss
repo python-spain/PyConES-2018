@@ -1,4 +1,16 @@
-.center {
+@import 'variables';
+
+.is-center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.is-hidden-mobile {
+  @media (max-width: $breakpoint1-width) {
+    display: none;
+  }
+}
+
+.is-half {
+  width: 50%;
 }

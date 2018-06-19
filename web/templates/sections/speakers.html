@@ -1,6 +1,6 @@
 {% load i18n static %}
 
-<div id="speakers" class="section section--bg-speakers">
+<div id="speakers" class="section section--bg-speakers is-half">
     <div class="section__content">
         <span class="text--section-title"><strong>#01</strong> {% trans 'Become one of us' %}</span>
         <h1>{% trans 'Speakers' %}</h1>
@@ -11,9 +11,9 @@
             {% endblocktrans %}
         </p>
         <img class="section__icon" src="{% static 'web/svg/speaker.svg' %}" alt="Speaker">
-        <a class="section__action link--stroke center" href="https://www.papercall.io/pycones2018">call for papers</a>
+        <a class="section__action link--stroke is-center" href="https://www.papercall.io/pycones2018">call for papers</a>
 
-        <a class="keynoter center" href="{% url "details" "speakers/hector-socas-navarro.html" %}">
+        <a class="keynoter is-center" href="{% url "details" "speakers/hector-socas-navarro.html" %}">
             <div class="keynoter__border"></div>
             <div class="keynoter__picture">
                 <img src="{% static 'web/jpg/speaker2-photo.jpg' %}" alt="Héctor Socas-Navarro">
@@ -24,7 +24,7 @@
             </div>
         </a>
 
-        <a class="keynoter center" href="#">
+        <a class="keynoter is-center" href="{% url "details" "speakers/lorena-mesa.html" %}">
             <div class="keynoter__border"></div>
             <div class="keynoter__picture">
                 <img src="{% static 'web/jpg/speaker1-photo.jpg' %}" alt="Lorena Mesa">

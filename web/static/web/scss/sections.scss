@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  width: 50%;
+  width: 100%;
   padding: 10rem 4rem;
 }
 
@@ -29,9 +29,9 @@
 .section__content {
   width: 100%;
   position: relative;
-  @media (min-width: $breakpoint2-width) {
-    width: $section-desktop-width;
-  }
+  //@media (min-width: $breakpoint2-width) {
+    max-width: $section-desktop-width;
+  //}
 }
 
 .section__location-link {

@@ -1,19 +1,29 @@
 {% extends 'base.html' %}
 
+{% block welcome_class %} is-hidden-mobile{% endblock %}
+
 {% block main %}
-    <div class="section section--bg-detail">
+    <div class="section details-speaker section--bg-detail">
         <div class="section__content">
-            <a class="details__speaker--close"></a>
-            <div class="details__speaker--picture" href="#" >
+            <a class="details-speaker__close" href="/"></a>
+            <div class="details-speaker__picture">
                 {% block picture %}{% endblock %}
             </div>
-            {% block title %}{% endblock %}
+            <div class="details-speaker__content">
+                <h1 class="details-speaker__title">
+                    {% block title %}{% endblock %}
+                </h1>
 
-            {% block subtitle %}{% endblock %}
-
-            {% block description %}{% endblock %}
-
-            {% block social %}{% endblock %}
+                <h2 class="details-speaker__subtitle">
+                    {% block subtitle %}{% endblock %}
+                </h2>
+                <p class="details-speaker__description">
+                    {% block description %}{% endblock %}
+                </p>
+                <div class="details-speaker__social">
+                    {% block social %}{% endblock %}
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
