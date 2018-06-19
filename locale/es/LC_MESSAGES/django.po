@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-24 09:25+0200\n"
+"POT-Creation-Date: 2018-06-19 11:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +41,7 @@ msgstr "6ª Edición"
 msgid "Welcome to the"
 msgstr "Bienvenidos a la"
 
-#: web/templates/base.html:36
+#: web/templates/base.html:37
 msgid ""
 "the most important nation-wide Python conference in Spain. A three-day event "
 "that will bring together amazing"
@@ -50,51 +49,59 @@ msgstr ""
 "la conferencia nacional sobre Python más importante de España. Un evento de "
 "tres días que reunirá a los"
 
-#: web/templates/base.html:37
+#: web/templates/base.html:39
 msgid "speakers"
 msgstr "ponentes"
 
-#: web/templates/base.html:37
+#: web/templates/base.html:39
 msgid "a super cool agenda, and an awesome audience."
 msgstr "más interesantes, una agenda increíble y unos asistentes maravillosos."
 
-#: web/templates/base.html:40
+#: web/templates/base.html:42
 msgid "Proudly organised and "
 msgstr "Organizado y "
 
-#: web/templates/base.html:40
+#: web/templates/base.html:43
 msgid "sponsored"
 msgstr "patrocinado"
 
-#: web/templates/base.html:40
+#: web/templates/base.html:43
 msgid " with care in "
 msgstr " con cariño en "
 
-#: web/templates/base.html:44
+#: web/templates/base.html:50 web/templates/sections/speakers.html:6
+msgid "Speakers"
+msgstr "Ponentes"
+
+#: web/templates/base.html:51 web/templates/sections/sponsors.html:8
+msgid "Sponsors"
+msgstr "Patrocinios"
+
+#: web/templates/base.html:57
 msgid "Buy your tickets here"
 msgstr "Compra tus entradas aquí"
 
-#: web/templates/base.html:45
+#: web/templates/base.html:58
 msgid "Get your ticket!"
 msgstr "Consigue tu entrada!"
 
-#: web/templates/base.html:48
+#: web/templates/base.html:61
 msgid ""
 "\n"
-"            Stay up to date by subscribing to the newsletter. No spam, just "
-"important stuff about the event\n"
-"          "
+"                Stay up to date by subscribing to the newsletter. No spam, "
+"just important stuff about the event\n"
+"            "
 msgstr ""
 "\n"
 "            Mantente al día suscribiéndote a la newsletter. Sin spam, solo "
 "te enviaremos información importante sobre el evento\n"
 "          "
 
-#: web/templates/base.html:53
+#: web/templates/base.html:66
 msgid "Got it!"
 msgstr "¡Lo tenemos!"
 
-#: web/templates/base.html:54
+#: web/templates/base.html:68
 msgid "Enter your email address"
 msgstr "Escribe tu email"
 
@@ -102,17 +109,13 @@ msgstr "Escribe tu email"
 msgid "Become one of us"
 msgstr "Conviértete en uno de ellos"
 
-#: web/templates/sections/speakers.html:6
-msgid "Speakers"
-msgstr "Ponentes"
-
 #: web/templates/sections/speakers.html:8
 msgid ""
 "\n"
-"      We want to promote diversity in the widest sense of the term, so don't "
-"be afraid to propose anything you think can make the audience learn, enjoy "
-"and give back.\n"
-"      "
+"                We want to promote diversity in the widest sense of the "
+"term, so don't be afraid to propose anything you\n"
+"                think can make the audience learn, enjoy and give back.\n"
+"            "
 msgstr ""
 "\n"
 "        Queremos promover la diversidad en el sentido más amplio, así que no "
@@ -120,13 +123,17 @@ msgstr ""
 "        enseñar a los asistentes, disfruta y haz disfrutar.\n"
 "      "
 
+#: web/templates/sections/speakers.html:22
+msgid "Physicist at the Instituto de Astrofisica de Canarias"
+msgstr ""
+
+#: web/templates/sections/speakers.html:33
+msgid "Political scientist turned coder"
+msgstr ""
+
 #: web/templates/sections/sponsors.html:7
 msgid "Make it happen"
 msgstr "Sé parte del evento"
-
-#: web/templates/sections/sponsors.html:8
-msgid "Sponsors"
-msgstr "Patrocinios"
 
 #: web/templates/sections/sponsors.html:10
 msgid "Help the whole community making this event a reality."
