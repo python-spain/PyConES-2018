@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 11:26+0000\n"
+"POT-Creation-Date: 2018-06-21 09:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,6 +105,45 @@ msgstr "¡Lo tenemos!"
 msgid "Enter your email address"
 msgstr "Escribe tu email"
 
+#: web/templates/details/speakers/hector-socas-navarro.html:13
+#: web/templates/sections/speakers.html:22
+msgid "Physicist at the Institute of Astrophysics of Canarias (Spain)"
+msgstr "Físico en el Instituto de Astrofisica de Canarias"
+
+#: web/templates/details/speakers/hector-socas-navarro.html:17
+msgid ""
+"He received his PhD at Universidad de La Laguna in 1999. His work was "
+"recognized as best PhD thesis of the period 1998/99 by the Spanish Astronomy "
+"Society. Between 1999 and 2008 he was working in the USA, at the National "
+"Center for Atmospheric Research, doing research, developing instrumentation "
+"for terrestrial telescopes and working for the Hinode missions (by the "
+"Japanese space agency JAXA) and SDO (from NASA). Furthermore, he had an "
+"important role in the development of the great USA solar telescope, nowadays "
+"under construction in Hawaii. From 2008 he works at the IAC where, among "
+"other things, he has been the scientific manager of the future European "
+"Solar Telescope (EST)."
+msgstr ""
+"Se doctoró en la Universidad de La Laguna en 1999. Su trabajo recibió el premio de la Sociedad Española de Astronomía a la mejor tesis doctoral durante el bienio 1998/99. Entre 1999 y 2008 estuvo trabajando en EEUU, en el National Center for Atmospheric Research, haciendo investigación, desarrollando instrumentación para telescopios terrestres y trabajando para las misiones espaciales Hinode (de la agencia espacial japonesa JAXA) y SDO (de NASA). Además tuvo una gran participación en el desarrollo del gran telescopio solar de EEUU, actualmente en construcción en Hawai. Desde 2008 trabaja en el IAC donde entre otras cosas ha sido el responsable científico del futuro Telescopio Solar Europeo (EST)."
+
+#: web/templates/details/speakers/lorena-mesa.html:13
+#: web/templates/sections/speakers.html:33
+msgid "Political scientist turned coder"
+msgstr "Politóloga reconvertida en programadora"
+
+#: web/templates/details/speakers/lorena-mesa.html:17
+msgid ""
+"Lorena Mesa is a software engineer on Sprout Social’s data science team, "
+"Director on the Python Software Foundation, and PyLadies Chicago co-"
+"organizer. Lorena's time at Obama for America and her subsequent graduate "
+"research required her to learn how to transform messy, incomplete data into "
+"intelligible analysis on topics like predicting Latinx voter behavior. It's "
+"this unique background in research and applied mathematics that drove Lorena "
+"to pursue a career in engineering and data science. One part activist, one "
+"part Star Wars fanatic, and another part Trekkie, Lorena abides by the motto "
+"to \"live long and prosper\"."
+msgstr ""
+"Lorena Mesa es ingeniera de software en el equipo de ciencia de datos de Sprout Social, directora de la Python Software Foundation, y co-organizadora de PyLadies Chicago. El tiempo que pasó en Obama for America y su subsiguiente investigación le requirió aprender cómo transformar datos incompletos y caóticos en análisis inteligibles sobre temas como predecir el voto latino. Es esta experiencia únca en investigación y matemática aplicada lo que llevó a Lorena a dedicarse a la ingeniería y la ciencia de datos. Parte activista, parte fanática de Star Wars, y parte Trekkie, Lorena se rige por el lema “larga vida y prosperidad”."
+
 #: web/templates/sections/speakers.html:5
 msgid "Become one of us"
 msgstr "Conviértete en uno de ellos"
@@ -122,14 +161,6 @@ msgstr ""
 "tengas miedo en proponer cualquier cosa que puedas\n"
 "        enseñar a los asistentes, disfruta y haz disfrutar.\n"
 "      "
-
-#: web/templates/sections/speakers.html:22
-msgid "Physicist at the Instituto de Astrofisica de Canarias"
-msgstr ""
-
-#: web/templates/sections/speakers.html:33
-msgid "Political scientist turned coder"
-msgstr ""
 
 #: web/templates/sections/sponsors.html:7
 msgid "Make it happen"
