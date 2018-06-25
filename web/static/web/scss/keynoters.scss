@@ -55,3 +55,14 @@ $keynoter-column-size: calc(#{$section-width} / 2);
   height: 100%;
   border-left: .5rem solid $blue;
 }
+
+.details-speaker__social {
+  display: flex;
+  flex-direction: row-reverse;
+  img {
+    margin: .5rem;
+    height: 1.5rem;
+    width: auto;
+    vertical-align: middle;
+  }
+}
