@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block welcome_class %} is-hidden-mobile{% endblock %}
 
 {% block main %}
     <div class="section details-speaker section--bg-detail">
         <div class="section__content">
-            <a class="details-speaker__close" href="/">&times;</a>
+            <a class="details-speaker__close" href="/">
+{#                &times;#}
+                <img src="{% static "web/images/icons/baseline-close-24px.svg" %}" alt="close">
+            </a>
             <div class="details-speaker__picture">
                 {% block picture %}{% endblock %}
             </div>
