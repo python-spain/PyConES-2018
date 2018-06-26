@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>PyConES 2018 - Málaga</title>
@@ -11,81 +11,98 @@
     <link rel="icon" type="image/png" href="{% static 'web/png/favicon.png' %}">
 
     {% block css %}
-      {% compress css %}
-        <link type="text/css" rel="stylesheet" href="{% static 'vendor/css/normalize.css' %}">
-        <link type="text/css" rel="stylesheet" href="{% static 'vendor/css/animate.css' %}">
-        <link type="text/x-sass" rel="stylesheet" href="{% static 'web/scss/main.scss' %}">
-      {% endcompress %}
-      {% block extracss %}{% endblock %}
+        {% compress css %}
+            <link type="text/css" rel="stylesheet" href="{% static 'vendor/css/normalize.css' %}">
+            <link type="text/css" rel="stylesheet" href="{% static 'vendor/css/animate.css' %}">
+            <link type="text/x-sass" rel="stylesheet" href="{% static 'web/scss/main.scss' %}">
+        {% endcompress %}
+        {% block extracss %}{% endblock %}
     {% endblock %}
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat">
-  </head>
-  <body>
-    <!--[if lt IE 11]>
+</head>
+<body>
+<!--[if lt IE 11]>
       <p class='browse-happy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="nav js-nav">
-      <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
-      <div class="nav__event-date text--black-console">{% trans '<5-7/OCT/2018> Málaga' %}</div>
-      <div class="nav__title text--console">{% trans 'Connecting the Python Community' %}</div>
-      <div class="nav__subtitle text--console">{% trans '6th Edition' %}</div>
-      <div class="nav__menu">
+<div class="nav js-nav{% block welcome_class %}{% endblock %}">
+    <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
+    <div class="nav__event-date text--black-console">{% trans '<5-7/OCT/2018> Málaga' %}</div>
+    <div class="nav__title text--console">{% trans 'Connecting the Python Community' %}</div>
+    <div class="nav__subtitle text--console">{% trans '6th Edition' %}</div>
+    <div class="nav__menu">
         <p>
-           {% trans 'Welcome to the' %} <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>, {% trans 'the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing' %}
-          <a class="link--mustache js-nav-link" href="#speakers">{% trans 'speakers' %}</a>, {% trans 'a super cool agenda, and an awesome audience.' %}
+            {% trans 'Welcome to the' %} <a class="link--mustache"
+                                            href="http://2018.es.pycon.org/">PyConES</a>, {% trans 'the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing' %}
+            <a class="link--mustache js-nav-link"
+               href="#speakers">{% trans 'speakers' %}</a>, {% trans 'a super cool agenda, and an awesome audience.' %}
         </p>
         <p>
-          {% trans 'Proudly organised and ' %}<a class="link--mustache js-nav-link" href="#sponsors">{% trans 'sponsored' %}</a>{% trans ' with care in ' %}<a class="link--mustache js-nav-link" href="#venue">Málaga</a>.
+            {% trans 'Proudly organised and ' %}<a class="link--mustache js-nav-link"
+                                                   href="#sponsors">{% trans 'sponsored' %}</a>{% trans ' with care in ' %}<a
+                class="link--mustache js-nav-link" href="#venue">Málaga</a>.
         </p>
-      </div>
-      <div class="nav__tickets">
-        <a class="link--button" href="https://www.ticketea.com/entradas-conferencia-pycones-2018/" title="{% trans 'Buy your tickets here' %}">
-          {% trans 'Get your ticket!' %}
+    </div>
+    <div class="nav__menu nav__menu--only-links">
+        <p>
+            <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>
+            <a class="link--mustache js-nav-link" href="#speakers">{% trans 'Speakers' %}</a>
+            <a class="link--mustache js-nav-link" href="#sponsors">{% trans 'Sponsors' %}</a>
+            <a class="link--mustache js-nav-link" href="#venue">Málaga</a>
+        </p>
+    </div>
+    <div class="nav__tickets">
+        <a class="link--button tickets-button" href="https://www.ticketea.com/entradas-conferencia-pycones-2018/"
+           title="{% trans 'Buy your tickets here' %}">
+            {% trans 'Get your ticket!' %}
         </a>
         <p>
-          {% blocktrans %}
-            Stay up to date by subscribing to the newsletter. No spam, just important stuff about the event
-          {% endblocktrans %}
+            {% blocktrans %}
+                Stay up to date by subscribing to the newsletter. No spam, just important stuff about the event
+            {% endblocktrans %}
         </p>
         <div class="nav__tickets__email js-email-widget">
-          <input class="js-email-success-message" type="hidden" name="success-message" value="{% trans 'Got it!' %}">
-          <input class="nav__tickets__email__input js-email-input" placeholder="{% trans 'Enter your email address' %}">
-          <span class="nav__tickets__email__button">
+            <input class="js-email-success-message" type="hidden" name="success-message" value="{% trans 'Got it!' %}">
+            <input class="nav__tickets__email__input js-email-input"
+                   placeholder="{% trans 'Enter your email address' %}">
+            <span class="nav__tickets__email__button">
             <button class="js-email-send-btn">
               <img src="{% static 'web/svg/send.svg' %}" alt="send">
             </button>
           </span>
         </div>
-      </div>
+    </div>
 
-      <div class="nav__language">
+    <div class="nav__language">
         <a href="#" onclick="$('.form__language__input').val('en');$('.form__language').submit();">en</a> -
         <a href="#" onclick="$('.form__language__input').val('es');$('.form__language').submit();">es</a>
         <form class="form__language" action="{% url 'set_language' %}" method="post">{% csrf_token %}
-          <input name="next" type="hidden" value="{{ redirect_to }}"/>
-          {% get_current_language as LANGUAGE_CODE %}
-          <input class="form__language__input" name="language" type="hidden" value="{{ LANGUAGE_CODE }}"/>
+            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+            {% get_current_language as LANGUAGE_CODE %}
+            <input class="form__language__input" name="language" type="hidden" value="{{ LANGUAGE_CODE }}"/>
         </form>
-      </div>
-
-      <div class="nav__social">
-        <a href="https://twitter.com/pycones">
-          <img src="{% static 'web/svg/twitter.svg' %}"> @PyConES
-        </a>
-        <a href="mailto:contact2018@es.pycon.org">contact2018@es.pycon.org</a>
-      </div>
     </div>
 
-    {% block main %}{% endblock %}
+    <div class="nav__social">
+        <a href="https://twitter.com/pycones">
+            <img src="{% static 'web/svg/twitter.svg' %}"> @PyConES
+        </a>
+        <a href="mailto:contact2018@es.pycon.org">contact2018@es.pycon.org</a>
+    </div>
+</div>
 
-    {% block js %}
-      {% compress js %}
+<div class="main js-main">
+    {% block main %}{% endblock %}
+</div>
+
+{% block js %}
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    {% compress js %}
         <script src="{% static 'vendor/js/jquery-3.3.1.js' %}"></script>
         <script src="{% static 'web/js/main.js' %}"></script>
-      {% endcompress %}
-      {% block extrajs %}{% endblock %}
-    {% endblock %}
-  </body>
+    {% endcompress %}
+    {% block extrajs %}{% endblock %}
+{% endblock %}
+</body>
 </html>
