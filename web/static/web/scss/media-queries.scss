@@ -24,6 +24,9 @@
 @media (max-width: $breakpoint2-width) {
   .main {
     .section {
+      padding: 5rem 1.5rem;
+    }
+    .details-speaker {
       padding: 2rem 1.5rem;
     }
   }
@@ -70,10 +73,18 @@
   .nav__tickets {
     margin-top: 2rem;
   }
+
+  .section__icon {
+    display: none;
+  }
+
+  .keynoter {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-height: $breakpoint2-height) {
-  .section--bg-speakers, .section--bg-sponsors {
+  .section--bg-sponsors {
     background-image: none;
   }
 }

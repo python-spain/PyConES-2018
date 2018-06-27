@@ -1,0 +1,65 @@
+@import 'variables';
+
+.details-speaker {
+  padding: 2rem 1.5rem;
+}
+
+.details-speaker__picture {
+  display: flex;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.details-speaker__close {
+  height: 50px;
+  width: 50px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  img {
+    margin: auto;
+  }
+  //font-size: 3.5rem;
+  //padding: 13px 0 0 11px;
+  &:hover {
+    background: $blue;
+    color: #000;
+  }
+}
+
+.details-speaker__content {
+  padding: 2rem;
+  background: white;
+}
+
+.details-speaker__title {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 600;
+  font-family: $altFontFamily;
+  margin-bottom: 1rem;
+}
+
+.details-speaker__subtitle {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+  font-family: $baseFontFamily;
+  margin-bottom: 1rem;
+}
+
+.details-speaker__details {
+
+}
+
+.details-speaker__social {
+
+}

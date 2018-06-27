@@ -1,0 +1,24 @@
+{% extends 'details/speakers/base.html' %}
+{% load i18n static %}
+
+{% block picture %}
+    <img src="{% static 'web/images/speakers/hector_big.png' %}" alt="Héctor Socas-Navarro">
+{% endblock %}
+{% block title %}
+    Héctor<br>
+    Socas-Navarro
+{% endblock %}
+
+{% block subtitle %}
+    {% trans 'Physicist at the Institute of Astrophysics of Canarias (Spain)' %}
+{% endblock %}
+
+{% block description %}
+    {% blocktrans %}He received his PhD at Universidad de La Laguna in 1999. His work was recognized as best PhD thesis of the period 1998/99 by the Spanish Astronomy Society. Between 1999 and 2008 he was working in the USA, at the National Center for Atmospheric Research, doing research, developing instrumentation for terrestrial telescopes and working for the Hinode missions (by the Japanese space agency JAXA) and SDO (from NASA). Furthermore, he had an important role in the development of the great USA solar telescope, nowadays under construction in Hawaii. From 2008 he works at the IAC where, among other things, he has been the scientific manager of the future European Solar Telescope (EST).{% endblocktrans %}
+{% endblock %}
+
+{% block social %}
+    <a href="https://twitter.com/hsocasnavarro">
+        <img src="{% static "web/images/icons/Twitter_Logo_Blue.png" %}" alt="Twitter">
+    </a>
+{% endblock %}

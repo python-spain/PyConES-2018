@@ -1,0 +1,68 @@
+@import 'variables';
+
+$keynoter-info-size: 12rem;
+$keynoter-column-size: calc(#{$section-width} / 2);
+
+.keynoter {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  height: $keynoter-column-size;
+  margin-top: 3.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  white-space: normal;
+  background: white;
+
+  &:hover {
+    color: inherit;
+    .keynoter__border {
+      display: block;
+    }
+  }
+}
+.keynoter__picture {
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.keynoter__info {
+  flex-direction: column;
+  width: 50%;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.keynoter__info__name {
+  font-weight: 900;
+  margin-bottom: 1rem;
+  line-height: 1.2rem;
+}
+
+.keynoter__border {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  border-left: .5rem solid $blue;
+}
+
+.details-speaker__social {
+  display: flex;
+  flex-direction: row-reverse;
+  img {
+    margin: .5rem;
+    height: 1.5rem;
+    width: auto;
+    vertical-align: middle;
+  }
+}
