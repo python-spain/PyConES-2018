@@ -32,13 +32,19 @@
   &.is-diamond,
   &.is-platinum {
     .sponsor {
-      width: 100%;
+      width: calc(100% / 1);
+      @media (min-width: $breakpoint1-width) {
+        width: calc(100% / 3);
+      }
     }
   }
   &.is-gold,
   &.is-silver {
     .sponsor {
-      width: 50%;
+      width: calc(100% / 2);
+      @media (min-width: $breakpoint1-width) {
+        width: calc(100% / 4);
+      }
     }
   }
 }

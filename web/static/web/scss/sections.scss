@@ -32,6 +32,11 @@
   //@media (min-width: $breakpoint2-width) {
     max-width: $section-desktop-width;
   //}
+  &.is-two-columns {
+    @media (min-width: $breakpoint1-width) {
+      max-width: 100%;
+    }
+  }
 }
 
 .section__location-link {
