@@ -1,0 +1,44 @@
+@import 'variables';
+
+.section--bg-sponsors {
+  background: $light-blue;
+}
+
+.section--sponsors-title {
+  text-align: left;
+  margin: 2rem 0 .5rem 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.section--sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 -.5rem;
+  .sponsor {
+    margin: .5rem 0;
+    padding: .5rem;
+  }
+  .sponsor-link {
+    padding: 1rem;
+    background: white;
+    height: 145px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  &.is-diamond,
+  &.is-platinum {
+    .sponsor {
+      width: 100%;
+    }
+  }
+  &.is-gold,
+  &.is-silver {
+    .sponsor {
+      width: 50%;
+    }
+  }
+}
