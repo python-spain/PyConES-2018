@@ -78,7 +78,6 @@ h2 {
 
 .link--stroke {
   width: 100%;
-  max-width: 400px;
   height: 3.5rem;
   line-height: 3.5rem;
   text-align: center;
@@ -88,6 +87,8 @@ h2 {
   font-size: 1.2rem;
   letter-spacing: 1px;
   transition: .2s;
+  //max-width: 400px;
+  max-width: $section-desktop-width;
 
   &:hover {
     color: white;
