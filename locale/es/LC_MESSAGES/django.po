@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-21 09:28+0000\n"
+"POT-Creation-Date: 2018-06-27 12:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,13 +187,29 @@ msgstr "Sé parte del evento"
 msgid "Help the whole community making this event a reality."
 msgstr "Ayuda a la comunidad haciendo este evento realidad"
 
-#: web/templates/sections/sponsors.html:10
+#: web/templates/sections/sponsors.html:11
 msgid "Drop us an email and we’ll talk about the specifics."
 msgstr "Déjanos tu email y te contaremos más sobre los detalles."
 
-#: web/templates/sections/sponsors.html:15
+#: web/templates/sections/sponsors.html:17
 msgid "sponsorship leaflet"
 msgstr "folleto de patrocinio"
+
+#: web/templates/sections/sponsors.html:19
+msgid "Diamond"
+msgstr "Diamante"
+
+#: web/templates/sections/sponsors.html:32
+msgid "Platinum"
+msgstr "Platino"
+
+#: web/templates/sections/sponsors.html:65
+msgid "Gold"
+msgstr "Oro"
+
+#: web/templates/sections/sponsors.html:93
+msgid "Silver"
+msgstr "Plata"
 
 #: web/templates/sections/venue.html:5
 msgid "The venue"

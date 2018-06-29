@@ -32,6 +32,11 @@
   //@media (min-width: $breakpoint2-width) {
     max-width: $section-desktop-width;
   //}
+  &.is-two-columns {
+    @media (min-width: $breakpoint1-width) {
+      max-width: 100%;
+    }
+  }
 }
 
 .section__location-link {
@@ -66,9 +71,6 @@
   background: $lightest-blue;
 }
 
-.section--bg-sponsors {
-  background: $light-blue url(/static/web/png/community-2.png) no-repeat left bottom;
-}
 
 
 

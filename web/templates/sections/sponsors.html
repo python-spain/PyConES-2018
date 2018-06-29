@@ -2,15 +2,116 @@
 
 {% get_current_language as LANGUAGE_CODE %}
 
-<div id="sponsors" class="section section--bg-sponsors is-half">
-  <div class="section__content">
-    <span class="text--section-title"><strong>#02</strong> {% trans 'Make it happen' %}</span>
-    <h1>{% trans 'Sponsors' %}</h1>
-    <p>
-      {% trans 'Help the whole community making this event a reality.' %} <br> {% trans 'Drop us an email and we’ll talk about the specifics.' %}
-    </p>
-    <a href="mailto:sponsors2018@es.pycon.org"><strong>sponsors2018@es.pycon.org</strong></a>
-  </div>
-  <img class="section__icon" src="{% static 'web/svg/rocket.svg' %}" alt="Sponsor">
-  <a class="section__action link--stroke" href="{% static 'web/pdf/pycones2018_dossier_'|add:LANGUAGE_CODE|add:'.pdf' %}" target="_blank">{% trans 'sponsorship leaflet' %}</a>
+<div id="sponsors" class="section section--bg-sponsors">
+    <div class="section__content is-two-columns">
+        <span class="text--section-title"><strong>#03</strong> {% trans 'Make it happen' %}</span>
+        <h1>{% trans 'Sponsors' %}</h1>
+        <p>
+            {% trans 'Help the whole community making this event a reality.' %}
+            <br> {% trans 'Drop us an email and we’ll talk about the specifics.' %}
+        </p>
+        <div class="is-center">
+            <a href="mailto:sponsors2018@es.pycon.org"><strong>sponsors2018@es.pycon.org</strong></a>
+            <a class="section__action link--stroke is-center"
+               href="{% static 'web/pdf/pycones2018_dossier_'|add:LANGUAGE_CODE|add:'.pdf' %}"
+               target="_blank">{% trans 'sponsorship leaflet' %}</a>
+        </div>
+        <h2 class="section--sponsors-title">{% trans "Diamond" %}</h2>
+        <div class="section--sponsors is-diamond">
+            <div class="sponsor">
+                <a href="https://www.ravenpack.com/" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/ravenpack.png" %}" alt="RavenPack">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.openshine.com/" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/openshine.png" %}" alt="openshine">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="http://www.athento.com/" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/athento.png" %}" alt="athento">
+                </a>
+            </div>
+        </div>
+        <h2 class="section--sponsors-title">{% trans "Platinum" %}</h2>
+        <div class="section--sponsors is-platinum">
+            <div class="sponsor">
+                <a href="http://a3sec.com/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/a3sec.png" %}" alt="A3Sec">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.intelygenz.com/" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/intelygenz.png" %}" alt="intelygenz  ">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://kaleidos.net/" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/kaleidos.png" %}" alt="kaleidos">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.opensistemas.com/" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/open_sistemas.png" %}" alt="OpenSistemas">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://kschool.com/" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/kschool.png" %}" alt="kschool">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.trustyou.com/" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/trustyou.png" %}" alt="trustyou">
+                </a>
+            </div>
+        </div>
+        <h2 class="section--sponsors-title">{% trans "Gold" %}</h2>
+        <div class="section--sponsors is-gold is-gold">
+            <div class="sponsor">
+                <a href="https://kernel-analytics.com/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/kernel_analytics.png" %}" alt="Kernel analytics">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.elgas.es/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/grup_el_gas.png" %}" alt="Grup el gas">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.apsl.net/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/apsl.png" %}" alt="apsl">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.bloomberg.com/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/bloomberg.png" %}" alt="bloomberg">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.paradigmadigital.com/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/paradigma.png" %}" alt="paradigma">
+                </a>
+            </div>
+        </div>
+        <h2 class="section--sponsors-title">{% trans "Silver" %}</h2>
+        <div class="section--sponsors is-silver">
+            <div class="sponsor">
+                <a href="https://www.gisce.net/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/gisce.png" %}" alt="gisce">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.idealista.com/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/idealista.png" %}" alt="idealista">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://adimian.com/" target="_blank" class="sponsor-link">
+                    <img src="{% static "web/images/sponsors/adimian.png" %}" alt="adimian">
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
