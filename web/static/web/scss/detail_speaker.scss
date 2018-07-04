@@ -2,6 +2,9 @@
 
 .details-speaker {
   padding: 2rem 1.5rem;
+  .section__content {
+    max-width: 450px;
+  }
 }
 
 .details-speaker__picture {
@@ -50,7 +53,7 @@
 
 .details-speaker__subtitle {
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   font-weight: 600;
   font-family: $baseFontFamily;
   margin-bottom: 1rem;
@@ -61,5 +64,12 @@
 }
 
 .details-speaker__social {
-
+  display: flex;
+  flex-direction: row-reverse;
+  img {
+    margin: .5rem;
+    height: 1.5rem;
+    width: auto;
+    vertical-align: middle;
+  }
 }
