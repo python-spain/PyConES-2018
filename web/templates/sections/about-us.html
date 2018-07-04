@@ -1,0 +1,48 @@
+{% load i18n static %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+<div id="about-us" class="section section--bg-about-us">
+    <div class="section__content is-two-columns">
+        <span class="text--section-title"><strong>#04</strong> {% trans 'Who are we?' %}</span>
+        <h1>{% trans 'About us' %}</h1>
+        <p>
+            {% blocktrans %}
+                People like as "special" price or exclusive offer directed only to them.
+                Most Industrial and Manufacturing equipment buyers are seeking to be told that they are special.
+            {% endblocktrans %}
+        </p>
+        <div class="organisers">
+            <div class="organiser is-half">
+                <a href="https://kernel-analytics.com/" target="_blank" class="organiser-link">
+                    <img src="{% static "web/images/organisation/python_espana.png" %}" alt="Python España">
+                </a>
+            </div>
+            <div class="organiser is-half">
+                <a href="https://www.elgas.es/" target="_blank" class="organiser-link">
+                    <img src="{% static "web/images/organisation/yes_we_tech.png" %}" alt="Yes We Tech">
+                </a>
+            </div>
+            <div class="organiser">
+                <a href="https://www.ravenpack.com/" class="organiser-link">
+                    <img src="{% static "web/images/organisation/malaga_python.png" %}" alt="Málaga Python">
+                </a>
+            </div>
+            <div class="organiser">
+                <a href="https://www.openshine.com/" class="organiser-link">
+                    <img src="{% static "web/images/organisation/ebury.png" %}" alt="Ebury">
+                </a>
+            </div>
+        </div>
+        <h3 class="about-us-subtitle">
+            {% trans "Previous events" %}
+        </h3>
+        <a href="http://2014.es.pycon.org">PyConEs 2014</a>
+        <br/>
+        <a href="http://2015.es.pycon.org">PyConEs 2015</a>
+        <br/>
+        <a href="http://2016.es.pycon.org">PyConEs 2016</a>
+        <br/>
+        <a href="https://2017.es.pycon.org">PyConEs 2017</a>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+@import 'variables';
+
+.section--bg-about-us {
+  background: $lightest-blue;
+}
+
+.about-us-subtitle {
+  margin-bottom: 1rem;
+}
+
+.organisers {
+  $gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 40px (-$gap);
+  .organiser {
+    padding: $gap;
+    width: 100%;
+    &.is-half {
+      width: 50%;
+    }
+  }
+  .organiser-link {
+    padding: 1rem;
+    background: white;
+    height: 145px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
