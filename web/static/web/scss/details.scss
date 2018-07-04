@@ -73,3 +73,18 @@
     vertical-align: middle;
   }
 }
+
+.details-code-of-conduct {
+  padding: 2rem 1.5rem;
+  h1 {
+    font-size: 3.5rem;
+  }
+  .section__content {
+    max-width: 60rem;
+  }
+}
+
+.details-code-of-conduct__content {
+  padding: 2rem;
+  background: white;
+}

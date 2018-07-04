@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 12:16+0000\n"
+"POT-Creation-Date: 2018-07-04 11:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,23 +69,31 @@ msgstr "patrocinado"
 msgid " with care in "
 msgstr " con cariño en "
 
-#: web/templates/base.html:50 web/templates/sections/speakers.html:6
+#: web/templates/base.html:47
+msgid "Please read our"
+msgstr "¡Por favor, leed nuestro"
+
+#: web/templates/base.html:47
+msgid "code of conduct"
+msgstr "código de conducta"
+
+#: web/templates/base.html:53 web/templates/sections/speakers.html:6
 msgid "Speakers"
 msgstr "Ponentes"
 
-#: web/templates/base.html:51 web/templates/sections/sponsors.html:8
+#: web/templates/base.html:54 web/templates/sections/sponsors.html:8
 msgid "Sponsors"
 msgstr "Patrocinios"
 
-#: web/templates/base.html:57
+#: web/templates/base.html:60
 msgid "Buy your tickets here"
 msgstr "Compra tus entradas aquí"
 
-#: web/templates/base.html:58
+#: web/templates/base.html:61
 msgid "Get your ticket!"
 msgstr "Consigue tu entrada!"
 
-#: web/templates/base.html:61
+#: web/templates/base.html:64
 msgid ""
 "\n"
 "                Stay up to date by subscribing to the newsletter. No spam, "
@@ -97,13 +105,140 @@ msgstr ""
 "te enviaremos información importante sobre el evento\n"
 "          "
 
-#: web/templates/base.html:66
+#: web/templates/base.html:69
 msgid "Got it!"
 msgstr "¡Lo tenemos!"
 
-#: web/templates/base.html:68
+#: web/templates/base.html:71
 msgid "Enter your email address"
 msgstr "Escribe tu email"
+
+#: web/templates/details/code-of-conduct.html:11
+msgid "Code of Conduct"
+msgstr "Código de conducta"
+
+#: web/templates/details/code-of-conduct.html:12
+msgid ""
+"PyConES is a community conference intended for networking and collaboration "
+"in the developer community."
+msgstr "PyConES es una conferencia hecha por la comunidad pensada para la divulgación y colaboración dentro de la comunidad de desarrolladores."
+
+#: web/templates/details/code-of-conduct.html:13
+msgid ""
+"We value the participation of each member of the Python community and want "
+"all attendees to have an enjoyable and fulfilling experience. Accordingly, "
+"all attendees are expected to show respect and courtesy to other attendees "
+"throughout the conference and at all conference events, whether officially "
+"sponsored by PyConES or not."
+msgstr "Valoramos la participación de cada miembro de la comunidad Python y queremos que todos los asistentes tengan una experiencia entretenida y satisfactoria. Para ello, se espera que todos los asistentes muestren respeto y cortesía hacia el resto durante la conferencia y todos los eventos relacionados con ella, estén oficialmente auspiciados por PyConES o no."
+
+#: web/templates/details/code-of-conduct.html:14
+msgid ""
+"To make clear what is expected, all delegates/attendees, speakers, "
+"exhibitors, organizers and volunteers at any PyConES event are required to "
+"conform to the following Code of Conduct. Organizers will enforce this code "
+"throughout the event."
+msgstr "En concreto, todos los delegados, disertantes, expositores y voluntarios que tomen parte en actividades relacionadas con PyConES deberán acatar el presente código de conducta. Los organizadores cuidarán del cumplimiento de este código durante el evento."
+
+#: web/templates/details/code-of-conduct.html:15
+msgid ""
+"Harassment includes offensive verbal comments related to gender, sexual "
+"orientation, disability, physical appearance, body size, race, religion, "
+"sexual images in public spaces, deliberate intimidation, stalking, "
+"following, harassing photography or recording, sustained disruption of talks "
+"or other events, inappropriate physical contact, and unwelcome sexual "
+"attention."
+msgstr "Se entiende por acoso todo comentario ofensivo alusivo al sexo, preferencias sexuales, discapacidades, aspecto físico, etnias y religiones; toda pornografía en espacios públicos; toda intimidación deliberada, acecho o persecución; todo acoso mediante fotografías o grabaciones; toda interrupción constante de charlas u otras actividades; todo contacto físico inapropiado y toda propuesta sexual no deseada."
+
+#: web/templates/details/code-of-conduct.html:16
+msgid ""
+"Participants asked to stop any harassing behavior are expected to comply "
+"immediately."
+msgstr "Los participantes que sean apercibidos deberán desistir inmediatamente de su actitud."
+
+#: web/templates/details/code-of-conduct.html:17
+msgid ""
+"Exhibitors in the expo hall, sponsor or vendor booths, or similar activities "
+"are also subject to the anti-harassment policy. In particular, exhibitors "
+"should not use sexualized images, activities, or other material. Booth staff "
+"(including volunteers) should not use sexualized clothing/uniforms/costumes, "
+"or otherwise create a sexualized environment."
+msgstr "Los expositores, las casetas o pabellones de patrocinadores o empresas y actividades similares también están sujetas a la política antiacoso. En particular, los expositores no deberían utilizar material o llevar a cabo actividades sexistas. El personal de las casetas (incluyendo voluntarios) no deberían utilizar uniformes o vestimentas sexistas, puesto que se crearía un ambiente sexualizado."
+
+#: web/templates/details/code-of-conduct.html:18
+msgid ""
+"Be careful in the words that you choose. Remember that sexist, racist, and "
+"other exclusionary jokes can be offensive to those around you. Excessive "
+"swearing and offensive jokes are not appropriate for PyCon."
+msgstr "Cuida tu lenguaje. Recuerda que las bromas sexistas, racistas y excluyentes en general podrían ofender a otras personas. El lenguaje excesivamente soez y las bromas ofensivas son inapropiadas en PyConES."
+
+#: web/templates/details/code-of-conduct.html:19
+msgid ""
+"If a participant engages in behavior that violates this code of conduct, the "
+"conference organizers may take any action they deem appropriate, including "
+"warning the offender or expulsion from the conference with no refund."
+msgstr "Si algún participante infringiera este código de conducta, la organización podrá tomar las medidas que considere adecuadas, como la amonestación o la expulsión sin derecho a reembolso."
+
+#: web/templates/details/code-of-conduct.html:20
+msgid "Contact information"
+msgstr "Información de contacto"
+
+#: web/templates/details/code-of-conduct.html:21
+msgid ""
+"If you are being harassed, notice that someone else is being harassed, or "
+"have any other concerns, please contact a member of conference staff. "
+"Conference staff will be wearing \"Personal PyConES Staff\" t-shirts. You "
+"may also contact hotel staff and ask to be put in touch with the conference "
+"chair — Juan Luis Cano."
+msgstr "Si estás siendo objeto de acoso, notas que alguien está siendo acosado, o tienes cualquier otra preocupación, por favor ponte en contacto con un miembro del personal de la conferencia. El personal de la conferencia vestirá camisetas con la inscripción \"Personal PyConES\". Además puedes hablar con el personal del lugar y pedir que se te ponga en contacto con el responsable de la conferencia - Juan Luis Cano."
+
+#: web/templates/details/code-of-conduct.html:22
+msgid ""
+"If the matter is especially urgent, please call/contact any of these "
+"individuals:"
+msgstr "Si se trata de una cuestión especialmente urgente, dirígete a cualquiera de estas personas:"
+
+#: web/templates/details/code-of-conduct.html:26
+msgid ""
+"Conference staff will be happy to help participants contact hotel/venue "
+"security or local law enforcement, provide escorts, or otherwise assist "
+"those experiencing harassment to feel safe for the duration of the "
+"conference. We value your attendance."
+msgstr "El personal de la conferencia ayudará gustosamente a los participantes a que se pongan en contacto con el personal de seguridad del lugar o la policía local, y proporcionará escolta o socorrerá de cualquier otra forma a las víctimas de acoso para que puedan sentirse seguras durante el desarrollo de la conferencia. Tu bienestar es una de nuestras prioridades."
+
+#: web/templates/details/code-of-conduct.html:27
+msgid "Thank you for helping make this a welcoming, friendly event for all."
+msgstr "Gracias por hacer de este un evento abierto a la comunidad y amistoso."
+
+#: web/templates/details/code-of-conduct.html:28
+msgid "License"
+msgstr "Licencia"
+
+#: web/templates/details/code-of-conduct.html:30
+msgid ""
+"\n"
+"                        This Code of Conduct is based on the ones used for "
+"PyCon US 2013\n"
+"                        (<a href=\"https://us.pycon.org/2013/about/code-of-"
+"conduct/\">https://us.pycon.org/2013/about/code-of-conduct/</a>)\n"
+"                        and PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/"
+"conference/diversity/\">http://ar.pycon.org/2012/conference/diversity/</a>), "
+"and\n"
+"                        is available under a Creative Commons Atribución 3.0 "
+"Spain license.\n"
+"                    "
+msgstr ""
+"\n"
+"                       Este Código de Conducta se basa en los códigos de conducta de "
+"PyCon US 2013\n"
+"                        (<a href=\"https://us.pycon.org/2013/about/code-of-"
+"conduct/\">https://us.pycon.org/2013/about/code-of-conduct/</a>)\n"
+"                        y PyConAr 2012 (<a href=\"http://ar.pycon.org/2012/"
+"conference/diversity/\">http://ar.pycon.org/2012/conference/diversity/</a>), "
+"y\n"
+"                        está disponible bajo una licencia Creative Commons Atribución 3.0 "
+"España.\n"
+"                    "
 
 #: web/templates/details/speakers/hector-socas-navarro.html:13
 #: web/templates/sections/speakers.html:22
@@ -199,15 +334,15 @@ msgstr "folleto de patrocinio"
 msgid "Diamond"
 msgstr "Diamante"
 
-#: web/templates/sections/sponsors.html:32
+#: web/templates/sections/sponsors.html:37
 msgid "Platinum"
 msgstr "Platino"
 
-#: web/templates/sections/sponsors.html:65
+#: web/templates/sections/sponsors.html:70
 msgid "Gold"
 msgstr "Oro"
 
-#: web/templates/sections/sponsors.html:93
+#: web/templates/sections/sponsors.html:98
 msgid "Silver"
 msgstr "Plata"
 

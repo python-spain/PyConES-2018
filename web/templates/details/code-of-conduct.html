@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block welcome_class %} is-hidden-mobile{% endblock %}
+
+{% block main %}
+    <div class="section details-code-of-conduct section--bg-detail">
+        <div class="section__content">
+            <div class="details-speaker__content">
+                <h1>{% trans "Code of Conduct"%}</h1>
+                <p>{% trans "PyConES is a community conference intended for networking and collaboration in the developer community." %}</p>
+                <p>{% trans "We value the participation of each member of the Python community and want all attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees are expected to show respect and courtesy to other attendees throughout the conference and at all conference events, whether officially sponsored by PyConES or not." %}</p>
+                <p>{% trans "To make clear what is expected, all delegates/attendees, speakers, exhibitors, organizers and volunteers at any PyConES event are required to conform to the following Code of Conduct. Organizers will enforce this code throughout the event." %}</p>
+                <p>{% trans "Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention." %}</p>
+                <p>{% trans "Participants asked to stop any harassing behavior are expected to comply immediately." %}</p>
+                <p>{% trans "Exhibitors in the expo hall, sponsor or vendor booths, or similar activities are also subject to the anti-harassment policy. In particular, exhibitors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment." %}</p>
+                <p>{% trans "Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you. Excessive swearing and offensive jokes are not appropriate for PyCon." %}</p>
+                <p>{% trans "If a participant engages in behavior that violates this code of conduct, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund." %}</p>
+                <h2>{% trans "Contact information" %}</h2>
+                <p>{% trans 'If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing "Personal PyConES Staff" t-shirts. You may also contact hotel staff and ask to be put in touch with the conference chair — Juan Luis Cano.' %}</p>
+                <p>{% trans "If the matter is especially urgent, please call/contact any of these individuals:" %}</p>
+                <ul>
+                    <li>Juan Luis Cano (+34 646515050)</li>
+                </ul>
+                <p>{% trans "Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance." %}</p>
+                <p>{% trans "Thank you for helping make this a welcoming, friendly event for all." %}</p>
+                <h2>{% trans "License" %}</h2>
+                <p>
+                    {% blocktrans %}
+                        This Code of Conduct is based on the ones used for PyCon US 2013
+                        (<a href="https://us.pycon.org/2013/about/code-of-conduct/">https://us.pycon.org/2013/about/code-of-conduct/</a>)
+                        and PyConAr 2012 (<a href="http://ar.pycon.org/2012/conference/diversity/">http://ar.pycon.org/2012/conference/diversity/</a>), and
+                        is available under a Creative Commons Atribución 3.0 Spain license.
+                    {% endblocktrans %}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
