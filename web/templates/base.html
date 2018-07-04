@@ -27,7 +27,7 @@
     <![endif]-->
 
 <div class="nav js-nav{% block welcome_class %}{% endblock %}">
-    <img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"><br>
+    <a href="/"><img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"></a><br>
     <div class="nav__event-date text--black-console">{% trans '<5-7/OCT/2018> Málaga' %}</div>
     <div class="nav__title text--console">{% trans 'Connecting the Python Community' %}</div>
     <div class="nav__subtitle text--console">{% trans '6th Edition' %}</div>
@@ -36,12 +36,12 @@
             {% trans 'Welcome to the' %} <a class="link--mustache"
                                             href="http://2018.es.pycon.org/">PyConES</a>, {% trans 'the most important nation-wide Python conference in Spain. A three-day event that will bring together amazing' %}
             <a class="link--mustache js-nav-link"
-               href="#speakers">{% trans 'speakers' %}</a>, {% trans 'a super cool agenda, and an awesome audience.' %}
+               href="/#speakers">{% trans 'speakers' %}</a>, {% trans 'a super cool agenda, and an awesome audience.' %}
         </p>
         <p>
             {% trans 'Proudly organised and ' %}<a class="link--mustache js-nav-link"
-                                                   href="#sponsors">{% trans 'sponsored' %}</a>{% trans ' with care in ' %}<a
-                class="link--mustache js-nav-link" href="#venue">Málaga</a>.
+                                                   href="/#sponsors">{% trans 'sponsored' %}</a>{% trans ' with care in ' %}<a
+                class="link--mustache js-nav-link" href="/#venue">Málaga</a>.
         </p>
         <p>
             {% trans "Please read our" %} <a class="link--mustache js-nav-link" href="{% url "details" "code-of-conduct.html" %}">{% trans 'code of conduct' %}</a>!
@@ -50,9 +50,9 @@
     <div class="nav__menu nav__menu--only-links">
         <p>
             <a class="link--mustache" href="http://2018.es.pycon.org/">PyConES</a>
-            <a class="link--mustache js-nav-link" href="#speakers">{% trans 'Speakers' %}</a>
-            <a class="link--mustache js-nav-link" href="#sponsors">{% trans 'Sponsors' %}</a>
-            <a class="link--mustache js-nav-link" href="#venue">Málaga</a>
+            <a class="link--mustache js-nav-link" href="/#speakers">{% trans 'Speakers' %}</a>
+            <a class="link--mustache js-nav-link" href="/#sponsors">{% trans 'Sponsors' %}</a>
+            <a class="link--mustache js-nav-link" href="/#venue">Málaga</a>
         </p>
     </div>
     <div class="nav__tickets">
