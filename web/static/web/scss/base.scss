@@ -11,7 +11,7 @@
 }
 
 textarea:focus, input:focus, button:focus {
-    outline: none;
+  outline: none;
 }
 
 // Styling on warning for users on IE11 or below
@@ -45,6 +45,12 @@ a {
 
   &:hover {
     color: $yellow;
+  }
+  &.is-black {
+    color: black;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 
