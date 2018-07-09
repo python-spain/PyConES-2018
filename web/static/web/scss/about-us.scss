@@ -1,7 +1,34 @@
 @import 'variables';
 
-.section--bg-about-us {
+.section--about-us {
   background: $lightest-blue;
+  .section__content {
+    .description {
+      .previous-events {
+        display: none;
+      }
+    }
+    @media (min-width: $breakpoint1-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .description {
+        max-width: $section-desktop-width;
+        order: 1;
+        .previous-events {
+          margin-top: 72px;
+          display: block;
+        }
+      }
+      .organisers {
+        max-width: $section-desktop-width;
+        order: 2;
+      }
+      .previous-events {
+        display: none;
+      }
+    }
+  }
 }
 
 .about-us-subtitle {
@@ -29,6 +56,7 @@
     align-content: center;
     align-items: center;
     justify-content: center;
+    min-width: 100%;
   }
 
 }
