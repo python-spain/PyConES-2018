@@ -174,8 +174,8 @@ msgid ""
 "PyConES 2018 is brought to you by <b>Python Spain</b>, <b>Ebury</b>, <b>Yes "
 "we tech</b> and <b>Málaga Python</b>."
 msgstr ""
-"PyConES 2018 está organizado por <b>Python España</br>, <b>Ebury</br>, "
-"<b>Yes we tech</br> y <b>Málaga Python</br>."
+"PyConES 2018 está organizado por <b>Python España</b>, <b>Ebury</b>, "
+"<b>Yes we tech</b> y <b>Málaga Python</b>."
 
 #: web/templates/sections/blocks/previous-events.html:5
 msgid "Previous events"
