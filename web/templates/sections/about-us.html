@@ -1,0 +1,37 @@
+{% load i18n static %}
+
+<div id="about-us" class="section section--about-us">
+    <div class="section__content is-two-columns">
+        <div class="description">
+            <span class="text--section-title"><strong>#04</strong> {% trans 'Who are we?' %}</span>
+            <h1>{% trans 'About us' %}</h1>
+            <p>
+                {% trans "PyConES 2018 is brought to you by <b>Python Spain</b>, <b>Ebury</b>, <b>Yes we tech</b> and <b>Málaga Python</b>." %}
+            </p>
+            {% include "sections/blocks/previous-events.html" %}
+        </div>
+        <div class="organisers">
+            <div class="organiser is-half">
+                <a href="https://kernel-analytics.com/" target="_blank" class="organiser-link">
+                    <img src="{% static "web/images/organisation/python_espana.png" %}" alt="Python España">
+                </a>
+            </div>
+            <div class="organiser is-half">
+                <a href="https://www.elgas.es/" target="_blank" class="organiser-link">
+                    <img src="{% static "web/images/organisation/yes_we_tech.png" %}" alt="Yes We Tech">
+                </a>
+            </div>
+            <div class="organiser">
+                <a href="https://www.ravenpack.com/" class="organiser-link">
+                    <img src="{% static "web/images/organisation/malaga_python.png" %}" alt="Málaga Python">
+                </a>
+            </div>
+            <div class="organiser">
+                <a href="https://www.openshine.com/" class="organiser-link">
+                    <img src="{% static "web/images/organisation/ebury.png" %}" alt="Ebury">
+                </a>
+            </div>
+        </div>
+        {% include "sections/blocks/previous-events.html" %}
+    </div>
+</div>
