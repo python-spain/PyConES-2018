@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 12:16+0000\n"
+"POT-Creation-Date: 2018-07-19 17:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,6 +161,26 @@ msgstr ""
 "Parte activista, parte fanática de Star Wars, y parte Trekkie, Lorena se "
 "rige por el lema “larga vida y prosperidad”."
 
+#: web/templates/sections/about-us.html:6
+msgid "Who are we?"
+msgstr "¿Quiénes somos?"
+
+#: web/templates/sections/about-us.html:7
+msgid "About us"
+msgstr "Sobre nosotros"
+
+#: web/templates/sections/about-us.html:9
+msgid ""
+"PyConES 2018 is brought to you by <b>Python Spain</b>, <b>Ebury</b>, <b>Yes "
+"we tech</b> and <b>Málaga Python</b>."
+msgstr ""
+"PyConES 2018 está organizado por <b>Python España</br>, <b>Ebury</br>, "
+"<b>Yes we tech</br> y <b>Málaga Python</br>."
+
+#: web/templates/sections/blocks/previous-events.html:5
+msgid "Previous events"
+msgstr "Eventos anteriores"
+
 #: web/templates/sections/speakers.html:5
 msgid "Become one of us"
 msgstr "Conviértete en uno de ellos"
@@ -199,15 +219,15 @@ msgstr "folleto de patrocinio"
 msgid "Diamond"
 msgstr "Diamante"
 
-#: web/templates/sections/sponsors.html:32
+#: web/templates/sections/sponsors.html:37
 msgid "Platinum"
 msgstr "Platino"
 
-#: web/templates/sections/sponsors.html:65
+#: web/templates/sections/sponsors.html:70
 msgid "Gold"
 msgstr "Oro"
 
-#: web/templates/sections/sponsors.html:93
+#: web/templates/sections/sponsors.html:98
 msgid "Silver"
 msgstr "Plata"
 
