@@ -12,11 +12,12 @@
   text-transform: uppercase;
 }
 
+$agenda__time-padding-top: 1rem;
 .agenda__time {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  padding-top: $agenda__time-padding-top;
   .time {
     font-weight: 600;
     white-space: nowrap;
@@ -26,6 +27,32 @@
     height: 1px;
     width: 100%;
     background: black;
+  }
+}
+
+.agenda__row--break {
+  margin-top: .5rem;
+  margin-bottom: -.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+$agenda__talk-padding: 1.5rem;
+.agenda__plenary-talk {
+  display: flex;
+  &--title {
+    padding: $agenda__talk-padding;
+    background: white;
+  }
+  &--speaker {
+    padding: $agenda__talk-padding;
+    background: $light-blue;
+    width: 100%;
+  }
+  &--track {
+    padding: $agenda__talk-padding;
+    position: absolute;
+    right: 0;
   }
 }
 
@@ -39,7 +66,6 @@
 }
 
 .agenda__talk {
-  $talk-padding: 1.5rem;
   padding-top: 1rem;
   @media (min-width: $breakpoint1-width) {
     width: calc(100% / 3);
@@ -57,10 +83,10 @@
     justify-content: space-between;
   }
   &--title {
-    padding: $talk-padding;
+    padding: $agenda__talk-padding;
   }
   &--attributes {
-    padding: $talk-padding;
+    padding: $agenda__talk-padding;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -69,16 +95,10 @@
     }
   }
   &--speaker {
-    padding: 0 $talk-padding;
+    padding: 0 $agenda__talk-padding;
     background: $light-blue;
     min-height: 5.5rem;
     display: flex;
     align-items: center;
   }
-}
-
-.agenda__row--break {
-  margin: .5rem;
-  text-align: center;
-  font-weight: bold;
 }

@@ -5,43 +5,93 @@
         <span class="text--section-title"><strong>#04</strong> {% trans 'Manage your time' %}</span>
         <h1>{% trans 'Agenda' %}</h1>
         <h2 class="agenda__day">{% trans "5 October" %}</h2>
-        <div class="agenda__time">
-            <div class="time">09:30 h</div>
-            <div class="line"></div>
-        </div>
-        <div class="agenda__row">
-            <div>
+        {% include "sections/blocks/agenda-time.html" with time="9:30" %}
+        <div class="agenda__plenary-talk">
+            <div class="agenda__plenary-talk--track">{% trans "Sala Norba" %}</div>
+            <div class="agenda__plenary-talk--title">
                 {% trans "Keynote" %}
             </div>
-            <div>
+            <div class="agenda__plenary-talk--speaker">
                 <div>Héctor Socas-Navarro</div>
-                <div>{% trans "Sala Norba" %}</div>
             </div>
         </div>
-        <div class="agenda__time">
-            <div class="time">10:30 h</div>
-            <div class="line"></div>
-        </div>
+        {% include "sections/blocks/agenda-time.html" with time="10:30" %}
         <div class="agenda__row">
-            {% include "sections/blocks/agenda-talk.html" with title="Back to Basics: NLP" track="Track 1" type="Machine Learning" lang="ES" speaker1="Claudia Guirao Fernández" speaker2="Antonio lopes" %}
-            {% include "sections/blocks/agenda-talk.html" with title="¿Por qué y para qué usar Wagtail?" track="Track 2" type="Web" lang="ES" speaker1="Federico Mon" %}
-            {% include "sections/blocks/agenda-talk.html" with title="Ansible DIY" track="Track 3" type="DevOps & Tools " lang="ES" speaker1="Álvaro León Santiago" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Back to Basics: NLP" track="Track 1" type="ml" lang="ES" speaker1="Claudia Guirao Fernández" %}
+            {% include "sections/blocks/agenda-talk.html" with title="¿Por qué y para qué usar Wagtail?" track="Track 2" type="web" lang="ES" speaker1="Federico Mon" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Ansible DIY" track="Track 3" type="dev" lang="ES" speaker1="Álvaro León Santiago" %}
         </div>
-        <div class="agenda__time">
-            <div class="time">11:30 h</div>
-            <div class="line"></div>
+        {% include "sections/blocks/agenda-time.html" with time="11:00" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="Y hoy...¿Qué vemos?. Analizando Reviews de Películas con Python" track="Track 1" type="ml" lang="ES" speaker1="Rafa Haro" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Build your static site with Python" track="Track 2" type="web" lang="EN" speaker1="Fernando Rabanal" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Instrumenta tu app con Prometheus" track="Track 3" type="dev" lang="ES" speaker1="Agustín Herranz Cecilia" %}
         </div>
+        {% include "sections/blocks/agenda-time.html" with time="11:30" %}
+        <p class="agenda__row--break">{% trans "Coffee" %}</p>
+        {% include "sections/blocks/agenda-time.html" with time="12:00" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="Desde imágenes RGB a mapas de profundidad pasando por redes convolucionales profundas" track="Track 1" type="ml" lang="ES" speaker1="Zuria Bauer" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Designing APIs in no time using Flask" track="Track 2" type="web" lang="EN" speaker1="Sara Iris García Avila" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Pipenv: nuevo sistema de gestión de dependencias de paquetes para Python." track="Track 3" type="dev" lang="ES" speaker1="Andreu Vallbona" %}
+        </div>
+        {% include "sections/blocks/agenda-time.html" with time="12:30" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="CHARLA PATROCINADA" track="" type="" lang="" speaker1="" %}
+            {% include "sections/blocks/agenda-talk.html" with title="CHARLA PATROCINADA" track="" type="" lang="" speaker1="" %}
+            {% include "sections/blocks/agenda-talk.html" with title="CHARLA PATROCINADA" track="" type="" lang="" speaker1="" %}
+        </div>
+        {% include "sections/blocks/agenda-time.html" with time="13:00" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="Hacking Reinforcement Learning" track="Track 1" type="ml" lang="EN" speaker1="Guillem Duran Ballester" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Flask, un pequeño gran héroe" track="Track 2" type="web" lang="ES" speaker1="Maribel Tirados Gómez" %}
+            {% include "sections/blocks/agenda-talk.html" with title="FaaS with no strings attached" track="Track 3" type="dev" lang="ES" speaker1="Unai" %}
+        </div>
+        {% include "sections/blocks/agenda-time.html" with time="13:30" %}
         <p class="agenda__row--break">
-            {% trans "Coffee" %}
+            {% trans "Lunch" %}
         </p>
-        <div class="agenda__time is-paddingless">
-            <div class="time">12:00 h</div>
-            <div class="line"></div>
-        </div>
+        {% include "sections/blocks/agenda-time.html" with time="15:30" %}
         <div class="agenda__row">
-            {% include "sections/blocks/agenda-talk.html" with title="Back to Basics: NLP" track="Track 1" type="Machine Learning" lang="ES" speaker1="Claudia Guirao Fernández" %}
-            {% include "sections/blocks/agenda-talk.html" with title="¿Por qué y para qué usar Wagtail?" track="Track 2" type="Web" lang="ES" speaker1="Federico Mon" %}
-            {% include "sections/blocks/agenda-talk.html" with title="Ansible DIY" track="Track 3" type="DevOps & Tools " lang="ES" speaker1="Álvaro León Santiago" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Khiva: Cómo Al Juarismi reventaba GPUs para analizar time-series" track="Track 1" type="ml" lang="ES" speaker1="Antonio Vilches" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Multitenant, el infierno de las migraciones" track="Track 2" type="web" lang="ES" speaker1="Xavier Gil Estarellas" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Project templates with Cookiecuter" track="Track 3" type="dev" lang="EN" speaker1="Héctor Canto" %}
         </div>
+        {% include "sections/blocks/agenda-time.html" with time="15:30" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="Evaluation of text analysis in social media: a linguistic approach" track="Track 1" type="ml" lang="EN" speaker1="Eulàlia Veny" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Nueva generación de APIs con API Star" track="Track 2" type="web" lang="ES" speaker1="José Antonio Perdiguero" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Sustituyendo Makefiles con Python y Luigi" track="Track 3" type="dev" lang="EN" speaker1="Javier Torres Niño" %}
+        </div>
+        {% include "sections/blocks/agenda-time.html" with time="16:00" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="CHARLA PATROCINADA" track="" type="" lang="" speaker1="" %}
+            {% include "sections/blocks/agenda-talk.html" with title="CHARLA PATROCINADA" track="" type="" lang="" speaker1="" %}
+            {% include "sections/blocks/agenda-talk.html" with title="CHARLA PATROCINADA" track="" type="" lang="" speaker1="" %}
+        </div>
+        {% include "sections/blocks/agenda-time.html" with time="16:30" %}
+        <p class="agenda__row--break">{% trans "Coffee" %}</p>
+        {% include "sections/blocks/agenda-time.html" with time="17:00" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="CHARLA PATROCINADA" track="" type="" lang="" speaker1="" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Taking Django Async" track="Track 2" type="web" lang="EN" speaker1="Andrew Godwin" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Python Heaps-ters" track="Track 3" type="core" lang="ES" speaker1="Víctor Terrón" %}
+        </div>
+        {% include "sections/blocks/agenda-time.html" with time="17:30" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="Ojalá que lluevan series temporales" track="Track 1" type="ml" lang="EN" speaker1="Elena Abril Medina" %}
+            {% include "sections/blocks/agenda-talk.html" with title="web scraping para principiantes" track="Track 2" type="web" lang="ES" speaker1="Sara Rodríguez López" %}
+            {% include "sections/blocks/agenda-talk.html" with title="PGradual typing en Python" track="Track 3" type="core" lang="ES" speaker1="David Barragán Merino" %}
+        </div>
+        {% include "sections/blocks/agenda-time.html" with time="18:00" %}
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="Prediciendo la contaminación del aire en Madrid: el proceso" track="Track 1" type="ml" lang="EN" speaker1="María Medina" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Aprende a enseñar, enseñando aprenderás" track="Track 2" type="edu" lang="ES" speaker1="Irene Pérez Encinar" %}
+            {% include "sections/blocks/agenda-talk.html" with title="¡Oh vosotros los que entráis, abandonad toda esperanza!" track="Track 3" type="core" lang="ES" speaker1="Pablo Galindo Salgado" %}
+        </div>
+        {% include "sections/blocks/agenda-time.html" with time="18:30" %}
+        <p class="agenda__row--break">{% trans "Lightning Talks" %}</p>
+        {% include "sections/blocks/agenda-time.html" with time="19:30" %}
+        <p class="agenda__row--break">{% trans "Asamblea Python España" %}</p>
     </div>
 </div>
