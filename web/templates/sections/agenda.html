@@ -1,0 +1,47 @@
+{% load i18n %}
+
+<div id="agenda" class="section section--bg-agenda">
+    <div class="section__content is-two-columns">
+        <span class="text--section-title"><strong>#04</strong> {% trans 'Manage your time' %}</span>
+        <h1>{% trans 'Agenda' %}</h1>
+        <h2 class="agenda__day">{% trans "5 October" %}</h2>
+        <div class="agenda__time">
+            <div class="time">09:30 h</div>
+            <div class="line"></div>
+        </div>
+        <div class="agenda__row">
+            <div>
+                {% trans "Keynote" %}
+            </div>
+            <div>
+                <div>Héctor Socas-Navarro</div>
+                <div>{% trans "Sala Norba" %}</div>
+            </div>
+        </div>
+        <div class="agenda__time">
+            <div class="time">10:30 h</div>
+            <div class="line"></div>
+        </div>
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="Back to Basics: NLP" track="Track 1" type="Machine Learning" lang="ES" speaker1="Claudia Guirao Fernández" speaker2="Antonio lopes" %}
+            {% include "sections/blocks/agenda-talk.html" with title="¿Por qué y para qué usar Wagtail?" track="Track 2" type="Web" lang="ES" speaker1="Federico Mon" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Ansible DIY" track="Track 3" type="DevOps & Tools " lang="ES" speaker1="Álvaro León Santiago" %}
+        </div>
+        <div class="agenda__time">
+            <div class="time">11:30 h</div>
+            <div class="line"></div>
+        </div>
+        <p class="agenda__row--break">
+            {% trans "Coffee" %}
+        </p>
+        <div class="agenda__time is-paddingless">
+            <div class="time">12:00 h</div>
+            <div class="line"></div>
+        </div>
+        <div class="agenda__row">
+            {% include "sections/blocks/agenda-talk.html" with title="Back to Basics: NLP" track="Track 1" type="Machine Learning" lang="ES" speaker1="Claudia Guirao Fernández" %}
+            {% include "sections/blocks/agenda-talk.html" with title="¿Por qué y para qué usar Wagtail?" track="Track 2" type="Web" lang="ES" speaker1="Federico Mon" %}
+            {% include "sections/blocks/agenda-talk.html" with title="Ansible DIY" track="Track 3" type="DevOps & Tools " lang="ES" speaker1="Álvaro León Santiago" %}
+        </div>
+    </div>
+</div>

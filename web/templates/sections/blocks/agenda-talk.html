@@ -1,0 +1,17 @@
+<div class="agenda__talk">
+    <div class="agenda__talk--description">
+        <div class="agenda__talk--title">
+            {{ title }}
+        </div>
+        <div class="agenda__talk--attributes">
+            <div>{{ track }}</div>
+            <div>{{ type }} / {{ lang }}</div>
+        </div>
+    </div>
+    <div class="agenda__talk--speaker">
+        {{ speaker1 }}
+        {% if speaker2 %}
+            <br> {{ speaker2 }}
+        {% endif %}
+    </div>
+</div>
