@@ -37,23 +37,34 @@ $agenda__time-padding-top: 1rem;
   font-weight: bold;
 }
 
-$agenda__talk-padding: 1.5rem;
 .agenda__plenary-talk {
+  $plenary-talk-padding: 30px 25px;
   display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  @media (min-width: $breakpoint1-width) {
+    flex-direction: row;
+  }
+
   &--title {
-    padding: $agenda__talk-padding;
+    font-weight: bold;
+    padding: $plenary-talk-padding;
     background: white;
   }
+
   &--speaker {
-    padding: $agenda__talk-padding;
+    padding: $plenary-talk-padding;
     background: $light-blue;
     width: 100%;
   }
+
   &--track {
-    padding: $agenda__talk-padding;
+    font-weight: bold;
+    padding: $plenary-talk-padding;
     position: absolute;
     right: 0;
   }
+
 }
 
 .agenda__row {
@@ -66,6 +77,8 @@ $agenda__talk-padding: 1.5rem;
 }
 
 .agenda__talk {
+  $padding-top: 30px;
+  $padding-side: 25px;
   padding-top: 1rem;
   @media (min-width: $breakpoint1-width) {
     width: calc(100% / 3);
@@ -83,10 +96,10 @@ $agenda__talk-padding: 1.5rem;
     justify-content: space-between;
   }
   &--title {
-    padding: $agenda__talk-padding;
+    padding: $padding-top $padding-side 15px;
   }
   &--attributes {
-    padding: $agenda__talk-padding;
+    padding: 15px $padding-side $padding-top;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -95,10 +108,31 @@ $agenda__talk-padding: 1.5rem;
     }
   }
   &--speaker {
-    padding: 0 $agenda__talk-padding;
+    padding: 0 $padding-side;
     background: $light-blue;
     min-height: 5.5rem;
     display: flex;
     align-items: center;
   }
+}
+
+.agenda__talk--extra-speakers {
+  min-height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.agenda__talk--sponsored {
+  .agenda__talk--title {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.agenda__day-break {
+  margin-bottom: 8rem;
 }

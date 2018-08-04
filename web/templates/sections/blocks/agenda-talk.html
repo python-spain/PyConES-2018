@@ -17,13 +17,18 @@
                 {% if type == "test" %}{% trans "Testing" %}{% endif %}
                 {% if type == "sec" %}{% trans "Security" %}{% endif %}
                 {% if type == "mc" %}{% trans "Microservices" %}{% endif %}
-                / {{ lang }}</div>
+                {% if type == "workshop" %}{% trans "Workshop" %}{% endif %}
+                {% if lang %}
+                    / {{ lang }}
+                {% endif %}
+            </div>
         </div>
     </div>
-    <div class="agenda__talk--speaker">
-        {{ speaker1 }}
-        {% if speaker2 %}
-            <br> {{ speaker2 }}
-        {% endif %}
+
+    <div class="agenda__talk--speaker {% if speaker1|length > 50 %}agenda__talk--extra-speakers{% endif %}">
+            {{ speaker1 }}
+            {% if speaker2 %}
+                <br> {{ speaker2 }}
+            {% endif %}
     </div>
 </div>
