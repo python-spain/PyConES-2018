@@ -1,0 +1,138 @@
+@import 'variables';
+
+.section--bg-agenda {
+  background: $lightest-blue;
+}
+
+.agenda__day {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+  font-family: $altFontFamily;
+  text-transform: uppercase;
+}
+
+$agenda__time-padding-top: 1rem;
+.agenda__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $agenda__time-padding-top;
+  .time {
+    font-weight: 600;
+    white-space: nowrap;
+    padding-right: 1rem;
+  }
+  .line {
+    height: 1px;
+    width: 100%;
+    background: black;
+  }
+}
+
+.agenda__row--break {
+  margin-top: .5rem;
+  margin-bottom: -.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.agenda__plenary-talk {
+  $plenary-talk-padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  @media (min-width: $breakpoint1-width) {
+    flex-direction: row;
+  }
+
+  &--title {
+    font-weight: bold;
+    padding: $plenary-talk-padding;
+    background: white;
+  }
+
+  &--speaker {
+    padding: $plenary-talk-padding;
+    background: $light-blue;
+    width: 100%;
+  }
+
+  &--track {
+    font-weight: bold;
+    padding: $plenary-talk-padding;
+    position: absolute;
+    right: 0;
+  }
+
+}
+
+.agenda__row {
+  display: block;
+  @media (min-width: $breakpoint1-width) {
+    display: flex;
+    align-content: stretch;
+    margin: 0 -5px;
+  }
+}
+
+.agenda__talk {
+  $padding-top: 30px;
+  $padding-side: 25px;
+  padding-top: 1rem;
+  @media (min-width: $breakpoint1-width) {
+    width: calc(100% / 3);
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &--description {
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &--title {
+    padding: $padding-top $padding-side 15px;
+  }
+  &--attributes {
+    padding: 15px $padding-side $padding-top;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: $breakpoint1-width) {
+      flex-direction: column;
+    }
+  }
+  &--speaker {
+    padding: 0 $padding-side;
+    background: $light-blue;
+    min-height: 5.5rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.agenda__talk--extra-speakers {
+  min-height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.agenda__talk--sponsored {
+  .agenda__talk--title {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.agenda__day-break {
+  margin-bottom: 8rem;
+}
