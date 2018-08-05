@@ -1,0 +1,34 @@
+{% load i18n %}
+
+<div class="agenda__talk">
+    <div class="agenda__talk--description">
+        <div class="agenda__talk--title">
+            {{ title }}
+        </div>
+        <div class="agenda__talk--attributes">
+            <div>{{ track }}</div>
+            <div>
+                {% if type == "ml" %}{% trans "Machine Learning" %}{% endif %}
+                {% if type == "core" %}{% trans "Core" %}{% endif %}
+                {% if type == "web" %}{% trans "Web" %}{% endif %}
+                {% if type == "edu" %}{% trans "Education" %}{% endif %}
+                {% if type == "science" %}{% trans "Science" %}{% endif %}
+                {% if type == "dev" %}{% trans "DevOps & Tools" %}{% endif %}
+                {% if type == "test" %}{% trans "Testing" %}{% endif %}
+                {% if type == "sec" %}{% trans "Security" %}{% endif %}
+                {% if type == "mc" %}{% trans "Microservices" %}{% endif %}
+                {% if type == "workshop" %}{% trans "Workshop" %}{% endif %}
+                {% if lang %}
+                    / {{ lang }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="agenda__talk--speaker {% if speaker1|length > 50 %}agenda__talk--extra-speakers{% endif %}">
+            {{ speaker1 }}
+            {% if speaker2 %}
+                <br> {{ speaker2 }}
+            {% endif %}
+    </div>
+</div>
