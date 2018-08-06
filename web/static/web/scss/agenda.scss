@@ -117,9 +117,11 @@ $agenda__time-padding-top: 1rem;
 }
 
 .agenda__talk--extra-speakers {
-  min-height: auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  @media (max-width: 1400px) {
+    min-height: auto;
+  }
 }
 
 .agenda__talk--sponsored {

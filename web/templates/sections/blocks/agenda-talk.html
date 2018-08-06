@@ -26,9 +26,11 @@
     </div>
 
     <div class="agenda__talk--speaker {% if speaker1|length > 50 %}agenda__talk--extra-speakers{% endif %}">
+        <div>
             {{ speaker1 }}
             {% if speaker2 %}
                 <br> {{ speaker2 }}
             {% endif %}
+        </div>
     </div>
 </div>
