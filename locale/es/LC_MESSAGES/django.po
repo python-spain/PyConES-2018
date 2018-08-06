@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-05 10:30+0000\n"
+"POT-Creation-Date: 2018-08-06 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -379,7 +379,7 @@ msgid "6 October"
 msgstr "6 de Octubre"
 
 #: web/templates/sections/agenda.html:26 web/templates/sections/agenda.html:171
-msgid "Sala Norba"
+msgid "Track 1"
 msgstr ""
 
 #: web/templates/sections/agenda.html:27 web/templates/sections/agenda.html:172
@@ -401,6 +401,10 @@ msgstr ""
 #: web/templates/sections/agenda.html:108
 msgid "7 October"
 msgstr "7 de Octubre"
+
+#: web/templates/sections/agenda.html:176
+msgid "Closing"
+msgstr "Clausura"
 
 #: web/templates/sections/blocks/agenda-sponsored-talk.html:7
 msgid "Sponsored talk"
