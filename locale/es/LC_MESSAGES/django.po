@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-06 11:43+0200\n"
+"POT-Creation-Date: 2018-08-07 10:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,23 +25,23 @@ msgstr "Inglés"
 msgid "Spanish"
 msgstr "Español"
 
-#: web/templates/base.html:31
+#: web/templates/base.html:30
 msgid "<5-7/OCT/2018> Málaga"
 msgstr ""
 
-#: web/templates/base.html:32
+#: web/templates/base.html:31
 msgid "Connecting the Python Community"
 msgstr ""
 
-#: web/templates/base.html:33
+#: web/templates/base.html:32
 msgid "6th Edition"
 msgstr "6ª Edición"
 
-#: web/templates/base.html:36
+#: web/templates/base.html:35
 msgid "Welcome to the"
 msgstr "Bienvenidos a la"
 
-#: web/templates/base.html:37
+#: web/templates/base.html:36
 msgid ""
 "the most important nation-wide Python conference in Spain. A three-day event "
 "that will bring together amazing"
@@ -49,55 +49,63 @@ msgstr ""
 "la conferencia nacional sobre Python más importante de España. Un evento de "
 "tres días que reunirá a los"
 
-#: web/templates/base.html:39
+#: web/templates/base.html:37
 msgid "speakers"
 msgstr "ponentes"
 
-#: web/templates/base.html:39
-msgid "a super cool agenda, and an awesome audience."
-msgstr "más interesantes, una agenda increíble y unos asistentes maravillosos."
+#: web/templates/base.html:38
+msgid ", a super cool"
+msgstr "más interesantes, una"
 
-#: web/templates/base.html:42
+#: web/templates/base.html:39
+msgid "agenda"
+msgstr "agenda"
+
+#: web/templates/base.html:40
+msgid "and an awesome audience."
+msgstr "increíble y unos asistentes maravillosos."
+
+#: web/templates/base.html:43
 msgid "Proudly organised and "
 msgstr "Organizado y "
 
-#: web/templates/base.html:43
+#: web/templates/base.html:44
 msgid "sponsored"
 msgstr "patrocinado"
 
-#: web/templates/base.html:43
+#: web/templates/base.html:44
 msgid " with care in "
 msgstr " con cariño en "
 
-#: web/templates/base.html:47
+#: web/templates/base.html:48
 msgid "Please read our"
 msgstr "¡Por favor, leed nuestro"
 
-#: web/templates/base.html:47
+#: web/templates/base.html:48
 msgid "code of conduct"
 msgstr "código de conducta"
 
-#: web/templates/base.html:53 web/templates/sections/speakers.html:6
+#: web/templates/base.html:54 web/templates/sections/speakers.html:6
 msgid "Speakers"
 msgstr "Ponentes"
 
-#: web/templates/base.html:54 web/templates/sections/sponsors.html:8
+#: web/templates/base.html:55 web/templates/sections/sponsors.html:8
 msgid "Sponsors"
 msgstr "Patrocinios"
 
-#: web/templates/base.html:56 web/templates/details/coc.html:9
+#: web/templates/base.html:57 web/templates/details/coc.html:9
 msgid "Code of Conduct"
 msgstr "Código de conducta"
 
-#: web/templates/base.html:61
+#: web/templates/base.html:62
 msgid "Buy your tickets here"
 msgstr "Compra tus entradas aquí"
 
-#: web/templates/base.html:62
+#: web/templates/base.html:63
 msgid "Get your ticket!"
 msgstr "Consigue tu entrada!"
 
-#: web/templates/base.html:65
+#: web/templates/base.html:66
 msgid ""
 "\n"
 "                Stay up to date by subscribing to the newsletter. No spam, "
@@ -109,11 +117,11 @@ msgstr ""
 "te enviaremos información importante sobre el evento\n"
 "          "
 
-#: web/templates/base.html:70
+#: web/templates/base.html:71
 msgid "Got it!"
 msgstr "¡Lo tenemos!"
 
-#: web/templates/base.html:72
+#: web/templates/base.html:73
 msgid "Enter your email address"
 msgstr "Escribe tu email"
 
@@ -489,18 +497,22 @@ msgid "sponsorship leaflet"
 msgstr "folleto de patrocinio"
 
 #: web/templates/sections/sponsors.html:19
+msgid "Keystone"
+msgstr ""
+
+#: web/templates/sections/sponsors.html:27
 msgid "Diamond"
 msgstr "Diamante"
 
-#: web/templates/sections/sponsors.html:37
+#: web/templates/sections/sponsors.html:50
 msgid "Platinum"
 msgstr "Platino"
 
-#: web/templates/sections/sponsors.html:70
+#: web/templates/sections/sponsors.html:83
 msgid "Gold"
 msgstr "Oro"
 
-#: web/templates/sections/sponsors.html:108
+#: web/templates/sections/sponsors.html:121
 msgid "Silver"
 msgstr "Plata"
 
