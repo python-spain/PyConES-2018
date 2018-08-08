@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-07 10:20+0200\n"
+"POT-Creation-Date: 2018-08-07 16:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr "6ª Edición"
 msgid "Welcome to the"
 msgstr "Bienvenidos a la"
 
-#: web/templates/base.html:36
+#: web/templates/base.html:37
 msgid ""
 "the most important nation-wide Python conference in Spain. A three-day event "
 "that will bring together amazing"
@@ -49,63 +49,67 @@ msgstr ""
 "la conferencia nacional sobre Python más importante de España. Un evento de "
 "tres días que reunirá a los"
 
-#: web/templates/base.html:37
+#: web/templates/base.html:38
 msgid "speakers"
 msgstr "ponentes"
 
-#: web/templates/base.html:38
+#: web/templates/base.html:39
 msgid ", a super cool"
 msgstr "más interesantes, una"
 
-#: web/templates/base.html:39
-msgid "agenda"
+#: web/templates/base.html:40
+msgid "schedule"
 msgstr "agenda"
 
-#: web/templates/base.html:40
+#: web/templates/base.html:41
 msgid "and an awesome audience."
 msgstr "increíble y unos asistentes maravillosos."
 
-#: web/templates/base.html:43
+#: web/templates/base.html:44
 msgid "Proudly organised and "
 msgstr "Organizado y "
 
-#: web/templates/base.html:44
+#: web/templates/base.html:45
 msgid "sponsored"
 msgstr "patrocinado"
 
-#: web/templates/base.html:44
+#: web/templates/base.html:45
 msgid " with care in "
 msgstr " con cariño en "
 
-#: web/templates/base.html:48
+#: web/templates/base.html:49
 msgid "Please read our"
 msgstr "¡Por favor, leed nuestro"
 
-#: web/templates/base.html:48
+#: web/templates/base.html:49
 msgid "code of conduct"
 msgstr "código de conducta"
 
-#: web/templates/base.html:54 web/templates/sections/speakers.html:6
+#: web/templates/base.html:55 web/templates/sections/speakers.html:6
 msgid "Speakers"
 msgstr "Ponentes"
 
-#: web/templates/base.html:55 web/templates/sections/sponsors.html:8
+#: web/templates/base.html:56 web/templates/sections/schedule.html:6
+msgid "Schedule"
+msgstr "Agenda"
+
+#: web/templates/base.html:57 web/templates/sections/sponsors.html:8
 msgid "Sponsors"
 msgstr "Patrocinios"
 
-#: web/templates/base.html:57 web/templates/details/coc.html:9
+#: web/templates/base.html:59 web/templates/details/coc.html:9
 msgid "Code of Conduct"
 msgstr "Código de conducta"
 
-#: web/templates/base.html:62
+#: web/templates/base.html:64
 msgid "Buy your tickets here"
 msgstr "Compra tus entradas aquí"
 
-#: web/templates/base.html:63
+#: web/templates/base.html:65
 msgid "Get your ticket!"
 msgstr "Consigue tu entrada!"
 
-#: web/templates/base.html:66
+#: web/templates/base.html:68
 msgid ""
 "\n"
 "                Stay up to date by subscribing to the newsletter. No spam, "
@@ -117,11 +121,11 @@ msgstr ""
 "te enviaremos información importante sobre el evento\n"
 "          "
 
-#: web/templates/base.html:71
+#: web/templates/base.html:73
 msgid "Got it!"
 msgstr "¡Lo tenemos!"
 
-#: web/templates/base.html:73
+#: web/templates/base.html:75
 msgid "Enter your email address"
 msgstr "Escribe tu email"
 
@@ -364,103 +368,104 @@ msgstr ""
 "PyConES 2018 está organizado por <b>Python España</b>, <b>Ebury</b>, <b>Yes "
 "we tech</b> y <b>Málaga Python</b>."
 
-#: web/templates/sections/agenda.html:5
-msgid "Manage your time"
-msgstr "Gestiona tu tiempo"
-
-#: web/templates/sections/agenda.html:6
-msgid "Agenda"
-msgstr "Agenda"
-
-#: web/templates/sections/agenda.html:7
-msgid "5 October"
-msgstr "5 de Octubre"
-
-#: web/templates/sections/agenda.html:15 web/templates/sections/agenda.html:43
-#: web/templates/sections/agenda.html:83 web/templates/sections/agenda.html:128
-#: web/templates/sections/agenda.html:168
-msgid "Coffee"
-msgstr "Café"
-
-#: web/templates/sections/agenda.html:23
-msgid "6 October"
-msgstr "6 de Octubre"
-
-#: web/templates/sections/agenda.html:26 web/templates/sections/agenda.html:171
-msgid "Track 1"
-msgstr ""
-
-#: web/templates/sections/agenda.html:27 web/templates/sections/agenda.html:172
-msgid "Keynote"
-msgstr ""
-
-#: web/templates/sections/agenda.html:63 web/templates/sections/agenda.html:148
-msgid "Lunch"
-msgstr "Comida"
-
-#: web/templates/sections/agenda.html:103
-msgid "Lightning Talks"
-msgstr ""
-
-#: web/templates/sections/agenda.html:105
-msgid "Asamblea Python España"
-msgstr ""
-
-#: web/templates/sections/agenda.html:108
-msgid "7 October"
-msgstr "7 de Octubre"
-
-#: web/templates/sections/agenda.html:176
-msgid "Closing"
-msgstr "Clausura"
-
-#: web/templates/sections/blocks/agenda-sponsored-talk.html:7
-msgid "Sponsored talk"
-msgstr "Charla patrocinada"
-
-#: web/templates/sections/blocks/agenda-talk.html:11
-msgid "Machine Learning"
-msgstr ""
-
-#: web/templates/sections/blocks/agenda-talk.html:12
-msgid "Core"
-msgstr ""
-
-#: web/templates/sections/blocks/agenda-talk.html:13
-msgid "Web"
-msgstr ""
-
-#: web/templates/sections/blocks/agenda-talk.html:14
-msgid "Education"
-msgstr "Educación"
-
-#: web/templates/sections/blocks/agenda-talk.html:15
-msgid "Science"
-msgstr "Ciencia"
-
-#: web/templates/sections/blocks/agenda-talk.html:16
-msgid "DevOps & Tools"
-msgstr "DevOps y Herramientas"
-
-#: web/templates/sections/blocks/agenda-talk.html:17
-msgid "Testing"
-msgstr ""
-
-#: web/templates/sections/blocks/agenda-talk.html:18
-msgid "Security"
-msgstr "Seguridad"
-
-#: web/templates/sections/blocks/agenda-talk.html:19
-msgid "Microservices"
-msgstr "Microservicios"
-
-#: web/templates/sections/blocks/agenda-talk.html:20
-msgid "Workshop"
-msgstr "Taller"
-
 #: web/templates/sections/blocks/previous-events.html:5
 msgid "Previous events"
 msgstr "Eventos anteriores"
+
+#: web/templates/sections/blocks/schedule-sponsored-talk.html:7
+msgid "Sponsored talk"
+msgstr "Charla patrocinada"
+
+#: web/templates/sections/blocks/schedule-talk.html:11
+msgid "Machine Learning"
+msgstr ""
+
+#: web/templates/sections/blocks/schedule-talk.html:12
+msgid "Core"
+msgstr ""
+
+#: web/templates/sections/blocks/schedule-talk.html:13
+msgid "Web"
+msgstr ""
+
+#: web/templates/sections/blocks/schedule-talk.html:14
+msgid "Education"
+msgstr "Educación"
+
+#: web/templates/sections/blocks/schedule-talk.html:15
+msgid "Science"
+msgstr "Ciencia"
+
+#: web/templates/sections/blocks/schedule-talk.html:16
+msgid "DevOps & Tools"
+msgstr "DevOps y Herramientas"
+
+#: web/templates/sections/blocks/schedule-talk.html:17
+msgid "Testing"
+msgstr ""
+
+#: web/templates/sections/blocks/schedule-talk.html:18
+msgid "Security"
+msgstr "Seguridad"
+
+#: web/templates/sections/blocks/schedule-talk.html:19
+msgid "Microservices"
+msgstr "Microservicios"
+
+#: web/templates/sections/blocks/schedule-talk.html:20
+msgid "Workshop"
+msgstr "Taller"
+
+#: web/templates/sections/schedule.html:5
+msgid "Manage your time"
+msgstr "Gestiona tu tiempo"
+
+#: web/templates/sections/schedule.html:7
+msgid "5 October"
+msgstr "5 de Octubre"
+
+#: web/templates/sections/schedule.html:15
+#: web/templates/sections/schedule.html:43
+#: web/templates/sections/schedule.html:83
+#: web/templates/sections/schedule.html:128
+#: web/templates/sections/schedule.html:168
+msgid "Coffee"
+msgstr "Café"
+
+#: web/templates/sections/schedule.html:23
+msgid "6 October"
+msgstr "6 de Octubre"
+
+#: web/templates/sections/schedule.html:26
+#: web/templates/sections/schedule.html:171
+msgid "Track 1"
+msgstr ""
+
+#: web/templates/sections/schedule.html:27
+#: web/templates/sections/schedule.html:172
+msgid "Keynote"
+msgstr ""
+
+#: web/templates/sections/schedule.html:63
+#: web/templates/sections/schedule.html:148
+msgid "Lunch"
+msgstr "Comida"
+
+#: web/templates/sections/schedule.html:103
+msgid "Lightning Talks"
+msgstr ""
+
+#: web/templates/sections/schedule.html:105
+msgid "Asamblea Python España"
+msgstr ""
+
+#: web/templates/sections/schedule.html:108
+msgid "7 October"
+msgstr "7 de Octubre"
+
+#: web/templates/sections/schedule.html:176
+msgid "Closing"
+msgstr "Clausura"
 
 #: web/templates/sections/speakers.html:5
 msgid "Become one of us"
