@@ -37,7 +37,7 @@ body {
 
 a {
   color: $blue;
-  max-width: $section-desktop-width;;
+  max-width: $section-desktop-column-width;
   font-family: $baseFontFamily;
   text-decoration: none;
   transition: $baseTransition;
@@ -55,7 +55,7 @@ a {
 }
 
 strong {
-  font-weight: 900;
+  font-weight: $bold;
 }
 
 input {
@@ -69,14 +69,14 @@ input {
 h1 {
   font-size: 4rem;
   line-height: 5rem;
-  font-weight: 600;
+  font-weight: $bold;
   font-family: $altFontFamily;
   margin: 0 0 2rem 0;
 }
 
 h2 {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: $bold;
   margin: 5px 0;
 }
 
@@ -94,7 +94,7 @@ h2 {
   letter-spacing: 1px;
   transition: .2s;
   //max-width: 400px;
-  max-width: $section-desktop-width;
+  max-width: $section-desktop-column-width;
 
   &:hover {
     color: white;

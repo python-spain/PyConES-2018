@@ -29,12 +29,12 @@
 .section__content {
   width: 100%;
   position: relative;
-  //@media (min-width: $breakpoint2-width) {
-    max-width: $section-desktop-width;
-  //}
+  max-width: $section-desktop-column-width;
   &.is-two-columns {
     @media (min-width: $breakpoint1-width) {
-      max-width: 100%;
+      max-width: $section-desktop-two-column-width;
+      margin-right: 64px;
+      margin-left: 64px;
     }
   }
 }

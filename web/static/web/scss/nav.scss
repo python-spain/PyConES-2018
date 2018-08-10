@@ -7,6 +7,9 @@
   width: 33%;
   text-align: center;
   padding: 3rem 4rem 8.5rem 4rem;
+  @media (min-width: $breakpoint1-width) {
+    padding-bottom: 4.5rem;
+  }
 }
 
 .nav__title {
@@ -38,8 +41,6 @@
     display: none;
   }
 }
-
-
 
 .nav__tickets {
   margin-top: 4rem;
