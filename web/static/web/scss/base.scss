@@ -37,7 +37,7 @@ body {
 
 a {
   color: $blue;
-  max-width: $section-desktop-width;;
+  max-width: $section-desktop-column-width;
   font-family: $baseFontFamily;
   text-decoration: none;
   transition: $baseTransition;
@@ -94,7 +94,7 @@ h2 {
   letter-spacing: 1px;
   transition: .2s;
   //max-width: 400px;
-  max-width: $section-desktop-width;
+  max-width: $section-desktop-column-width;
 
   &:hover {
     color: white;
