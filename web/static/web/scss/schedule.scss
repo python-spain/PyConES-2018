@@ -7,7 +7,7 @@
 .schedule__day {
   font-size: 2.5rem;
   line-height: 3rem;
-  font-weight: 600;
+  font-weight: $bold;
   font-family: $altFontFamily;
   text-transform: uppercase;
 }
@@ -19,7 +19,7 @@ $schedule__time-padding-top: 1rem;
   align-items: center;
   padding-top: $schedule__time-padding-top;
   .time {
-    font-weight: 600;
+    font-weight: $bold;
     white-space: nowrap;
     padding-right: 1rem;
   }
@@ -34,7 +34,7 @@ $schedule__time-padding-top: 1rem;
   margin-top: .5rem;
   margin-bottom: -.5rem;
   text-align: center;
-  font-weight: bold;
+  font-weight: $bold;
 }
 
 .schedule__plenary-talk {
@@ -47,7 +47,7 @@ $schedule__time-padding-top: 1rem;
   }
 
   &--title {
-    font-weight: bold;
+    font-weight: $bold;
     padding: $plenary-talk-padding;
     background: white;
   }
@@ -59,7 +59,7 @@ $schedule__time-padding-top: 1rem;
   }
 
   &--track {
-    font-weight: bold;
+    font-weight: $bold;
     padding: $plenary-talk-padding;
     position: absolute;
     right: 0;
@@ -100,7 +100,7 @@ $schedule__time-padding-top: 1rem;
   }
   &--attributes {
     padding: 15px $padding-side $padding-top;
-    font-weight: bold;
+    font-weight: $bold;
     display: flex;
     justify-content: space-between;
     @media (min-width: $breakpoint1-width) {
