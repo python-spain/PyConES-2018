@@ -56,7 +56,18 @@
       background: #f0ead3;
     }
   }
-  .job__subtitle {
-    font-size: 1.285rem;
+}
+
+.job__subtitle {
+  font-size: 1.285rem;
+  @media (min-width: $breakpoint1-width) {
+    display: flex;
+    flex-direction: row;
+    > span {
+      width: 50%;
+    }
+    .separator {
+      display: none;
+    }
   }
 }
