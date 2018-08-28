@@ -1,0 +1,28 @@
+{% load i18n static %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+<div id="jobs" class="section section--bg-jobs">
+    <div class="section__content is-two-columns">
+        <span class="text--section-title"><strong>#05</strong> {% trans 'Your futre' %}</span>
+        <h1>{% trans 'Jobs' %}</h1>
+        <p class="job__subtitle">
+            <span>{% trans 'Position' %}</span><span>/</span><span>{% trans 'Company' %}</span>
+        </p>
+        <a href="" class="job">
+            <div class="active"></div>
+            <div class="job__position">Cobol Web Developer</div>
+            <div class="job__company">The Cobol Company</div>
+        </a>
+        <a href="" class="job">
+            <div class="active"></div>
+            <div class="job__position">Cobol Web Developer</div>
+            <div class="job__company">The Cobol Company</div>
+        </a>
+        <a href="" class="job">
+            <div class="active"></div>
+            <div class="job__position">Senior Engineer in Cobol Web Developer, iOS, Android, SQL and Photoshop</div>
+            <div class="job__company">The Cobol Company</div>
+        </a>
+    </div>
+</div>
