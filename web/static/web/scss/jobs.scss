@@ -1,0 +1,73 @@
+@import "variables";
+
+.section--bg-jobs {
+  background: #fdfbf4;
+}
+
+.job {
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  margin-top: 25px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background: #f9f3df;
+  white-space: normal;
+  > .job__border {
+    display: none;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: .5rem solid #debc3e;
+  }
+  &__position, &__company {
+    padding: 26px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__position {
+    padding-bottom: 0;
+  }
+  &__company {
+    font-weight: $bold;
+    padding-top: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    color: black;
+    .job__border {
+      display: block;
+    }
+  }
+  @media (min-width: $breakpoint1-width) {
+    flex-direction: row;
+    &__position, &__company {
+      padding: 26px 22px;
+    }
+    &__position {
+      width: 50%;
+    }
+    &__company {
+      width: 50%;
+      background: #f0ead3;
+    }
+  }
+}
+
+.job__subtitle {
+  font-size: 1.285rem;
+  @media (min-width: $breakpoint1-width) {
+    display: flex;
+    flex-direction: row;
+    > span {
+      width: 50%;
+    }
+    .separator {
+      display: none;
+    }
+  }
+}
