@@ -62,54 +62,78 @@ msgid "schedule"
 msgstr "agenda"
 
 #: web/templates/base.html:41
-msgid "and an awesome audience."
-msgstr "increíble y unos asistentes maravillosos."
+msgid " and awesome "
+msgstr " increíble y unas oportunidades de "
 
-#: web/templates/base.html:44
-msgid "Proudly organised and "
-msgstr "Organizado y "
+#: web/templates/base.html:42
+msgid "jobs"
+msgstr "trabajo"
 
-#: web/templates/base.html:45
+#: web/templates/base.html:43
+msgid " opportunities"
+msgstr " maravillosas"
+
+#: web/templates/base.html:46
+msgid "Proudly "
+msgstr " "
+
+#: web/templates/base.html:47
+msgid "organised"
+msgstr "Organizado"
+
+#: web/templates/base.html:48
+msgid " and "
+msgstr " y "
+
+#: web/templates/base.html:49
 msgid "sponsored"
 msgstr "patrocinado"
 
-#: web/templates/base.html:45
+#: web/templates/base.html:50
 msgid " with care in "
 msgstr " con cariño en "
 
-#: web/templates/base.html:49
+#: web/templates/base.html:54
 msgid "Please read our"
 msgstr "¡Por favor, leed nuestro"
 
-#: web/templates/base.html:49
+#: web/templates/base.html:54
 msgid "code of conduct"
 msgstr "código de conducta"
 
-#: web/templates/base.html:55 web/templates/sections/speakers.html:6
+#: web/templates/base.html:60 web/templates/sections/speakers.html:6
 msgid "Speakers"
 msgstr "Ponentes"
 
-#: web/templates/base.html:56 web/templates/sections/schedule.html:6
+#: web/templates/base.html:61 web/templates/sections/schedule.html:6
 msgid "Schedule"
 msgstr "Agenda"
 
-#: web/templates/base.html:57 web/templates/sections/sponsors.html:8
+#: web/templates/base.html:62 web/templates/sections/sponsors.html:8
 msgid "Sponsors"
 msgstr "Patrocinios"
 
-#: web/templates/base.html:59 web/templates/details/coc.html:9
+#: web/templates/base.html:64 web/templates/sections/jobs.html:8
+msgid "Jobs"
+msgstr "Trabajos"
+
+#: web/templates/base.html:65
+msgid "Organization"
+msgstr "Organizacion"
+
+#: web/templates/base.html:66 web/templates/details/coc.html:9
 msgid "Code of Conduct"
 msgstr "Código de conducta"
 
-#: web/templates/base.html:64
+#: web/templates/base.html:71
 msgid "Buy your tickets here"
 msgstr "Compra tus entradas aquí"
 
-#: web/templates/base.html:65
+#: web/templates/base.html:72
 msgid "Get your ticket!"
 msgstr "Consigue tu entrada!"
 
-#: web/templates/base.html:68
+#: web/templates/base.html:75
 msgid ""
 "\n"
 "                Stay up to date by subscribing to the newsletter. No spam, "
@@ -121,11 +145,11 @@ msgstr ""
 "te enviaremos información importante sobre el evento\n"
 "          "
 
-#: web/templates/base.html:73
+#: web/templates/base.html:80
 msgid "Got it!"
 msgstr "¡Lo tenemos!"
 
-#: web/templates/base.html:75
+#: web/templates/base.html:82
 msgid "Enter your email address"
 msgstr "Escribe tu email"
 
@@ -576,6 +600,9 @@ msgstr ""
 "encuentra la Escuela Técnica Superior de Ingeniería Informática (ETSI) y la "
 "Escuela Técnica Superior de Ingeniería en Telecomunicaciones (ETSIT).\n"
 "      "
+
+#~ msgid "Proudly organised and "
+#~ msgstr "Organizado y "
 
 #~ msgid "Where are the tickets?!"
 #~ msgstr "¿Dónde puedo comprar las entradas?"
