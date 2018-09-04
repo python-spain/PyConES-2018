@@ -14,7 +14,7 @@
   flex-direction: column;
   background: #f9f3df;
   white-space: normal;
-  > .active {
+  > .job__border {
     display: none;
     top: 0;
     bottom: 0;
@@ -39,7 +39,7 @@
   &:hover {
     cursor: pointer;
     color: black;
-    .active {
+    .job__border {
       display: block;
     }
   }
