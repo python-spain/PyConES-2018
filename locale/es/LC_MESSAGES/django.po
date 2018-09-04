@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-04 11:33+0200\n"
+"POT-Creation-Date: 2018-09-04 12:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -417,7 +417,7 @@ msgid "Workshop"
 msgstr "Taller"
 
 #: web/templates/sections/jobs.html:7
-msgid "Your futre"
+msgid "Your future"
 msgstr "Tu futuro"
 
 #: web/templates/sections/jobs.html:8
