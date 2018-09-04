@@ -25,7 +25,7 @@
       <p class='browse-happy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<div class="nav js-nav{% block welcome_class %}{% endblock %}">
+<div id="menu" class="nav js-nav{% block welcome_class %}{% endblock %}">
     <a href="/"><img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"></a><br>
     <div class="nav__event-date text--black-console">{% trans '<5-7/OCT/2018> Málaga' %}</div>
     <div class="nav__title text--console">{% trans 'Connecting the Python Community' %}</div>
@@ -38,12 +38,17 @@
             <a class="link--mustache js-nav-link" href="/#speakers">{% trans 'speakers' %}</a>
             {% trans ', a super cool' %}
             <a class="link--mustache js-nav-link" href="/#schedule">{% trans 'schedule' %}</a>
-            {% trans 'and an awesome audience.' %}
+            {% trans ' and awesome ' %}
+            <a class="link--mustache js-nav-link" href="/#jobs">{% trans 'jobs' %}</a>
+            {% trans ' opportunities' %}.
         </p>
         <p>
-            {% trans 'Proudly organised and ' %}<a class="link--mustache js-nav-link"
-                                                   href="/#sponsors">{% trans 'sponsored' %}</a>{% trans ' with care in ' %}<a
-                class="link--mustache js-nav-link" href="/#venue">Málaga</a>.
+            {% trans 'Proudly ' %}
+            <a class="link--mustache js-nav-link" href="/#about-us">{% trans 'organised' %}</a>
+            {% trans ' and ' %}
+            <a class="link--mustache js-nav-link" href="/#sponsors">{% trans 'sponsored' %}</a>
+            {% trans ' with care in ' %}
+            <a class="link--mustache js-nav-link" href="/#venue">Málaga</a>.
         </p>
         <p>
             {% trans "Please read our" %} <a class="link--mustache js-nav-link" href="{% url "details" "coc" %}#coc">{% trans 'code of conduct' %}</a>!
@@ -56,6 +61,8 @@
             <a class="link--mustache js-nav-link" href="/#schedule">{% trans 'Schedule' %}</a>
             <a class="link--mustache js-nav-link" href="/#sponsors">{% trans 'Sponsors' %}</a>
             <a class="link--mustache js-nav-link" href="/#venue">Málaga</a>
+            <a class="link--mustache js-nav-link" href="/#jobs">{% trans 'Jobs' %}</a>
+            <a class="link--mustache js-nav-link" href="/#about-us">{% trans 'Organization' %}</a>
             <a class="link--mustache js-nav-link" href="{% url "details" "coc" %}#coc">{% trans 'Code of Conduct' %}</a>
         </p>
     </div>
