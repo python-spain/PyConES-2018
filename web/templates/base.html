@@ -25,7 +25,7 @@
       <p class='browse-happy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<div class="nav js-nav{% block welcome_class %}{% endblock %}">
+<div id="menu" class="nav js-nav{% block welcome_class %}{% endblock %}">
     <a href="/"><img class="nav__logo" src="{% static 'web/svg/logo.svg' %}"></a><br>
     <div class="nav__event-date text--black-console">{% trans '<5-7/OCT/2018> Málaga' %}</div>
     <div class="nav__title text--console">{% trans 'Connecting the Python Community' %}</div>
@@ -100,6 +100,7 @@
 </div>
 
 <div class="main js-main">
+    <a href="#menu" class="nav__go-up">link</a>
     {% block main %}{% endblock %}
 </div>
 

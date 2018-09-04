@@ -1,6 +1,7 @@
 @import 'variables';
 
 .nav {
+  z-index: 1;
   position: fixed;
   background: white;
   min-height: 100vh;
@@ -136,4 +137,23 @@
 
 .nav__language {
   margin-top: 4rem;
+}
+
+.nav__go-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 35px;
+  right: 35px;
+  width: 65px;
+  height: 65px;
+  background: #fff;
+  box-shadow: 0 1px 3px 0 #64878e;
+}
+
+@media (min-width: $breakpoint1-width) {
+  .nav__go-up {
+    display: none;
+  }
 }
