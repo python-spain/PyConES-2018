@@ -3,6 +3,9 @@
 {% load i18n static compress %}
 
 {% block main %}
+    <a href="#menu" class="nav__go-up">
+        <img src="{% static 'web/svg/baseline-keyboard_arrow_up-24px.svg' %}" alt="menu">
+    </a>
     {% include 'sections/speakers.html' %}
     {% include 'sections/venue.html' %}
     {% include 'sections/sponsors.html' %}

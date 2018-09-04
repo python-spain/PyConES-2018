@@ -140,14 +140,16 @@
 }
 
 .nav__go-up {
+  $size: 65px;
+  $margin: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 35px;
-  right: 35px;
-  width: 65px;
-  height: 65px;
+  top: $margin;
+  right: $margin;
+  width: $size;
+  height: $size;
   background: #fff;
   box-shadow: 0 1px 3px 0 #64878e;
 }
