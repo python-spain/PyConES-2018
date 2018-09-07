@@ -1,10 +1,24 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block welcome_class %} is-hidden-mobile{% endblock %}
 
 {% block main %}
     <div class="section details-speaker section--bg-detail">
-        {{ title }}
+        <a href="/#schedule">{% trans "Schedule" %}</a>
+        <h1>{{ title }}</h1>
+        <p>
+            {{ name }}
+        </p>
+
+        <p>{{ bio }}</p>
+        <p>{{ avatar }}</p>
+        <p>{{ twitter }}</p>
+        <p>{{ url }}</p>
+        <p>{{ abstract }}</p>
+        <p>{{ description }}</p>
+        <p>{{ notes }}</p>
+        <p>{{ level }}</p>
+        <p>{{ tags }}</p>
     </div>
 {% endblock %}

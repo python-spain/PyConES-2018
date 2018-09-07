@@ -1,6 +1,7 @@
 {% load i18n %}
 
 <a class="schedule__talk" href="{% url 'talk_details' title|slugify %}">
+    <div class="schedule__talk__border"></div>
     <div class="schedule__talk--description">
         <div class="schedule__talk--title">
             {{ title }}
