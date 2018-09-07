@@ -7,6 +7,10 @@ from django.template import TemplateDoesNotExist
 from django.urls import reverse
 from django.views.generic import TemplateView, View
 
+from utils.import_talks import talks_from_file
+
+TALKS = talks_from_file()
+
 
 class IndexView(TemplateView):
     template_name = "index.html"
@@ -24,4 +28,14 @@ class DetailsView(View):
             template_path = "{}.html".format(os.path.join(self.base_path, path))
             return render(request, template_path)
         except TemplateDoesNotExist:
+            raise Http404()
+
+
+class TalkDetail(View):
+    @staticmethod
+    def get(request, slug):
+        try:
+            talk = TALKS[slug]
+            return render(request, 'details/talk.html', talk)
+        except KeyError:
             raise Http404()

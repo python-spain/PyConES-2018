@@ -80,6 +80,9 @@ $schedule__time-padding-top: 1rem;
   $padding-top: 30px;
   $padding-side: 25px;
   padding-top: 1rem;
+  display: block;
+  white-space: normal;
+  color: black;
   @media (min-width: $breakpoint1-width) {
     width: calc(100% / 3);
     padding-left: 5px;
