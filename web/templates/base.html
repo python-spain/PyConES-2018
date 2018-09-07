@@ -67,10 +67,13 @@
         </p>
     </div>
     <div class="nav__tickets">
-        <a class="link--button tickets-button" href="https://www.ticketea.com/entradas-conferencia-pycones-2018/"
-           title="{% trans 'Buy your tickets here' %}">
-            {% trans 'Get your ticket!' %}
-        </a>
+{#        <a class="link--button tickets-button" href="https://www.ticketea.com/entradas-conferencia-pycones-2018/"#}
+{#           title="{% trans 'Buy your tickets here' %}">#}
+{#            {% trans 'Get your ticket!' %}#}
+{#        </a>#}
+        <div class="link--button tickets-button tickets-out-button">
+            {% trans 'All tickets sold out!' %}
+        </div>
         <p>
             {% blocktrans %}
                 Stay up to date by subscribing to the newsletter. No spam, just important stuff about the event
