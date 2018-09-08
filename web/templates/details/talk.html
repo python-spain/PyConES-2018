@@ -4,21 +4,50 @@
 {% block welcome_class %} is-hidden-mobile{% endblock %}
 
 {% block main %}
-    <div class="section details-speaker section--bg-detail">
-        <a href="/#schedule">{% trans "Schedule" %}</a>
-        <h1>{{ title }}</h1>
-        <p>
-            {{ name }}
-        </p>
-
-        <p>{{ bio }}</p>
-        <p>{{ avatar }}</p>
-        <p>{{ twitter }}</p>
-        <p>{{ url }}</p>
-        <p>{{ abstract }}</p>
-        <p>{{ description }}</p>
-        <p>{{ notes }}</p>
-        <p>{{ level }}</p>
-        <p>{{ tags }}</p>
+    <div class="section talk-details section--bg-detail">
+        <div class="section__content is-two-columns">
+            <a class="talk-details__back" href="/#schedule">
+                <img src="{% static "web/svg/baseline-arrow_back-24px.svg" %}" alt="{% trans "arrow" %}">
+                {% trans "Schedule" %}
+            </a>
+            <div class="talk-details__content">
+                <div class="talk-details__row">
+                    <div class="talk-details__speakers">
+                        {{ name|linebreaks }}
+                    </div>
+                    <div class="talk-details__attributes">
+                        <p>
+                            {% if category == "ml" %}{% trans "Machine Learning" %}{% endif %}
+                            {% if category == "core" %}{% trans "Core" %}{% endif %}
+                            {% if category == "web" %}{% trans "Web" %}{% endif %}
+                            {% if category == "edu" %}{% trans "Education" %}{% endif %}
+                            {% if category == "science" %}{% trans "Science" %}{% endif %}
+                            {% if category == "dev" %}{% trans "DevOps & Tools" %}{% endif %}
+                            {% if category == "test" %}{% trans "Testing" %}{% endif %}
+                            {% if category == "sec" %}{% trans "Security" %}{% endif %}
+                            {% if category == "mc" %}{% trans "Microservices" %}{% endif %}
+                            {% if category == "workshop" %}{% trans "Workshop" %}{% endif %}
+                            {% if lang %}
+                                / {{ lang|upper }}
+                            {% endif %}
+                        </p>
+                        <p>{{ track }}</p>
+                        <p>{{ day|date:"d F Y" }}, {{ start }} - {{ end }}</p>
+                    </div>
+                </div>
+                <div class="talk-details__description">
+                    <h1>{{ title }}</h1>
+                    <p>{{ description|linebreaks }}</p>
+                    {#                <p>{{ bio }}</p>#}
+                    {#                <p>{{ avatar }}</p>#}
+                    {#                <p>{{ twitter }}</p>#}
+                    {#                <p>{{ url }}</p>#}
+                    {#                <p>{{ abstract }}</p>#}
+                    {#                <p>{{ notes }}</p>#}
+                    {#                <p>{{ level }}</p>#}
+                    {#                <p>{{ tags }}</p>#}
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

@@ -1,0 +1,60 @@
+@import "variables";
+
+.section--bg-talk-details {
+  background: $lightest-blue;
+}
+
+.talk-details {
+  padding: 2rem 1.5rem;
+  display: flex;
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: $bold;
+    font-family: $baseFontFamily;
+    margin-bottom: 3rem;
+  }
+  &__back {
+    color: $blue;
+    display: flex;
+    > img {
+      margin-right: 8px;
+    }
+  }
+  &__content {
+    margin: 32px 0;
+    //padding: 32px 42px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+  &__row {
+    display: flex;
+    margin: 32px 0;
+    > div {
+      padding: 0 45px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &__speakers {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: #aae7f3;
+  }
+  &__attributes p {
+    font-family: $altFontFamily;
+    font-weight: $bold;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    //margin: 1rem 0;
+  }
+  &__description {
+    padding: 32px 45px;
+  }
+}
