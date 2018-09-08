@@ -4,10 +4,12 @@
 @media (max-width: $breakpoint1-width) {
   .main {
     margin-left: 0;
-
     .section {
       height: inherit;
       width: 100%;
+    }
+    .details {
+      padding: 2rem 1.5rem;
     }
   }
 
@@ -26,7 +28,7 @@
     .section {
       padding: 5rem 1.5rem;
     }
-    .details-speaker {
+    .details-speaker, .details {
       padding: 2rem 1.5rem;
     }
   }

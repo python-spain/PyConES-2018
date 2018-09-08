@@ -5,8 +5,10 @@
 }
 
 .talk-details {
-  padding: 2rem 1.5rem;
   display: flex;
+  .section__content {
+    max-width: 60rem;
+  }
   h1 {
     font-size: 3.5rem;
     line-height: 4rem;
