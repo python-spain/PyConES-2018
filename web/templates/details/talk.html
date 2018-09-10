@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static i18n %}
+{% load static i18n schedule markup_tags %}
 
 {% block welcome_class %} is-hidden-mobile{% endblock %}
 
@@ -16,20 +16,11 @@
             <div class="talk-details__content">
                 <div class="talk-details__row">
                     <div class="talk-details__speakers">
-                        {{ name|linebreaks }}
+                        {{ speakers|linebreaks }}
                     </div>
                     <div class="talk-details__attributes">
                         <p>
-                            {% if category == "ml" %}{% trans "Machine Learning" %}{% endif %}
-                            {% if category == "core" %}{% trans "Core" %}{% endif %}
-                            {% if category == "web" %}{% trans "Web" %}{% endif %}
-                            {% if category == "edu" %}{% trans "Education" %}{% endif %}
-                            {% if category == "science" %}{% trans "Science" %}{% endif %}
-                            {% if category == "dev" %}{% trans "DevOps & Tools" %}{% endif %}
-                            {% if category == "test" %}{% trans "Testing" %}{% endif %}
-                            {% if category == "sec" %}{% trans "Security" %}{% endif %}
-                            {% if category == "mc" %}{% trans "Microservices" %}{% endif %}
-                            {% if category == "workshop" %}{% trans "Workshop" %}{% endif %}
+                            {% locale_category category %}
                             {% if lang %}
                                 / {{ lang|upper }}
                             {% endif %}
@@ -41,7 +32,7 @@
                 <div class="talk-details__description">
                     <h1>{{ title }}</h1>
                     {% autoescape off %}
-                        <p>{{ description|linebreaks }}</p>
+                        <p>{{ description|apply_markup:"markdown" }}</p>
 {#                        {% if notes %}#}
 {#                            <h2>{% trans "Notes" %}</h2>#}
 {#                            <p>{{ notes|linebreaks }}</p>#}

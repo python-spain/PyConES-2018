@@ -117,6 +117,9 @@ $schedule__time-padding-top: 1rem;
     min-height: 5.5rem;
     display: flex;
     align-items: center;
+    > p {
+      margin: 0;
+    }
   }
   > .schedule__talk__border {
     display: none;
