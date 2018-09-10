@@ -1,4 +1,4 @@
-{% load i18n %}
+{% load i18n schedule %}
 
 <a class="schedule__talk" href="{% url 'talk_details' title|slugify %}">
     <div class="schedule__talk__border"></div>
@@ -9,16 +9,7 @@
         <div class="schedule__talk--attributes">
             <div>{{ track }}</div>
             <div>
-                {% if category == "ml" %}{% trans "Machine Learning" %}{% endif %}
-                {% if category == "core" %}{% trans "Core" %}{% endif %}
-                {% if category == "web" %}{% trans "Web" %}{% endif %}
-                {% if category == "edu" %}{% trans "Education" %}{% endif %}
-                {% if category == "science" %}{% trans "Science" %}{% endif %}
-                {% if category == "dev" %}{% trans "DevOps & Tools" %}{% endif %}
-                {% if category == "test" %}{% trans "Testing" %}{% endif %}
-                {% if category == "sec" %}{% trans "Security" %}{% endif %}
-                {% if category == "mc" %}{% trans "Microservices" %}{% endif %}
-                {% if category == "workshop" %}{% trans "Workshop" %}{% endif %}
+                {% locale_category category %}
                 {% if lang %}
                     / {{ lang|upper }}
                 {% endif %}

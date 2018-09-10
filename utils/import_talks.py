@@ -38,6 +38,9 @@ def talks_from_file():
                 day = datetime.strptime(row[LABEL_DAY], '%d/%m/%Y')
             except ValueError:
                 day = None
+            names = row["name"].replace(' & ', ',').replace(' y ', ',').split(',')
+            speakers = ", ".join(names) if len(names) > 2 else "\n".join(names)
+
             talks[slugify(title)] = {
                 'title': title,
                 'name': row[LABEL_NAME],
@@ -56,5 +59,6 @@ def talks_from_file():
                 'day': day,
                 'start': row[LABEL_START],
                 'end': row[LABEL_END],
+                'speakers': speakers,
             }
     return talks
