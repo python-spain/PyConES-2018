@@ -40,13 +40,18 @@
                 </div>
                 <div class="talk-details__description">
                     <h1>{{ title }}</h1>
-                    <p>{{ description|linebreaks }}</p>
+                    {% autoescape off %}
+                        <p>{{ description|linebreaks }}</p>
+{#                        {% if notes %}#}
+{#                            <h2>{% trans "Notes" %}</h2>#}
+{#                            <p>{{ notes|linebreaks }}</p>#}
+{#                        {% endif %}#}
+                    {% endautoescape %}
                     {#                <p>{{ bio }}</p>#}
                     {#                <p>{{ avatar }}</p>#}
                     {#                <p>{{ twitter }}</p>#}
                     {#                <p>{{ url }}</p>#}
                     {#                <p>{{ abstract }}</p>#}
-                    {#                <p>{{ notes }}</p>#}
                     {#                <p>{{ level }}</p>#}
                     {#                <p>{{ tags }}</p>#}
                 </div>

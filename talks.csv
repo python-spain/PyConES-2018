@@ -684,14 +684,14 @@ El objetivo de este taller es enseñar al usuario sobre conceptos básicos de op
 Sara Rodríguez López,https://secure.gravatar.com/avatar/181a0a0d9e65f5c3f1dc410c0cd5f19c?s=500,"Ingeniera de teleco de carrera y Data Scientist de profesión. Mis primeros pinitos en el mundo de los datos fueron con R pero me enamoró Python.  Soy un culo inquieto. Me encanta viajar, bailar, la montaña, o leer un buen libro haciendo la fotosíntesis al sol. ",,https://es.linkedin.com/in/sararodriguezlopez,Representación de datos geográficos,"¿Has hecho análisis con información a nivel geográfico y luego has acabado presentando tus resultados en aburridas tablas o gráficos de barras? ¡Eso se acabó! , representa tus resultados como se merecen. Aprenderemos a hacer mapas geográficos interactivos en los que plasmar tus datos con folium.","¿Has hecho un análisis súper profesional a nivel municipio? ¿Has descubierto grandes diferencias en los valores de una variable entre distintos países a lo largo de distintos años?  Pon el lacito a tu trabajo y aprende a hacer mapas geográficos interactivos en los que plasmar tus datos. ¡Todo es más fácil de entender con una buena visualización!
 Aprenderemos a manejar la librería folium, que nos pone fácil generar en Python mapas Leaflet, una librería open-source de JavaScript para generar mapas interactivos.
 Hablaremos de las siguientes funcionalidades:
-<li>Mapas con marcadores.</li>
-<li>	Personaliza tus marcadores.</li>
-<li>	Pops ups en tus marcadores.</li>
-<li>	Mapas coroplético(choropleth  maps) en que cada región del mapa se pintará de uno u otro color en función de una variable</li>
-<li>	Aprende a generar tus propias regiones geográficas en json dibujando en un  mapa.</li>
-<li>	Heatmaps</li>
-<li>	Heatmaps que evolucionan en el tiempo </li>
-<li>	Mapas con capas</li>","Requerimientos técnicos: python instalado, pandas, y folium instalados, conocimientos básicos de Python ( al menos conocer las listas y saber manejarse en un dataframe de pandas). 
+ - Mapas con marcadores.
+ - Personaliza tus marcadores.
+ - Pops ups en tus marcadores.
+ - Mapas coroplético(choropleth  maps) en que cada región del mapa se pintará de uno u otro color en función de una variable.
+ - Aprende a generar tus propias regiones geográficas en json dibujando en un  mapa.
+ - Heatmaps.
+ - Heatmaps que evolucionan en el tiempo.
+ - Mapas con capas.","Requerimientos técnicos: python instalado, pandas, y folium instalados, conocimientos básicos de Python ( al menos conocer las listas y saber manejarse en un dataframe de pandas). 
 
 Ingeniera de teleco de carrera y Data Scientist de profesión. Mis primeros pinitos en el mundo de los datos fueron con R pero me enamoró Python. Odio las ppt al máximo y estoy obsesionada en buscar siempre una manera distinta de entregar los resultados a los clientes de los proyectos en los que participo.  En mi empresa ya he dado varias formaciones de Python con éxito y esta sería una buena forma de romper las barreras de la empresa y divulgar lo que he ido aprendiendo a la comunidad Python 
 ",Beginner,accepted,"[""folium"", ""SIG"", ""leaflet""]",workshop,es,Aula 3,05/10/2018,15:00,17:30
