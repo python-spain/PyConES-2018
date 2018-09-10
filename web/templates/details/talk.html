@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block welcome_class %} is-hidden-mobile{% endblock %}
+
+{% block main %}
+    <div class="section details talk-details section--bg-detail">
+        <div class="section__content">
+            <a class="talk-details__back" href="/#schedule">
+                {#                <img src="{% static "web/svg/baseline-arrow_back-24px.svg" %}" alt="{% trans "arrow" %}">#}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                </svg>
+                {% trans "Schedule" %}
+            </a>
+            <div class="talk-details__content">
+                <div class="talk-details__row">
+                    <div class="talk-details__speakers">
+                        {{ name|linebreaks }}
+                    </div>
+                    <div class="talk-details__attributes">
+                        <p>
+                            {% if category == "ml" %}{% trans "Machine Learning" %}{% endif %}
+                            {% if category == "core" %}{% trans "Core" %}{% endif %}
+                            {% if category == "web" %}{% trans "Web" %}{% endif %}
+                            {% if category == "edu" %}{% trans "Education" %}{% endif %}
+                            {% if category == "science" %}{% trans "Science" %}{% endif %}
+                            {% if category == "dev" %}{% trans "DevOps & Tools" %}{% endif %}
+                            {% if category == "test" %}{% trans "Testing" %}{% endif %}
+                            {% if category == "sec" %}{% trans "Security" %}{% endif %}
+                            {% if category == "mc" %}{% trans "Microservices" %}{% endif %}
+                            {% if category == "workshop" %}{% trans "Workshop" %}{% endif %}
+                            {% if lang %}
+                                / {{ lang|upper }}
+                            {% endif %}
+                        </p>
+                        <p>{{ track }}</p>
+                        <p>{{ day|date:"d F Y" }}, {{ start }} - {{ end }}</p>
+                    </div>
+                </div>
+                <div class="talk-details__description">
+                    <h1>{{ title }}</h1>
+                    {% autoescape off %}
+                        <p>{{ description|linebreaks }}</p>
+{#                        {% if notes %}#}
+{#                            <h2>{% trans "Notes" %}</h2>#}
+{#                            <p>{{ notes|linebreaks }}</p>#}
+{#                        {% endif %}#}
+                    {% endautoescape %}
+                    {#                <p>{{ bio }}</p>#}
+                    {#                <p>{{ avatar }}</p>#}
+                    {#                <p>{{ twitter }}</p>#}
+                    {#                <p>{{ url }}</p>#}
+                    {#                <p>{{ abstract }}</p>#}
+                    {#                <p>{{ level }}</p>#}
+                    {#                <p>{{ tags }}</p>#}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
