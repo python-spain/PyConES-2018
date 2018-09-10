@@ -29,8 +29,8 @@
                         <p>{{ day|date:"d F Y" }}, {{ start }} - {{ end }}</p>
                     </div>
                 </div>
+                <h1 class="talk-details__title">{{ title }}</h1>
                 <div class="talk-details__description">
-                    <h1>{{ title }}</h1>
                     {% autoescape off %}
                         <p>{{ description|apply_markup:"markdown" }}</p>
 {#                        {% if notes %}#}
