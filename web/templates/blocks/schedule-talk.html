@@ -1,0 +1,23 @@
+{% load i18n schedule %}
+
+<a class="schedule__talk" href="{% url 'talk_details' title|slugify %}">
+    <div class="schedule__talk__border"></div>
+    <div class="schedule__talk--description">
+        <div class="schedule__talk--title">
+            {{ title }}
+        </div>
+        <div class="schedule__talk--attributes">
+            <div>{{ track }}</div>
+            <div>
+                {% locale_category category %}
+                {% if lang %}
+                    / {{ lang|upper }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="schedule__talk--speaker {% if name|length > 50 %}schedule__talk--extra-speakers{% endif %}">
+        {{ speakers|linebreaks }}
+    </div>
+</a>
