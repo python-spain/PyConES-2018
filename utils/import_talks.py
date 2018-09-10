@@ -30,7 +30,7 @@ LABEL_END = 'end'
 
 def talks_from_file():
     talks = {}
-    with open(CSV_FILE_PATH) as csv_file:
+    with open(CSV_FILE_PATH, encoding="utf-8") as csv_file:
         reader = csv.DictReader(csv_file)
         for row in reader:
             title = row[LABEL_TITLE]
