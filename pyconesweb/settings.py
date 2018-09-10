@@ -39,6 +39,7 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'compressor',
+    'django_markup',
 ]
 
 PROJECT_APPS = [
