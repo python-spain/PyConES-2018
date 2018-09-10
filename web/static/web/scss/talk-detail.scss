@@ -19,8 +19,15 @@
   &__back {
     color: $blue;
     display: flex;
-    > img {
+    > svg {
+      transition: $baseTransition;
       margin-right: 8px;
+      fill: $blue;
+    }
+    &:hover {
+      > svg {
+        fill: $yellow;
+      }
     }
   }
   &__content {
