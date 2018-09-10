@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-04 11:59+0000\n"
+"POT-Creation-Date: 2018-09-10 09:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,8 @@ msgstr "código de conducta"
 msgid "Speakers"
 msgstr "Ponentes"
 
-#: web/templates/base.html:61 web/templates/sections/schedule.html:6
+#: web/templates/base.html:61 web/templates/details/talk.html:14
+#: web/templates/sections/schedule.html:6
 msgid "Schedule"
 msgstr "Agenda"
 
@@ -376,6 +377,60 @@ msgstr ""
 "Parte activista, parte fanática de Star Wars, y parte Trekkie, Lorena se "
 "rige por el lema “larga vida y prosperidad”."
 
+#: web/templates/details/talk.html:23
+#: web/templates/sections/blocks/schedule-talk.html:12
+msgid "Machine Learning"
+msgstr ""
+
+#: web/templates/details/talk.html:24
+#: web/templates/sections/blocks/schedule-talk.html:13
+msgid "Core"
+msgstr ""
+
+#: web/templates/details/talk.html:25
+#: web/templates/sections/blocks/schedule-talk.html:14
+msgid "Web"
+msgstr ""
+
+#: web/templates/details/talk.html:26
+#: web/templates/sections/blocks/schedule-talk.html:15
+msgid "Education"
+msgstr "Educación"
+
+#: web/templates/details/talk.html:27
+#: web/templates/sections/blocks/schedule-talk.html:16
+msgid "Science"
+msgstr "Ciencia"
+
+#: web/templates/details/talk.html:28
+#: web/templates/sections/blocks/schedule-talk.html:17
+msgid "DevOps & Tools"
+msgstr "DevOps y Herramientas"
+
+#: web/templates/details/talk.html:29
+#: web/templates/sections/blocks/schedule-talk.html:18
+msgid "Testing"
+msgstr ""
+
+#: web/templates/details/talk.html:30
+#: web/templates/sections/blocks/schedule-talk.html:19
+msgid "Security"
+msgstr "Seguridad"
+
+#: web/templates/details/talk.html:31
+#: web/templates/sections/blocks/schedule-talk.html:20
+msgid "Microservices"
+msgstr "Microservicios"
+
+#: web/templates/details/talk.html:32
+#: web/templates/sections/blocks/schedule-talk.html:21
+msgid "Workshop"
+msgstr "Taller"
+
+#: web/templates/details/talk.html:46
+msgid "Notes"
+msgstr "Notas"
+
 #: web/templates/sections/about-us.html:6
 msgid "Who are we?"
 msgstr "¿Quiénes somos?"
@@ -399,46 +454,6 @@ msgstr "Eventos anteriores"
 #: web/templates/sections/blocks/schedule-sponsored-talk.html:7
 msgid "Sponsored talk"
 msgstr "Charla patrocinada"
-
-#: web/templates/sections/blocks/schedule-talk.html:11
-msgid "Machine Learning"
-msgstr ""
-
-#: web/templates/sections/blocks/schedule-talk.html:12
-msgid "Core"
-msgstr ""
-
-#: web/templates/sections/blocks/schedule-talk.html:13
-msgid "Web"
-msgstr ""
-
-#: web/templates/sections/blocks/schedule-talk.html:14
-msgid "Education"
-msgstr "Educación"
-
-#: web/templates/sections/blocks/schedule-talk.html:15
-msgid "Science"
-msgstr "Ciencia"
-
-#: web/templates/sections/blocks/schedule-talk.html:16
-msgid "DevOps & Tools"
-msgstr "DevOps y Herramientas"
-
-#: web/templates/sections/blocks/schedule-talk.html:17
-msgid "Testing"
-msgstr ""
-
-#: web/templates/sections/blocks/schedule-talk.html:18
-msgid "Security"
-msgstr "Seguridad"
-
-#: web/templates/sections/blocks/schedule-talk.html:19
-msgid "Microservices"
-msgstr "Microservicios"
-
-#: web/templates/sections/blocks/schedule-talk.html:20
-msgid "Workshop"
-msgstr "Taller"
 
 #: web/templates/sections/jobs.html:7
 msgid "Your future"
