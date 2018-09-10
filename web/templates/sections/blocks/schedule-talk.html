@@ -7,7 +7,7 @@
             {{ title }}
         </div>
         <div class="schedule__talk--attributes">
-            <div>{{ track }}</div>
+            <div>{{ track|upper }}</div>
             <div>
                 {% if type == "ml" %}{% trans "Machine Learning" %}{% endif %}
                 {% if type == "core" %}{% trans "Core" %}{% endif %}

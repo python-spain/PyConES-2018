@@ -38,7 +38,6 @@ def talks_from_file():
                 day = datetime.strptime(row[LABEL_DAY], '%d/%m/%Y')
             except ValueError:
                 day = None
-            print(day)
             talks[slugify(title)] = {
                 'title': title,
                 'name': row[LABEL_NAME],
