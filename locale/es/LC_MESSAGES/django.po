@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-10 09:54+0200\n"
+"POT-Creation-Date: 2018-09-12 13:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pyconesweb/settings.py:131
+#: pyconesweb/settings.py:132
 msgid "English"
 msgstr "Inglés"
 
-#: pyconesweb/settings.py:132
+#: pyconesweb/settings.py:133
 msgid "Spanish"
 msgstr "Español"
 
@@ -114,7 +114,8 @@ msgstr "Agenda"
 msgid "Sponsors"
 msgstr "Patrocinios"
 
-#: web/templates/base.html:64 web/templates/sections/jobs.html:8
+#: web/templates/base.html:64 web/templates/details/jobs/base.html:13
+#: web/templates/sections/jobs.html:8
 msgid "Jobs"
 msgstr "Trabajos"
 
@@ -126,15 +127,11 @@ msgstr "Organizacion"
 msgid "Code of Conduct"
 msgstr "Código de conducta"
 
-#: web/templates/base.html:71
-msgid "Buy your tickets here"
-msgstr "Compra tus entradas aquí"
-
-#: web/templates/base.html:72
-msgid "Get your ticket!"
-msgstr "Consigue tu entrada!"
-
 #: web/templates/base.html:75
+msgid "All tickets sold out!"
+msgstr ""
+
+#: web/templates/base.html:78
 msgid ""
 "\n"
 "                Stay up to date by subscribing to the newsletter. No spam, "
@@ -146,11 +143,11 @@ msgstr ""
 "te enviaremos información importante sobre el evento\n"
 "          "
 
-#: web/templates/base.html:80
+#: web/templates/base.html:83
 msgid "Got it!"
 msgstr "¡Lo tenemos!"
 
-#: web/templates/base.html:82
+#: web/templates/base.html:85
 msgid "Enter your email address"
 msgstr "Escribe tu email"
 
@@ -321,6 +318,10 @@ msgstr ""
 "Atribución 3.0 España.\n"
 "                    "
 
+#: web/templates/details/jobs/base.html:25
+msgid "Send request"
+msgstr "Enviar solicitud"
+
 #: web/templates/details/speakers/hector-socas-navarro.html:13
 #: web/templates/sections/speakers.html:22
 msgid "Physicist at the Institute of Astrophysics of Canarias (Spain)"
@@ -377,60 +378,6 @@ msgstr ""
 "Parte activista, parte fanática de Star Wars, y parte Trekkie, Lorena se "
 "rige por el lema “larga vida y prosperidad”."
 
-#: web/templates/details/talk.html:23
-#: web/templates/sections/blocks/schedule-talk.html:12
-msgid "Machine Learning"
-msgstr ""
-
-#: web/templates/details/talk.html:24
-#: web/templates/sections/blocks/schedule-talk.html:13
-msgid "Core"
-msgstr ""
-
-#: web/templates/details/talk.html:25
-#: web/templates/sections/blocks/schedule-talk.html:14
-msgid "Web"
-msgstr ""
-
-#: web/templates/details/talk.html:26
-#: web/templates/sections/blocks/schedule-talk.html:15
-msgid "Education"
-msgstr "Educación"
-
-#: web/templates/details/talk.html:27
-#: web/templates/sections/blocks/schedule-talk.html:16
-msgid "Science"
-msgstr "Ciencia"
-
-#: web/templates/details/talk.html:28
-#: web/templates/sections/blocks/schedule-talk.html:17
-msgid "DevOps & Tools"
-msgstr "DevOps y Herramientas"
-
-#: web/templates/details/talk.html:29
-#: web/templates/sections/blocks/schedule-talk.html:18
-msgid "Testing"
-msgstr ""
-
-#: web/templates/details/talk.html:30
-#: web/templates/sections/blocks/schedule-talk.html:19
-msgid "Security"
-msgstr "Seguridad"
-
-#: web/templates/details/talk.html:31
-#: web/templates/sections/blocks/schedule-talk.html:20
-msgid "Microservices"
-msgstr "Microservicios"
-
-#: web/templates/details/talk.html:32
-#: web/templates/sections/blocks/schedule-talk.html:21
-msgid "Workshop"
-msgstr "Taller"
-
-#: web/templates/details/talk.html:46
-msgid "Notes"
-msgstr "Notas"
-
 #: web/templates/sections/about-us.html:6
 msgid "Who are we?"
 msgstr "¿Quiénes somos?"
@@ -454,6 +401,56 @@ msgstr "Eventos anteriores"
 #: web/templates/sections/blocks/schedule-sponsored-talk.html:7
 msgid "Sponsored talk"
 msgstr "Charla patrocinada"
+
+#: web/templates/sections/blocks/schedule-talk.html:12
+#: web/templatetags/schedule.py:13
+msgid "Machine Learning"
+msgstr ""
+
+#: web/templates/sections/blocks/schedule-talk.html:13
+#: web/templatetags/schedule.py:15
+msgid "Core"
+msgstr ""
+
+#: web/templates/sections/blocks/schedule-talk.html:14
+#: web/templatetags/schedule.py:17
+msgid "Web"
+msgstr ""
+
+#: web/templates/sections/blocks/schedule-talk.html:15
+#: web/templatetags/schedule.py:19
+msgid "Education"
+msgstr "Educación"
+
+#: web/templates/sections/blocks/schedule-talk.html:16
+#: web/templatetags/schedule.py:21
+msgid "Science"
+msgstr "Ciencia"
+
+#: web/templates/sections/blocks/schedule-talk.html:17
+#: web/templatetags/schedule.py:23
+msgid "DevOps & Tools"
+msgstr "DevOps y Herramientas"
+
+#: web/templates/sections/blocks/schedule-talk.html:18
+#: web/templatetags/schedule.py:25
+msgid "Testing"
+msgstr ""
+
+#: web/templates/sections/blocks/schedule-talk.html:19
+#: web/templatetags/schedule.py:27
+msgid "Security"
+msgstr "Seguridad"
+
+#: web/templates/sections/blocks/schedule-talk.html:20
+#: web/templatetags/schedule.py:29
+msgid "Microservices"
+msgstr "Microservicios"
+
+#: web/templates/sections/blocks/schedule-talk.html:21
+#: web/templatetags/schedule.py:31
+msgid "Workshop"
+msgstr "Taller"
 
 #: web/templates/sections/jobs.html:7
 msgid "Your future"
@@ -611,6 +608,15 @@ msgstr ""
 "encuentra la Escuela Técnica Superior de Ingeniería Informática (ETSI) y la "
 "Escuela Técnica Superior de Ingeniería en Telecomunicaciones (ETSIT).\n"
 "      "
+
+#~ msgid "Buy your tickets here"
+#~ msgstr "Compra tus entradas aquí"
+
+#~ msgid "Get your ticket!"
+#~ msgstr "Consigue tu entrada!"
+
+#~ msgid "Notes"
+#~ msgstr "Notas"
 
 #~ msgid "Proudly organised and "
 #~ msgstr "Organizado y "
