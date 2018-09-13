@@ -1,0 +1,93 @@
+{% extends 'details/jobs/base.html' %}
+{% load static %}
+
+{% block logo %}
+    <img src="{% static "web/images/sponsors/a3sec.png" %}" alt="a3sec">
+{% endblock %}
+{% block title %}Full stack developer{% endblock %}
+{% block description %}
+
+    <p>
+        Necesitamos incorporar en A3Sec Madrid desarrolladores con entre <strong>2 y 4 años</strong> de experiencia
+        tanto en backend como
+        en frontend para desarrollar junto a un equipo de I+D+i una herramienta de monitorización de última generación.
+    </p>
+
+    <p>
+        Los candidatos deberán <strong>dominar</strong> las siguientes tecnologías:
+    </p>
+
+    <p class="is-marginless">
+        <strong>Back:</strong>
+    </p>
+
+    <ul>
+        <li>
+            Python + django
+        </li>
+        <li>
+            Control de versiones con Git
+        </li>
+        <li>
+            Administración básica de sistemas Linux (principalmente debian y ubuntu)
+        </li>
+        <li>
+            Desarrollo y uso de APIs REST
+        </li>
+    </ul>
+
+    <p class="is-marginless">
+        <strong>Front:</strong>
+    </p>
+
+    <ul>
+        <li>HTML5 + CSS3</li>
+        <li>javascript + jquery y algún framework javascript preferiblemente react.js</li>
+    </ul>
+
+    <p class="is-marginless">
+        Se <strong>valorará</strong> muy positivamente el conocimiento en cualquiera de las siguientes tecnologías:
+    </p>
+
+    <ul>
+        <li>
+            Scripting Linux (bash, python, perl, ruby)
+        </li>
+        <li>
+            Motores de bases de datos: MySQL, MongoDB, Redis, Casandra
+        </li>
+        <li>
+            Despliegue de configuraciones (salt, puppet, ansible, chef)
+        </li>
+        <li>
+            Servidores web (apache, nginx, gunicorn, etc.)
+        </li>
+        <li>
+            Contenedores
+        </li>
+        <li>
+            Stack ELK (Elastic)
+        </li>
+        <li>
+            Preprocesadores CSS (SASS, LESS)
+        </li>
+        <li>
+            Empaquetado de software (deb y/o rpm)
+        </li>
+    </ul>
+
+    <p>
+        Salario competitivo dependiendo de experiencia y valía, beneficios sociales, horario flexible, teletrabajo y
+        toda la Coca-Cola que puedas tomar.
+    </p>
+
+    <p>
+        Envía tu CV a <a href="mailto:rrhh@a3sec.com">rrhh@a3sec.com</a> con la Referencia Full Stack Developer.
+    </p>
+
+    <p>
+        Te esperamos!!!
+    </p>
+{% endblock %}
+
+{% block send_request_link %}mailto:rrhh@a3sec.com{% endblock %}
