@@ -1,0 +1,13 @@
+@import "variables";
+
+.page-404 {
+  background: $lightest-blue;
+  .details__content {
+    h1 {
+      font-size: 12rem;
+      line-height: 12rem;
+      margin-bottom: 0;
+    }
+    padding: 26px 45px 62px;
+  }
+}
