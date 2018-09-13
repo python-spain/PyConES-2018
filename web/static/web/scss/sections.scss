@@ -86,4 +86,19 @@
       margin-top: 32px;
     }
   }
+  &__back {
+    color: $blue;
+    display: flex;
+    font-size: 1.2rem;
+    > svg {
+      transition: $baseTransition;
+      margin-right: 8px;
+      fill: $blue;
+    }
+    &:hover {
+      > svg {
+        fill: $yellow;
+      }
+    }
+  }
 }
