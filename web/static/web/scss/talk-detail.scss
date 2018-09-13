@@ -12,20 +12,6 @@
     font-family: $altFontFamily;
     margin: 20px 45px 0;
   }
-  &__back {
-    color: $blue;
-    display: flex;
-    > svg {
-      transition: $baseTransition;
-      margin-right: 8px;
-      fill: $blue;
-    }
-    &:hover {
-      > svg {
-        fill: $yellow;
-      }
-    }
-  }
   &__row {
     display: flex;
     margin: 32px 0;
