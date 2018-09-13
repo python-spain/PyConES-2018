@@ -327,7 +327,18 @@ En la charla expondré y explicaré cómo calcular órbitas y trayectorias, cóm
 Cristina Luna
 Investigadora Espacial en AISTECH SPACE. Astrónoma en Soy Astrónoma.
 ",All,accepted,[],science,es,Track 3,07/10/2018,15:30,15:55
-Josema Camacho,https://secure.gravatar.com/avatar/939fe6365d5a192d1fa05e6c8c551bf2?s=500,"Josema ❤ Data, Betis & coffee, ¿en ese orden?. Se levanta a las 4 de la mañana por el Machine Learning y las metaheurísticas. Chief Innovation Officer en Geographica.
+"Josema Camacho, Alberto Asuero, Cayetano Benavent",https://secure.gravatar.com/avatar/939fe6365d5a192d1fa05e6c8c551bf2?s=500,"Name: Josema Camacho
+Bio: Josema ❤ Data, Betis & coffee, ¿en ese orden?. Se levanta a las 4 de la mañana por el Machine Learning y las metaheurísticas. Chief Innovation Officer en Geographica.
+
+Name: Alberto Asuero
+Twitter Handle: @alasarr
+Organization or Affiliation: Geographica
+Bio: Alberto trata de conquistar el mundo usando mapas. Ha pedido días de 72 horas. Chief Technology Officer en Geographica.
+
+Name: Cayetano Benavent
+Twitter Handle: @cayetanobv
+Organization or Affiliation: Geographica
+Bio: Cayetano es un amante de los mapas, los datos y el open source software, especialmente si está escrito en Python. Head of Data en Geographica.
 ",josemazo,http://josemazo.com,Motor de optimización de rutas para el mundo real: Python y otras bestias,"¿Quieres saber la manera más óptima de planificar las rutas que recogen tu basura, entregan tus paquetes o te mandan tu comida? Te contaremos la preparación de una receta secreta donde los ingredientes principales son OpenStreetMaps, PostgreSQL y Python.","Construir un motor de optimización para la planificación de rutas de vehículos de recogida de residuos, de reparto de mercancías, u otras muchas aplicaciones, no es tarea fácil por dos importantes motivos:
 - La enorme cantidad de restricciones involucradas en el problema: restricciones a la hora de circular con los vehículos, puntos de parada que hay que visitar a cierta hora, conductores con horarios, camiones que se llenan y vacían, entregas y recogidas… 
 - Es un problema de optimización combinatoria bestial (_NP-duro_). Por ejemplo, para un sólo vehículo que tendría que visitar 100 localizaciones, existen `100!` rutas posibles… `100! = 9.33 * 10^157`. El número estimado de átomos en el universo visible es sólo `10^80`, ¡casi nada!

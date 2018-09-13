@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-12 13:51+0200\n"
+"POT-Creation-Date: 2018-09-13 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pyconesweb/settings.py:132
+#: pyconesweb/settings.py:134
 msgid "English"
 msgstr "Inglés"
 
-#: pyconesweb/settings.py:133
+#: pyconesweb/settings.py:135
 msgid "Spanish"
 msgstr "Español"
+
+#: web/templates/404.html:13
+msgid "Home"
+msgstr ""
+
+#: web/templates/404.html:17
+msgid "Page not found"
+msgstr ""
+
+#: web/templates/404.html:20
+msgid "Go Back"
+msgstr "Volver"
 
 #: web/templates/base.html:30
 msgid "<5-7/OCT/2018> Málaga"
