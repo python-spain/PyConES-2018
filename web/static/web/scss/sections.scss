@@ -67,14 +67,23 @@
   background-size: auto 100%;
 }
 
-.section--bg-speakers, .section--bg-detail {
+.section--bg-speakers, .section--bg-talk-detail {
   background: $lightest-blue;
 }
 
 .details {
+  display: flex;
   padding: 2rem 1.5rem;
+  .section__content {
+    max-width: 60rem;
+    .details__content {
+      margin: 32px 0;
+      background: white;
+      display: flex;
+      flex-direction: column;
+    }
+    .section__action {
+      margin-top: 32px;
+    }
+  }
 }
-
-
-
-

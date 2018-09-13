@@ -4,7 +4,7 @@
 {% block welcome_class %} is-hidden-mobile{% endblock %}
 
 {% block main %}
-    <div class="section details talk-details section--bg-detail">
+    <div class="section details talk-details section--bg-talk-detail">
         <div class="section__content">
             <a class="talk-details__back" href="/#schedule">
                 {#                <img src="{% static "web/svg/baseline-arrow_back-24px.svg" %}" alt="{% trans "arrow" %}">#}
@@ -13,7 +13,7 @@
                 </svg>
                 {% trans "Schedule" %}
             </a>
-            <div class="talk-details__content">
+            <div class="details__content">
                 <div class="talk-details__row">
                     <div class="talk-details__speakers">
                         {{ speakers|linebreaks }}
