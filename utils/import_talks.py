@@ -26,6 +26,7 @@ LABEL_TRACK = 'track'
 LABEL_DAY = 'day'
 LABEL_START = 'start'
 LABEL_END = 'end'
+LABEL_SPONSORED = 'sponsored'
 
 
 def talks_from_file():
@@ -38,7 +39,7 @@ def talks_from_file():
                 day = datetime.strptime(row[LABEL_DAY], '%d/%m/%Y')
             except ValueError:
                 day = None
-            names = row["name"].replace(' & ', ',').replace(' y ', ',').split(',')
+            names = row["name"].replace(' & ', ',').replace(' y ', ',').replace(' and', ',').split(',')
             speakers = ", ".join(names) if len(names) > 2 else "\n".join(names)
 
             talks[slugify(title)] = {
@@ -60,5 +61,6 @@ def talks_from_file():
                 'start': row[LABEL_START],
                 'end': row[LABEL_END],
                 'speakers': speakers,
+                'sponsored': row[LABEL_SPONSORED],
             }
     return talks

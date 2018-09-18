@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.is-pulled-right {
+  text-align: right;
+}
+
 .is-hidden-mobile {
   @media (max-width: $breakpoint1-width) {
     display: none;
