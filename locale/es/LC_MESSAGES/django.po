@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-19 12:42+0200\n"
+"POT-Creation-Date: 2018-09-19 19:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -493,10 +493,10 @@ msgid "5 October"
 msgstr "5 de Octubre"
 
 #: web/templates/sections/schedule.html:15
-#: web/templates/sections/schedule.html:49
-#: web/templates/sections/schedule.html:89
-#: web/templates/sections/schedule.html:134
-#: web/templates/sections/schedule.html:174
+#: web/templates/sections/schedule.html:52
+#: web/templates/sections/schedule.html:92
+#: web/templates/sections/schedule.html:137
+#: web/templates/sections/schedule.html:177
 msgid "Coffee"
 msgstr "Café"
 
@@ -505,37 +505,41 @@ msgid "6 October"
 msgstr "6 de Octubre"
 
 #: web/templates/sections/schedule.html:25
+msgid "Registration"
+msgstr "Registro"
+
+#: web/templates/sections/schedule.html:27
 msgid "Opening"
 msgstr "Apertura"
 
-#: web/templates/sections/schedule.html:32
-#: web/templates/sections/schedule.html:177
+#: web/templates/sections/schedule.html:35
+#: web/templates/sections/schedule.html:180
 msgid "Track 1"
 msgstr ""
 
-#: web/templates/sections/schedule.html:33
-#: web/templates/sections/schedule.html:178
+#: web/templates/sections/schedule.html:36
+#: web/templates/sections/schedule.html:181
 msgid "Keynote"
 msgstr ""
 
-#: web/templates/sections/schedule.html:69
-#: web/templates/sections/schedule.html:154
+#: web/templates/sections/schedule.html:72
+#: web/templates/sections/schedule.html:157
 msgid "Lunch"
 msgstr "Comida"
 
-#: web/templates/sections/schedule.html:109
+#: web/templates/sections/schedule.html:112
 msgid "Lightning Talks"
 msgstr ""
 
-#: web/templates/sections/schedule.html:111
+#: web/templates/sections/schedule.html:114
 msgid "Asamblea Python España"
 msgstr ""
 
-#: web/templates/sections/schedule.html:114
+#: web/templates/sections/schedule.html:117
 msgid "7 October"
 msgstr "7 de Octubre"
 
-#: web/templates/sections/schedule.html:182
+#: web/templates/sections/schedule.html:185
 msgid "Closing"
 msgstr "Clausura"
 

@@ -21,6 +21,8 @@
         </div>
 
         <h2 class="schedule__day">{% trans "6 October" %}</h2>
+        {% include "sections/blocks/schedule-time.html" with time="08:15" %}
+        <p class="schedule__row--break">{% trans "Registration" %}</p>
         {% include "sections/blocks/schedule-time.html" with time="09:00" %}
         <p class="schedule__row--break">{% trans "Opening" %}</p>
         <p class="schedule__row--break is-font-weight-normal">
