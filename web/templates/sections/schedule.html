@@ -21,6 +21,12 @@
         </div>
 
         <h2 class="schedule__day">{% trans "6 October" %}</h2>
+        {% include "sections/blocks/schedule-time.html" with time="09:00" %}
+        <p class="schedule__row--break">{% trans "Opening" %}</p>
+        <p class="schedule__row--break is-font-weight-normal">
+            Presentación
+            <a href="https://hackathon.kernel-analytics.com/event/PythonHack-2018/" target="_blank">#PythonHack18</a>
+        </p>
         {% include "sections/blocks/schedule-time.html" with time="09:30" %}
         <div class="schedule__plenary-talk">
             <div class="schedule__plenary-talk--track">{% trans "Track 1" %}</div>
