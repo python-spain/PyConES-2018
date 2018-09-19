@@ -49,8 +49,8 @@
         </div>
         {% include "sections/blocks/schedule-time.html" with time="12:30" %}
         <div class="schedule__row">
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 1" %}
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 2" %}
+            {% schedule_talk title="From unstructured news to real-time visualizations, a Fintech story" %}
+            {% schedule_talk title="El hombre pisó la luna, pero gracias a la mujer" %}
             {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 3" %}
         </div>
         {% include "sections/blocks/schedule-time.html" with time="13:00" %}

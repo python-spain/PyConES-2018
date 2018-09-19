@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 13:27+0200\n"
+"POT-Creation-Date: 2018-09-18 12:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pyconesweb/settings.py:134
+#: pyconesweb/settings.py:132
 msgid "English"
 msgstr "Inglés"
 
-#: pyconesweb/settings.py:135
+#: pyconesweb/settings.py:133
 msgid "Spanish"
 msgstr "Español"
 
@@ -162,6 +162,10 @@ msgstr "¡Lo tenemos!"
 #: web/templates/base.html:85
 msgid "Enter your email address"
 msgstr "Escribe tu email"
+
+#: web/templates/blocks/schedule-talk.html:7
+msgid "Sponsored"
+msgstr "Patrocinada"
 
 #: web/templates/details/coc.html:10
 msgid ""
@@ -389,6 +393,10 @@ msgstr ""
 "lo que llevó a Lorena a dedicarse a la ingeniería y la ciencia de datos. "
 "Parte activista, parte fanática de Star Wars, y parte Trekkie, Lorena se "
 "rige por el lema “larga vida y prosperidad”."
+
+#: web/templates/details/talk.html:36
+msgid "Sponsored by: "
+msgstr "Patrocinada por:"
 
 #: web/templates/sections/about-us.html:6
 msgid "Who are we?"
