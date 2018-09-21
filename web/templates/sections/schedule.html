@@ -60,7 +60,7 @@
         <div class="schedule__row">
             {% schedule_talk title="From unstructured news to real-time visualizations, a Fintech story" %}
             {% schedule_talk title="El hombre pisó la luna, pero gracias a la mujer" %}
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 3" %}
+            {% schedule_talk title="Twelve-Factor app" %}
         </div>
         {% include "sections/blocks/schedule-time.html" with time="13:00" %}
         <div class="schedule__row">
@@ -92,7 +92,7 @@
         <p class="schedule__row--break">{% trans "Coffee" %}</p>
         {% include "sections/blocks/schedule-time.html" with time="17:00" %}
         <div class="schedule__row">
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 1" %}
+            {% schedule_talk title="Industrializando modelos de ML" %}
             {% schedule_talk title="Taking Django Async" %}
             {% schedule_talk title="Python Heaps-ters" %}
         </div>
