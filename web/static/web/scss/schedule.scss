@@ -84,6 +84,7 @@ $schedule__time-padding-top: 1rem;
   position: relative;
   white-space: normal;
   color: black;
+
   @media (min-width: $breakpoint1-width) {
     width: calc(100% / 3);
     margin-left: 5px;
@@ -91,6 +92,10 @@ $schedule__time-padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .sponsored-background {
+    background: $job-background;
   }
   &--description {
     background: white;
