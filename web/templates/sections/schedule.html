@@ -84,7 +84,8 @@
         </div>
         {% include "sections/blocks/schedule-time.html" with time="16:00" %}
         <div class="schedule__row">
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 1" %}
+{#            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 1" %}#}
+            {% schedule_talk title="Scaling beyond scikit-learn's Pipeline: handling mixed data types easily!" %}
             {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 2" %}
             {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 3" %}
         </div>
