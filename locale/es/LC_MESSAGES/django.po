@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 13:27+0200\n"
+"POT-Creation-Date: 2018-09-19 19:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pyconesweb/settings.py:134
+#: pyconesweb/settings.py:132
 msgid "English"
 msgstr "Inglés"
 
-#: pyconesweb/settings.py:135
+#: pyconesweb/settings.py:133
 msgid "Spanish"
 msgstr "Español"
 
@@ -162,6 +162,10 @@ msgstr "¡Lo tenemos!"
 #: web/templates/base.html:85
 msgid "Enter your email address"
 msgstr "Escribe tu email"
+
+#: web/templates/blocks/schedule-talk.html:7
+msgid "Sponsored"
+msgstr "Patrocinada"
 
 #: web/templates/details/coc.html:10
 msgid ""
@@ -390,6 +394,10 @@ msgstr ""
 "Parte activista, parte fanática de Star Wars, y parte Trekkie, Lorena se "
 "rige por el lema “larga vida y prosperidad”."
 
+#: web/templates/details/talk.html:36
+msgid "Sponsored by: "
+msgstr "Patrocinada por:"
+
 #: web/templates/sections/about-us.html:6
 msgid "Who are we?"
 msgstr "¿Quiénes somos?"
@@ -485,10 +493,10 @@ msgid "5 October"
 msgstr "5 de Octubre"
 
 #: web/templates/sections/schedule.html:15
-#: web/templates/sections/schedule.html:43
-#: web/templates/sections/schedule.html:83
-#: web/templates/sections/schedule.html:128
-#: web/templates/sections/schedule.html:168
+#: web/templates/sections/schedule.html:52
+#: web/templates/sections/schedule.html:92
+#: web/templates/sections/schedule.html:137
+#: web/templates/sections/schedule.html:177
 msgid "Coffee"
 msgstr "Café"
 
@@ -496,34 +504,42 @@ msgstr "Café"
 msgid "6 October"
 msgstr "6 de Octubre"
 
-#: web/templates/sections/schedule.html:26
-#: web/templates/sections/schedule.html:171
+#: web/templates/sections/schedule.html:25
+msgid "Registration"
+msgstr "Registro"
+
+#: web/templates/sections/schedule.html:27
+msgid "Opening"
+msgstr "Apertura"
+
+#: web/templates/sections/schedule.html:35
+#: web/templates/sections/schedule.html:180
 msgid "Track 1"
 msgstr ""
 
-#: web/templates/sections/schedule.html:27
-#: web/templates/sections/schedule.html:172
+#: web/templates/sections/schedule.html:36
+#: web/templates/sections/schedule.html:181
 msgid "Keynote"
 msgstr ""
 
-#: web/templates/sections/schedule.html:63
-#: web/templates/sections/schedule.html:148
+#: web/templates/sections/schedule.html:72
+#: web/templates/sections/schedule.html:157
 msgid "Lunch"
 msgstr "Comida"
 
-#: web/templates/sections/schedule.html:103
+#: web/templates/sections/schedule.html:112
 msgid "Lightning Talks"
 msgstr ""
 
-#: web/templates/sections/schedule.html:105
+#: web/templates/sections/schedule.html:114
 msgid "Asamblea Python España"
 msgstr ""
 
-#: web/templates/sections/schedule.html:108
+#: web/templates/sections/schedule.html:117
 msgid "7 October"
 msgstr "7 de Octubre"
 
-#: web/templates/sections/schedule.html:176
+#: web/templates/sections/schedule.html:185
 msgid "Closing"
 msgstr "Clausura"
 

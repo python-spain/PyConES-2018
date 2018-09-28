@@ -31,12 +31,17 @@
                 </div>
                 <h1 class="talk-details__title">{{ title }}</h1>
                 <div class="talk-details__description">
+                    {% if sponsored %}
+                        <p class="is-pulled-right">
+                            {% trans "Sponsored by: " %} <strong>{{ sponsored }}</strong>
+                        </p>
+                    {% endif %}
                     {% autoescape off %}
                         <p>{{ description|apply_markup:"markdown" }}</p>
-{#                        {% if notes %}#}
-{#                            <h2>{% trans "Notes" %}</h2>#}
-{#                            <p>{{ notes|linebreaks }}</p>#}
-{#                        {% endif %}#}
+                        {#                        {% if notes %}#}
+                        {#                            <h2>{% trans "Notes" %}</h2>#}
+                        {#                            <p>{{ notes|linebreaks }}</p>#}
+                        {#                        {% endif %}#}
                     {% endautoescape %}
                     {#                <p>{{ bio }}</p>#}
                     {#                <p>{{ avatar }}</p>#}
