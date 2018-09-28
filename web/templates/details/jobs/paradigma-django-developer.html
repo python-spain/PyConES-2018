@@ -1,5 +1,5 @@
 {% extends 'details/jobs/base.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block logo %}
     <img src="{% static "web/images/sponsors/paradigma.png" %}" alt="Paradigma">
@@ -67,4 +67,10 @@
     </p>
 {% endblock %}
 
-{% block send_request_link %}mailto:people@paradigmadigital.com{% endblock %}
+{#{% block send_request_link %}mailto:people@paradigmadigital.com{% endblock %}#}
+{% block send_request %}
+    <a class="section__action link--stroke is-center sponsors__action"
+       href="https://www.linkedin.com/jobs/cap/view/850311814/?pathWildcard=850311814&trk=job_capjs" target="_blank">
+        {% trans "Send request" %}
+    </a>
+{% endblock %}
