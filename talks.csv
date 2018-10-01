@@ -2655,4 +2655,4 @@ Dado que las operaciones a realizar dependerán de la tipología de partida de l
 
 Scikit-learn ha incluido una nueva funcionalidad en su recientemente lanzada versión 0.20, que complementa a su poderoso “Pipeline” para construir arquitecturas multimodales como la esbozada: “ColumnTransformer”.
 
-En esta charla presentaremos a través de ejemplos prácticos la problemática que puede plantear el procesamiento de datos mixtos y cómo scikit-learn nos proporciona una potente solución 'off-the-shelf'.",,,,,ml,en,Track 1,07/10/2018,10:30,10:55,Ebury
+En esta charla presentaremos a través de ejemplos prácticos la problemática que puede plantear el procesamiento de datos mixtos y cómo scikit-learn nos proporciona una potente solución 'off-the-shelf'.",,,,,ml,es,Track 1,07/10/2018,10:30,10:55,Ebury
