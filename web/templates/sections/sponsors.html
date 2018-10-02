@@ -11,7 +11,8 @@
             <br> {% trans 'Drop us an email and we’ll talk about the specifics.' %}
         </p>
         <div class="sponsors__actions is-center">
-            <a class="is-black is-center" href="mailto:sponsors2018@es.pycon.org"><strong>sponsors2018@es.pycon.org</strong></a>
+            <a class="is-black is-center"
+               href="mailto:sponsors2018@es.pycon.org"><strong>sponsors2018@es.pycon.org</strong></a>
             <a class="section__action link--stroke is-center sponsors__action"
                href="{% static 'web/pdf/pycones2018_dossier_'|add:LANGUAGE_CODE|add:'.pdf' %}"
                target="_blank">{% trans 'sponsorship leaflet' %}</a>
@@ -163,6 +164,14 @@
             <div class="sponsor">
                 <a href="https://www.fisotec.es/" target="_blank" class="link">
                     <img src="{% static "web/images/sponsors/fisotec.png" %}" alt="fisotec">
+                </a>
+            </div>
+        </div>
+        <h2 class="section--sponsors-title">{% trans "Contributors" %}</h2>
+        <div class="section--sponsors is-contributor">
+            <div class="sponsor">
+                <a href="https://www.tecnoempleo.com/?utm_source=pycones&utm_medium=partner" target="_blank" class="link">
+                    <img src="{% static "web/images/sponsors/tecnoempleo.png" %}" alt="tecnoempleo.com">
                 </a>
             </div>
         </div>

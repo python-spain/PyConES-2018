@@ -21,7 +21,7 @@ def locale_category(category):
         return _("Science")
     if category == "dev":
         return _("DevOps & Tools")
-    if category == "test":
+    if category == "testing":
         return _("Testing")
     if category == "sec":
         return _("Security")

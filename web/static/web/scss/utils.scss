@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.is-pulled-right {
+  text-align: right;
+}
+
 .is-hidden-mobile {
   @media (max-width: $breakpoint1-width) {
     display: none;
@@ -22,4 +26,8 @@
 
 .is-marginless {
   margin: 0 !important;
+}
+
+.is-font-weight-normal {
+  font-weight: normal;
 }

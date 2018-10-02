@@ -51,7 +51,8 @@ $sponsor-gap: 8px;
     }
   }
   &.is-gold,
-  &.is-silver {
+  &.is-silver,
+  &.is-contributor {
     .sponsor {
       width: calc(100% / 2);
       @media (min-width: $breakpoint1-width) {

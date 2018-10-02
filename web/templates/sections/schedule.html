@@ -21,6 +21,15 @@
         </div>
 
         <h2 class="schedule__day">{% trans "6 October" %}</h2>
+        {% include "sections/blocks/schedule-time.html" with time="08:15" %}
+        <p class="schedule__row--break">{% trans "Registration" %}</p>
+        {% include "sections/blocks/schedule-time.html" with time="09:00" %}
+        <p class="schedule__row--break">{% trans "Opening" %}</p>
+        <p class="schedule__row--break is-font-weight-normal">
+            Presentación
+            <a href="https://hackathon.kernel-analytics.com/event/PythonHack-2018/" target="_blank"
+               title="PythonHack 2018">PythonHack 2018</a>
+        </p>
         {% include "sections/blocks/schedule-time.html" with time="09:30" %}
         <div class="schedule__plenary-talk">
             <div class="schedule__plenary-talk--track">{% trans "Track 1" %}</div>
@@ -49,13 +58,13 @@
         </div>
         {% include "sections/blocks/schedule-time.html" with time="12:30" %}
         <div class="schedule__row">
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 1" %}
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 2" %}
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 3" %}
+            {% schedule_talk title="Industrializando modelos de ML" %}
+            {% schedule_talk title="El hombre pisó la luna, pero gracias a la mujer" %}
+            {% schedule_talk title="Twelve-Factor app" %}
         </div>
         {% include "sections/blocks/schedule-time.html" with time="13:00" %}
         <div class="schedule__row">
-            {% schedule_talk title="Hacking Reinforcement Learning" %}
+            {% schedule_talk title="Hackeando el Reinforcement Learning" %}
             {% schedule_talk title="Flask, un pequeño gran héroe" %}
             {% schedule_talk title="FaaS with no strings attached" %}
         </div>
@@ -75,7 +84,7 @@
         </div>
         {% include "sections/blocks/schedule-time.html" with time="16:00" %}
         <div class="schedule__row">
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 1" %}
+            {% schedule_talk title="From unstructured news to real-time visualizations, a Fintech story" %}
             {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 2" %}
             {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 3" %}
         </div>
@@ -120,7 +129,7 @@
         </div>
         {% include "sections/blocks/schedule-time.html" with time="10:30" %}
         <div class="schedule__row">
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 1" %}
+            {% schedule_talk title="Scaling beyond scikit-learn's Pipeline: handling mixed data types easily!" %}
             {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 2" %}
             {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 3" %}
         </div>
