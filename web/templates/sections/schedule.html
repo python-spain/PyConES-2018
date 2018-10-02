@@ -85,14 +85,14 @@
         {% include "sections/blocks/schedule-time.html" with time="16:00" %}
         <div class="schedule__row">
             {% schedule_talk title="From unstructured news to real-time visualizations, a Fintech story" %}
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 2" %}
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 3" %}
+            {% schedule_talk title="Aprende a enseñar, enseñando aprenderás" %}
+            {% schedule_talk title="¡Oh vosotros los que entráis, abandonad toda esperanza!" %}
         </div>
         {% include "sections/blocks/schedule-time.html" with time="16:30" %}
         <p class="schedule__row--break">{% trans "Coffee" %}</p>
         {% include "sections/blocks/schedule-time.html" with time="17:00" %}
         <div class="schedule__row">
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 1" %}
+            {% schedule_talk title="Prediciendo la contaminación del aire en Madrid: el proceso" %}
             {% schedule_talk title="Taking Django Async" %}
             {% schedule_talk title="Python Heaps-ters" %}
         </div>
@@ -103,14 +103,8 @@
             {% schedule_talk title="Gradual typing en Python" %}
         </div>
         {% include "sections/blocks/schedule-time.html" with time="18:00" %}
-        <div class="schedule__row">
-            {% schedule_talk title="Prediciendo la contaminación del aire en Madrid: el proceso" %}
-            {% schedule_talk title="Aprende a enseñar, enseñando aprenderás" %}
-            {% schedule_talk title="¡Oh vosotros los que entráis, abandonad toda esperanza!" %}
-        </div>
-        {% include "sections/blocks/schedule-time.html" with time="18:30" %}
         <p class="schedule__row--break">{% trans "Lightning Talks" %}</p>
-        {% include "sections/blocks/schedule-time.html" with time="19:30" %}
+        {% include "sections/blocks/schedule-time.html" with time="19:00" %}
         <p class="schedule__row--break schedule__day-break">{% trans "Asamblea Python España" %}</p>
 
 
@@ -130,8 +124,8 @@
         {% include "sections/blocks/schedule-time.html" with time="10:30" %}
         <div class="schedule__row">
             {% schedule_talk title="Scaling beyond scikit-learn's Pipeline: handling mixed data types easily!" %}
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 2" %}
-            {% include "sections/blocks/schedule-sponsored-talk.html" with title="" track="Track 3" %}
+            {% schedule_talk title="From chaos to insights: the challenges of extracting meaningful information from unstructured data with Python and spaCy" %}
+            {% schedule_talk title="Un drone voló sobre el nido de Python" %}
         </div>
         {% include "sections/blocks/schedule-time.html" with time="11:00" %}
         <p class="schedule__row--break">{% trans "Coffee" %}</p>
@@ -164,14 +158,14 @@
         {% include "sections/blocks/schedule-time.html" with time="15:00" %}
         <div class="schedule__row">
             {% schedule_talk title="Estrategias de comprensión con y para Python" %}
-            {% schedule_talk title="Find Vulnerability on Your Python Code" %}
             {% schedule_talk title="The Python Space adventure" %}
+            <div class="schedule__talk"></div>
         </div>
         {% include "sections/blocks/schedule-time.html" with time="15:30" %}
         <div class="schedule__row">
             {% schedule_talk title="Machine Learning en Cardiología" %}
             {% schedule_talk title="Using Python to build a data privacy layer for decentralized applications" %}
-            {% schedule_talk title="Python Espacial" %}
+            <div class="schedule__talk"></div>
         </div>
         {% include "sections/blocks/schedule-time.html" with time="16:00" %}
         <p class="schedule__row--break">{% trans "Coffee" %}</p>
