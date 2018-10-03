@@ -656,7 +656,10 @@ Has sido elegida (junto con tu compañera de pair programming) para implementar 
 5b. Revisión y dudas
 6. Conclusiones y preguntas finales
 
-**Los asistentes necesitan traer: pc con python 3, pip y virtualenv (o similar)**",,All,accepted,"[""tdd"", ""pair_programming"", ""bdd""]",workshop,,Aula 2,05/10/2018,15:00,17:30,
+**Los asistentes necesitan traer: pc con python 3, pip y virtualenv (o similar)**
+
+[En este repositorio podéis encontrar todos los detalles e instrucciones para seguir el taller.](https://github.com/aleasoluciones/pycones2018)
+",,All,accepted,"[""tdd"", ""pair_programming"", ""bdd""]",workshop,,Aula 2,05/10/2018,15:00,17:30,
 Miguel Sánchez de León Peque,https://secure.gravatar.com/avatar/3a7c08cb0e764122426e2e3fc69b3ed9?s=500,"- [GitHub](https://github.com/Peque/)
 - [LinkedIn](https://www.linkedin.com/in/peque)",,https://github.com/Peque/,¡Eureka! - Python y ciencia,"Mediante la experimentación, las matemáticas y, por supuesto, Python ¡haremos ciencia! Exploraremos el cálculo simbólico, el numérico y hasta el aprendizaje máquina. El objetivo será medir la gravedad terrestre y validar las ecuaciones del movimiento rectilíneo uniformemente acelerado.","![Archimedes](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/180px-Domenico-Fetti_Archimedes_1620.jpg)
 
@@ -2657,4 +2660,68 @@ Jeson Jacob,,,,,From chaos to insights: the challenges of extracting meaningful 
 We decided to use Python to hook up all the components of our stack. At the core of our data application lies spaCy, which is the natural language processing engine enabling the extraction of meaningful information from large amounts of textual data.
 
 We will present our workflow at a conceptual level (collecting data, textual analysis, creating insights). We will then describe the different components of our stack and why we chose them (Mongo, ElasticSearch, spaCy, AWS). Finally, we will share the lessons we have learned along the way on this challenging journey. Examples and code illustrating the main points will also be discussed during the talk.",,,,,ml,en,Track 2,07/10/2018,10:30,10:55,
-Mario Bartolome Manovel,,,,,Un drone voló sobre el nido de Python,,"En 2014 construí mi primer drone. Algo que empezó como un hobby, es hoy parte de mi proyecto de final de carrera. Haciendo uso de Python tanto para back como frontend y una RaspberryPi, he diseñado un sistema que permite controlar un drone a través de una interfaz web realizando streaming de vídeo.",,,,,hw,es,Track 3,07/10/2018,10:30,10:55,
+Mario Bartolome Manovel,,,,,Un drone voló sobre el nido de Python,"En 2014 construí mi primer drone. Algo que empezó como un hobby, es hoy parte de mi proyecto de final de carrera. Haciendo uso de Python tanto para back como frontend y una RaspberryPi, he diseñado un sistema que permite controlar un drone a través de una interfaz web realizando streaming de vídeo.","#### Un **drone**, una **RaspberryPi**, una **cámara con visión nocturna**, una **web diseñada mediante Flask** que permite controlar ese drone de forma totalmente remota, y desde cualquier lugar del mundo... y todo ello bien conectado por el lenguaje que hoy nos ha traido aquí:
+![PYTHON](https://www.python.org/static/community_logos/python-logo.png ""Python"")
+
+#### Sí... Pocas palabras juntas podrían atraer tanta atención. 
+
+---
+**¿Te gusta(n)...**
+
+* ...programar en **Python**?
+Menuda pregunta, si no ¿qué ibas a hacer aquí?
+
+* ...los **drones**?
+Menuda pregunta, ¿a quién no?
+
+* ...las **RaspberryPi**? 
+    Deme diez, pero démelas ya.
+
+* ...las enumeraciones interminables?
+
+Esta charla es un ejemplo perfecto de **que** se puede conseguir con Python. Una implementación que pasa de la simple teoría a algo real, tremendamente divertido, y potencialmente peligroso **:D**.
+
+En esta charla se mostrará como se han integrado diferentes tecnologías mediante Python, para conseguir controlar un drone conectado a una RaspberryPi.
+
+---
+
+### Hablaremos de...
+
+### Flask
+
+Utilizado en el diseño y gestión de la página web, así como de SQLAlchemy para mantener la base de datos, Flask-SocketIO para comunicación en tiempo real con WebSockets y otros módulos compatibles con este pequeño gran framework.
+
+#### WebSockets
+
+Un poco de JavaScript para ayudarnos a comunicar el input de usuario con la aplicación web basada en Flask.
+
+#### WebRTC
+
+Una de las tecnologías más prometedoras para el **streaming de video en riguroso directo**, y con una latencia mínima. 
+
+### Python
+
+#### Comunicación Serie
+
+De alguna forma se tiene que **establecer comunicación entre la RaspberryPi y el drone**, y Python provee de mecanismos que permiten implementar un protocolo de comunicación muy avanzado, de forma relativamente sencilla.
+
+#### Threads y Sockets
+
+Hay que mantener ese **servidor de control remoto** constántemente atento y listo para recibir órdenes!
+
+#### Numpy
+
+Utilizado para implemnetar un sistema de **evasión de obstáculos** de forma eficiente, y un sistema de **localización sin GPS**, basando ambos en las posibilidades del cálculo vectorizado que ofrece Numpy.
+
+---
+
+### Y por supuesto...
+
+`DEMO || GT*O`
+
+### Demo!
+
+Para la admiración, sorpresa y/o terror (no son excluyentes) de los asistentes, se llevará a cabo una pequeña demo en la que se hará volar un drone basado en el sistema expuesto. Siempre contemplando una serie de medidas de seguridad, por supuesto.
+
+### Ronda de preguntas
+",,,,,science,es,Track 3,07/10/2018,10:30,10:55,
