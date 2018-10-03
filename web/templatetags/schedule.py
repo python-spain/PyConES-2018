@@ -29,8 +29,6 @@ def locale_category(category):
         return _("Microservices")
     if category == "workshop":
         return _("Workshop")
-    if category == "hw":
-        return _("Drones")
     return ""
 
 
