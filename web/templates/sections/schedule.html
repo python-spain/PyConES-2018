@@ -6,6 +6,8 @@
         <h1>{% trans "Schedule" %}</h1>
         <h2 class="schedule__day">{% trans "5 October" %}</h2>
         {% include "sections/blocks/schedule-time.html" with time="15:00" %}
+        <p class="schedule__row--break">{% trans "Registration" %}</p>
+        {% include "sections/blocks/schedule-time.html" with time="15:00" %}
         <div class="schedule__row">
             {% schedule_talk "Introducción a Data Science en Python" %}
             {% schedule_talk "TDD de cero a cien (o casi)" %}

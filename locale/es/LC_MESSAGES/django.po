@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-19 19:26+0200\n"
+"POT-Creation-Date: 2018-10-04 09:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,10 +162,6 @@ msgstr "¡Lo tenemos!"
 #: web/templates/base.html:85
 msgid "Enter your email address"
 msgstr "Escribe tu email"
-
-#: web/templates/blocks/schedule-talk.html:7
-msgid "Sponsored"
-msgstr "Patrocinada"
 
 #: web/templates/details/coc.html:10
 msgid ""
@@ -335,6 +331,7 @@ msgstr ""
 "                    "
 
 #: web/templates/details/jobs/base.html:25
+#: web/templates/details/jobs/paradigma-django-developer.html:74
 msgid "Send request"
 msgstr "Enviar solicitud"
 
@@ -492,54 +489,55 @@ msgstr "Gestiona tu tiempo"
 msgid "5 October"
 msgstr "5 de Octubre"
 
-#: web/templates/sections/schedule.html:15
-#: web/templates/sections/schedule.html:52
-#: web/templates/sections/schedule.html:92
-#: web/templates/sections/schedule.html:137
-#: web/templates/sections/schedule.html:177
-msgid "Coffee"
-msgstr "Café"
-
-#: web/templates/sections/schedule.html:23
-msgid "6 October"
-msgstr "6 de Octubre"
-
-#: web/templates/sections/schedule.html:25
+#: web/templates/sections/schedule.html:9
+#: web/templates/sections/schedule.html:27
 msgid "Registration"
 msgstr "Registro"
 
-#: web/templates/sections/schedule.html:27
+#: web/templates/sections/schedule.html:17
+#: web/templates/sections/schedule.html:54
+#: web/templates/sections/schedule.html:94
+#: web/templates/sections/schedule.html:133
+#: web/templates/sections/schedule.html:173
+msgid "Coffee"
+msgstr "Café"
+
+#: web/templates/sections/schedule.html:25
+msgid "6 October"
+msgstr "6 de Octubre"
+
+#: web/templates/sections/schedule.html:29
 msgid "Opening"
 msgstr "Apertura"
 
-#: web/templates/sections/schedule.html:35
-#: web/templates/sections/schedule.html:180
+#: web/templates/sections/schedule.html:37
+#: web/templates/sections/schedule.html:176
 msgid "Track 1"
 msgstr ""
 
-#: web/templates/sections/schedule.html:36
-#: web/templates/sections/schedule.html:181
+#: web/templates/sections/schedule.html:38
+#: web/templates/sections/schedule.html:177
 msgid "Keynote"
 msgstr ""
 
-#: web/templates/sections/schedule.html:72
-#: web/templates/sections/schedule.html:157
+#: web/templates/sections/schedule.html:74
+#: web/templates/sections/schedule.html:153
 msgid "Lunch"
 msgstr "Comida"
 
-#: web/templates/sections/schedule.html:112
+#: web/templates/sections/schedule.html:108
 msgid "Lightning Talks"
 msgstr ""
 
-#: web/templates/sections/schedule.html:114
+#: web/templates/sections/schedule.html:110
 msgid "Asamblea Python España"
 msgstr ""
 
-#: web/templates/sections/schedule.html:117
+#: web/templates/sections/schedule.html:113
 msgid "7 October"
 msgstr "7 de Octubre"
 
-#: web/templates/sections/schedule.html:185
+#: web/templates/sections/schedule.html:181
 msgid "Closing"
 msgstr "Clausura"
 
@@ -573,29 +571,33 @@ msgstr "Ayuda a la comunidad haciendo este evento realidad"
 msgid "Drop us an email and we’ll talk about the specifics."
 msgstr "Déjanos tu email y te contaremos más sobre los detalles."
 
-#: web/templates/sections/sponsors.html:17
+#: web/templates/sections/sponsors.html:18
 msgid "sponsorship leaflet"
 msgstr "folleto de patrocinio"
 
-#: web/templates/sections/sponsors.html:19
+#: web/templates/sections/sponsors.html:20
 msgid "Keystone"
 msgstr ""
 
-#: web/templates/sections/sponsors.html:27
+#: web/templates/sections/sponsors.html:28
 msgid "Diamond"
 msgstr "Diamante"
 
-#: web/templates/sections/sponsors.html:55
+#: web/templates/sections/sponsors.html:56
 msgid "Platinum"
 msgstr "Platino"
 
-#: web/templates/sections/sponsors.html:88
+#: web/templates/sections/sponsors.html:89
 msgid "Gold"
 msgstr "Oro"
 
-#: web/templates/sections/sponsors.html:136
+#: web/templates/sections/sponsors.html:137
 msgid "Silver"
 msgstr "Plata"
+
+#: web/templates/sections/sponsors.html:170
+msgid "Contributors"
+msgstr ""
 
 #: web/templates/sections/venue.html:5
 msgid "The venue"
@@ -636,6 +638,9 @@ msgstr ""
 "encuentra la Escuela Técnica Superior de Ingeniería Informática (ETSI) y la "
 "Escuela Técnica Superior de Ingeniería en Telecomunicaciones (ETSIT).\n"
 "      "
+
+#~ msgid "Sponsored"
+#~ msgstr "Patrocinada"
 
 #~ msgid "Buy your tickets here"
 #~ msgstr "Compra tus entradas aquí"
