@@ -122,6 +122,9 @@ $schedule__time-padding-top: 1rem;
   }
   &--title {
     padding: $padding-top $padding-side 15px;
+    a {
+      white-space: normal;
+    }
   }
   &--attributes {
     padding: 15px $padding-side $padding-top;
