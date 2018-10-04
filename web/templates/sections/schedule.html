@@ -5,6 +5,20 @@
         <span class="text--section-title"><strong>#04</strong> {% trans "Manage your time" %}</span>
         <h1>{% trans "Schedule" %}</h1>
         <h2 class="schedule__day">{% trans "5 October" %}</h2>
+        {% include "sections/blocks/schedule-time.html" with time="8:30" %}
+        <p class="schedule__row--break">
+            <a href="https://djangogirls.org/malaga/" target="_blank">
+                {% trans "Django Girls" %}
+            </a>
+        </p>
+        {% include "sections/blocks/schedule-time.html" with time="11:00" %}
+        <p class="schedule__row--break">
+            <a href="https://bloomberg.recsolu.com/external/events/jt1pWiT6vtuq4QBDqvaItQ" target="_blank">
+                {% trans "Bloomberg - CV Workshop" %}
+            </a>
+        </p>
+        {% include "sections/blocks/schedule-time.html" with time="14:15" %}
+        <p class="schedule__row--break">{% trans "Registration" %}</p>
         {% include "sections/blocks/schedule-time.html" with time="15:00" %}
         <div class="schedule__row">
             {% schedule_talk "Introducción a Data Science en Python" %}
@@ -105,8 +119,9 @@
         {% include "sections/blocks/schedule-time.html" with time="18:00" %}
         <p class="schedule__row--break">{% trans "Lightning Talks" %}</p>
         {% include "sections/blocks/schedule-time.html" with time="19:00" %}
-        <p class="schedule__row--break schedule__day-break">{% trans "Asamblea Python España" %}</p>
-
+        <p class="schedule__row--break">{% trans "Asamblea Python España" %}</p>
+        {% include "sections/blocks/schedule-time.html" with time="19:30" %}
+        <p class="schedule__row--break schedule__day-break">{% trans "Hackathon PyConES 2018 Happy Hour Contest" %}</p>
 
         <h2 class="schedule__day">{% trans "7 October" %}</h2>
         {% include "sections/blocks/schedule-time.html" with time="09:30" %}
@@ -126,6 +141,7 @@
             {% schedule_talk title="Scaling beyond scikit-learn's Pipeline: handling mixed data types easily!" %}
             {% schedule_talk title="From chaos to insights: the challenges of extracting meaningful information from unstructured data with Python and spaCy" %}
             {% schedule_talk title="Un drone voló sobre el nido de Python" %}
+            {% include "sections/blocks/schedule-extra-slot.html" with title="Hackathon PyConES 2018 Accuracy Contest Solutions" %}
         </div>
         {% include "sections/blocks/schedule-time.html" with time="11:00" %}
         <p class="schedule__row--break">{% trans "Coffee" %}</p>
@@ -177,5 +193,7 @@
         </div>
         {% include "sections/blocks/schedule-time.html" with time="17:30" %}
         <p class="schedule__row--break">{% trans "Closing" %}</p>
+        <p class="schedule__row--break is-font-weight-normal">
+        {% trans "Hackathon PyConES 2018 Award ceremony" %}</p>
     </div>
 </div>

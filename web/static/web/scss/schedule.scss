@@ -35,6 +35,9 @@ $schedule__time-padding-top: 1rem;
   margin-bottom: -.5rem;
   text-align: center;
   font-weight: $bold;
+  a {
+    white-space: normal;
+  }
 }
 
 .schedule__plenary-talk {
@@ -76,6 +79,13 @@ $schedule__time-padding-top: 1rem;
   }
 }
 
+.schedule__extra-slot {
+  .schedule__talk--description {
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+}
+
 .schedule__talk {
   $padding-top: 30px;
   $padding-side: 25px;
@@ -97,6 +107,7 @@ $schedule__time-padding-top: 1rem;
   .sponsored-background {
     background: $job-background;
   }
+
   &--description {
     background: white;
     height: 100%;
@@ -124,11 +135,16 @@ $schedule__time-padding-top: 1rem;
   &--speaker {
     padding: 0 $padding-side;
     background: $light-blue;
-    min-height: 5.5rem;
-    display: flex;
-    align-items: center;
-    > p {
-      margin: 0;
+    //display: flex;
+    //align-items: center;
+    div {
+      min-height: 5.5rem;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      > p {
+        margin: 0;
+      }
     }
   }
   > .schedule__talk__border {
@@ -145,14 +161,6 @@ $schedule__time-padding-top: 1rem;
     .schedule__talk__border {
       display: block;
     }
-  }
-}
-
-.schedule__talk--extra-speakers {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  @media (max-width: 1400px) {
-    min-height: auto;
   }
 }
 
