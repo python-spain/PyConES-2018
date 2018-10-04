@@ -7,7 +7,12 @@
             <div class="sponsored">{{ sponsored }}</div>
         {% endif %}
         <div class="schedule__talk--title">
-            {{ title }}
+            {% if title|wordcount < 15 %}
+                {{ title }}
+            {% else %}
+                {{ title|truncatewords:10 }}
+            {% endif %}
+
         </div>
         <div class="schedule__talk--attributes">
             <div>{{ track }}</div>
