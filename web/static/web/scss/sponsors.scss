@@ -29,6 +29,9 @@ $sponsor-gap: 8px;
   .sponsor {
     //margin: .5rem 0;
     padding: $sponsor-gap;
+    img {
+      max-width: 100%;
+    }
   }
   .link {
     padding: 1rem;
