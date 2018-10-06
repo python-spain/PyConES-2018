@@ -11,6 +11,10 @@
     font-weight: $bold;
     font-family: $altFontFamily;
     margin: 20px 45px 0;
+    @media(max-width: $mobile) {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
   }
   &__row {
     display: flex;
@@ -24,6 +28,16 @@
     }
     p {
       margin: 0;
+    }
+    &.talk-details__row-attrs {
+      @media(max-width: $mobile) {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        > div {
+          width: 100%;
+          padding: 25px 45px;
+        }
+      }
     }
   }
   &__speakers {

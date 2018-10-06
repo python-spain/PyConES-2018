@@ -122,6 +122,9 @@ $schedule__time-padding-top: 1rem;
   }
   &--title {
     padding: $padding-top $padding-side 15px;
+    a {
+      white-space: normal;
+    }
   }
   &--attributes {
     padding: 15px $padding-side $padding-top;
@@ -156,12 +159,15 @@ $schedule__time-padding-top: 1rem;
     height: 100%;
     border-left: .5rem solid #14b8df;
   }
-  &:hover {
-    color: black;
-    .schedule__talk__border {
-      display: block;
+  @media(hover: hover) {
+    &:hover {
+      color: black;
+      .schedule__talk__border {
+        display: block;
+      }
     }
   }
+
 }
 
 .schedule__talk--sponsored {
