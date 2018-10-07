@@ -8,6 +8,7 @@ name,avatar,bio,twitter,url,title,abstract,description,notes,audience_level,stat
 ,,,,,Lightning Talks,,,,,,,es,,Ebury,06/10/2018,18:00,19:00,
 ,,,,,Asamblea Python España,,,,,,,es,,Ebury,06/10/2018,19:00,19:30,
 ,,,,,Hackathon PyConES 2018,,,,,,,es,,Ebury,06/10/2018,19:30,22:30,
+,,,,,Hackathon PyConES 2018 - Accuracy Contest Solutions,,,,,,,es,,Aula 3.05,07/10/2018,10:30,10:55,
 Lorena Mesa,,,,,Keynote,,,,,,,es,,Ebury,07/10/2018,16:30,17:30,
 Héctor Socas-Navarro,,,,,Keynote,,,,,,,es,,Ebury,06/10/2018,9:30,10:20,
 Unai,https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/30041/photo_2018-05-16_00-52-23.jpg,"Soy desarrollador python para OrbitalAds y colaborador de PythonAlicante.
@@ -223,7 +224,7 @@ Static Application Security Tools (SAST) can be used to find vulnerability on de
 This topic will cover how to find vulnerability using free/open source SAST. It will cover SAST which has capability to scan python. SAST usage will demonstrate with several scenario, CLI usage and Jenkins integration. Jenkins is open source CI/CD tools commonly used for supporting Devops.
 ","so, how this topic is relevant to python developer audience ? because this topic will cover how to find security issue using free/open source Static Aplication Securtiy Testing (SAST) tools which specially created for python programming language. This topic will cover demo on CLI usage and jenkins integration
 
-So that, python developer will be able to find vulnerability on their python code and make secure code without waiting for penetration test result.",All,accepted,"[""python security"", ""python""]",sec,en,PSF,07/10/2018,15:00,15:25,
+So that, python developer will be able to find vulnerability on their python code and make secure code without waiting for penetration test result.",All,accepted,"[""python security"", ""python""]",sec,en,,,,,
 Zuria Bauer,https://secure.gravatar.com/avatar/226445de7cb5d80ea956a17d5c05dc04?s=500,"Soy una Ingeniera Química, con un Máster en Robótica y Automática cursando un PhD en Ingeniería Informática. Finjo que se como funciona el Deep Learning y como se programa en Tensorflow desde Septiembre del 2017 (:",zuriich92,https://www.linkedin.com/in/zbauerhartwig/,Desde imágenes RGB a mapas de profundidad pasando por redes convolucionales profundas,En esta charla se mostrará un sistema basado en visión por computador y aprendizaje profundo capaz de estimar las profundidades de los objetos en una escena a partir de una imagen 2D. El sistema se utilizará para ayudar a personas con discapacidad visual a desplazarse en entornos exteriores.,"Poder determinar la distancia entre objetos a partir de una imagen en dos dimensiones es una tarea que ha intrigado a multitud de investigadores en estos últimos años. Esto permitiría la estimación de la profundidad en imágenes monoculares, siendo capaces de realizar predicciones precisas en mapas de profundidad. Las ventajas son evidentes, ya que,  cualquier cámara de color detectaría datos tridimensionales. Esta capacidad es importante para crear sistemas de asistencia de bajo coste para ayudar a personas con discapacidad visual a desplazarse y desarrollar su vida en entornos exteriores de forma autónoma. Entre otras aplicaciones, esta técnica permitiría generar reconstrucciones tridimensionales de un objeto o escena sin necesidad de disponer de dispositivos específicos.
 
 En esta charla se mostrará un sistema basado en visión capaz de detectar estas distancias a partir de imágenes en 2D, con el objetivo de implementarse en sistemas para ayudar a personas con discapacidad visual a desplazarse en entornos exteriores.
@@ -360,7 +361,7 @@ En la charla expondré y explicaré cómo calcular órbitas y trayectorias, cóm
 
 Cristina Luna
 Investigadora Espacial en AISTECH SPACE. Astrónoma en Soy Astrónoma.
-",All,accepted,[],science,es,Málaga,07/10/2018,15:30,15:55,
+",All,accepted,[],science,es,,,,,
 "Josema Camacho, Alberto Asuero, Cayetano Benavent",https://secure.gravatar.com/avatar/939fe6365d5a192d1fa05e6c8c551bf2?s=500,"Name: Josema Camacho
 Bio: Josema ❤ Data, Betis & coffee, ¿en ese orden?. Se levanta a las 4 de la mañana por el Machine Learning y las metaheurísticas. Chief Innovation Officer en Geographica.
 
