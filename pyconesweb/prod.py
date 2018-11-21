@@ -6,5 +6,6 @@ DEBUG = False
 COMPRESS_ENABLED = True
 
 ALLOWED_HOSTS = [
-    '2018.es.pycon.org'
+    '2018.es.pycon.org',
+    'localhost'
 ]
